@@ -1,12 +1,17 @@
-![Học AI](learnai.png)
+<p align="center">
+  <img src="learnai.png" alt="Học AI" width="200">
+</p>
 
-# Học AI
+<h1 align="center">Học AI</h1>
 
-[![Stars](https://img.shields.io/github/stars/mhieuhonda/learn-ai?style=flat-square&color=blue)](https://github.com/mhieuhonda/learn-ai/stargazers)
-[![Forks](https://img.shields.io/github/forks/mhieuhonda/learn-ai?style=flat-square&color=blue)](https://github.com/mhieuhonda/learn-ai/network/members)
-[![Issues](https://img.shields.io/github/issues/mhieuhonda/learn-ai?style=flat-square&color=orange)](https://github.com/mhieuhonda/learn-ai/issues)
-[![Last commit](https://img.shields.io/github/last-commit/mhieuhonda/learn-ai?style=flat-square&color=green)](https://github.com/mhieuhonda/learn-ai/commits/main)
-[![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/mhieuhonda/learn-ai?style=social)](https://github.com/mhieuhonda/learn-ai)
+[![GitHub forks](https://img.shields.io/github/forks/mhieuhonda/learn-ai?style=social)](https://github.com/mhieuhonda/learn-ai)
+[![GitHub issues](https://img.shields.io/github/issues/mhieuhonda/learn-ai?style=flat&logo=github&color=orange)](https://github.com/mhieuhonda/learn-ai/issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/mhieuhonda/learn-ai?style=flat&logo=git&color=green)](https://github.com/mhieuhonda/learn-ai/commits/main)
+[![GitHub contributors](https://img.shields.io/github/contributors/mhieuhonda/learn-ai?style=flat&logo=github&color=blue)](https://github.com/mhieuhonda/learn-ai/graphs/contributors)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/mhieuhonda/learn-ai/pulls)
+[![Made with Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](https://commonmark.org)
 
 Một lộ trình học Trí tuệ Nhân tạo từ con số không đến chuyên sâu. Mỗi chặng đặt kiến thức lên trước, thực hành theo sau, toàn bộ nội dung được thiết kế để người đọc tự mình hoàn thành.
 
