@@ -59,7 +59,7 @@ Một số khái niệm trong lộ trình (gradient descent, attention, p-value)
 
 ## 5. Tự học với AI trợ lý — đúng cách
 
-Từ Phần C trở đi, bạn nên dùng một trợ lý AI (ChatGPT, Claude, Gemini, DeepSeek, v.v.) như một người hướng dẫn cá nhân. Dùng đúng cách:
+Từ Phần 2 trở đi, bạn nên dùng một trợ lý AI (ChatGPT, Claude, Gemini, DeepSeek, v.v.) như một người hướng dẫn cá nhân. Dùng đúng cách:
 
 | Việc NÊN làm | Việc KHÔNG nên làm |
 |---------------|---------------------|
@@ -87,7 +87,7 @@ Cuối mỗi tuần, đặt mục tiêu tuần sau: "Hoàn thành chặng 25 và
 
 ### 6.3. Quản lý năng lượng, không quản lý thời gian
 
-Một số chặng (Deep Learning) cần đầu óc tươi. Một số chặng (làm sạch dữ liệu) cần kiên nhẫn hơn là thông minh. Sắp xếp chặng cần sáng tạo vào giờ bạn tỉnh nhất (thường là sáng); chặng cần tỉ mỉ vào giờ bạn đang bình tĩnh hơn (chiều/tối). Đừng cố học gradient descent sau khi đã làm việc 10 tiếng.
+Một số chặng ở Phần 3 (Deep Learning) cần đầu óc tươi. Một số chặng ở Phần 2 (làm sạch dữ liệu) cần kiên nhẫn hơn là thông minh. Sắp xếp chặng cần sáng tạo vào giờ bạn tỉnh nhất (thường là sáng); chặng cần tỉ mỉ vào giờ bạn đang bình tĩnh hơn (chiều hoặc tối). Đừng cố học gradient descent sau khi đã làm việc 10 tiếng.
 
 ## 7. Bốn dấu hiệu bạn đang học đúng
 
