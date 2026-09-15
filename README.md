@@ -1,82 +1,86 @@
-# Học AI cùng Việt Nam
+# Học AI — Tài liệu tự học nghiêm túc 170 chặng
 
-**Lộ trình học Trí tuệ Nhân tạo 170 giai đoạn — từ con số không đến chuyên sâu, dành cho mọi lứa tuổi.**
-
-> Kho học liệu mở dành cho học sinh, sinh viên, giáo viên, phụ huynh và mọi người Việt Nam muốn học AI một cách bài bản: bắt đầu từ tư duy máy tính ở tiểu học, đi qua lập trình và dữ liệu, đến Machine Learning, Deep Learning và nghiên cứu chuyên sâu.
+Một lộ trình tự học Trí tuệ Nhân tạo từ con số không đến chuyên sâu, viết cho người đọc tự mình học — không phải cho người đi dạy. Mỗi chặng đặt kiến thức lên trước, thực hành theo sau. Toàn bộ nội dung được thiết kế để bạn làm một mình, không cần lớp học, không cần giáo viên, không cần người lớn đồng hành.
 
 ---
 
-## Vì sao có kho tài liệu này?
+## Vì sao có kho tài liệu này
 
-Trí tuệ nhân tạo đang thay đổi cách chúng ta học, làm việc và sáng tạo. Chiến lược quốc gia về nghiên cứu, phát triển và ứng dụng AI đến năm 2030 (Quyết định 127/QĐ-TTg) đặt mục tiêu đưa AI đến mọi lĩnh vực của đời sống — và điều đó bắt đầu từ **người học**. Tuy nhiên, hầu hết tài liệu AI hiện nay hoặc quá khó (dành cho kỹ sư), hoặc quá rời rạc (thiếu lộ trình nối tiếp nhau). Kho tài liệu này được xây dựng để lấp khoảng trống đó: **một con đường duy nhất, liền mạch 170 giai đoạn, mỗi giai đoạn xây trên giai đoạn trước**, phù hợp với từng lứa tuổi và bám sát Chương trình Giáo dục phổ thông 2018 của Bộ Giáo dục và Đào tạo.
+Trí tuệ nhân tạo đang định hình lại cách con người học, làm việc và sáng tạo. Hầu hết tài liệu hiện có rơi vào hai cực: hoặc quá hàn lâm (dành cho nghiên cứu sinh), hoặc quá rời rạc (bài blog, video ngắn không nối tiếp nhau). Kho tài liệu này lấp khoảng trống ở giữa — một con đường liền mạch **170 chặng**, mỗi chặng xây trực tiếp trên chặng trước, đi từ khái niệm nền tảng đến nghiên cứu chuyên sâu.
 
-## Điểm đặc biệt của bộ tài liệu
+Toàn bộ học liệu được viết theo nguyên tắc **đọc là học được**, không phải "đọc rồi đem đi dạy cho người khác". Bạn không cần ai đồng hành, không cần lớp học, không cần giấy phép. Cần duy nhất: một máy tính kết nối mạng, sự tò mò và kỷ luật tự học.
 
-1. **Bám chuẩn giáo dục** — đối chiếu với Chương trình GDPT 2018 (Thông tư 32/2018/TT-BGDĐT), Khung năng lực số cho người học của Bộ GD&ĐT, Khung năng lực AI của UNESCO (2024) và Chiến lược quốc gia về AI đến 2030.
-2. **Đi từ gần đến xa** — bắt đầu từ những gì học sinh nhìn thấy hằng ngày (trợ lý ảo, gợi ý video, dịch máy), rồi mới đến khái niệm trừu tượng.
-3. **Học qua dự án** — mỗi giai đoạn kết thúc bằng một sản phẩm cụ thể có thể chụp ảnh, trình bày, nộp portfolio.
-4. **Bao quát mọi lứa tuổi** — cùng một lộ trình nhưng có 3 con đường học tập khác nhau cho tiểu học, trung học và người tự học người lớn.
-5. **Song ngữ thuật ngữ** — mỗi giai đoạn có từ điển Việt–Anh, vì tài liệu AI chuyên sâu trên thế giới đều bằng tiếng Anh.
-6. **An toàn và đạo đức ngay từ đầu** — an toàn số có ở giai đoạn 21–22, đạo đức AI có ở Phần C và xuyên suốt đến giai đoạn cuối.
+## Triết lý thiết kế
 
-## Bản đồ hành trình 170 giai đoạn
+| Nguyên tắc | Diễn giải |
+|------------|-----------|
+| **Kiến thức trước, thực hành sau** | Mỗi chặng mở đầu bằng khái niệm, định nghĩa, cơ chế — rồi mới đến bài tập và dự án. Bạn phải hiểu vì sao trước khi làm. |
+| **Tự làm một mình** | Không có hoạt động nhóm, không có "giáo viên phát lệnh", không cần phụ huynh. Mọi bài tập đều thực hiện độc lập. |
+| **Từ gần đến xa** | Mọi khái niệm mới bắt đầu từ ví dụ đời sống bạn đã gặp, rồi mới đến ký hiệu, công thức, mã giả. |
+| **Lặp xoáy ốc** | Các chủ đề then chốt (dữ liệu, thuật toán, đạo đức AI) quay lại nhiều lần ở mức sâu hơn — dữ liệu xuất hiện ở chặng 03, 23, 53–60, 77–100, 141–144. |
+| **An toàn và đạo đức ngay từ đầu** | An toàn số ở chặng 21–22, đạo đức AI từ Phần C trở đi và xuyên suốt đến chặng cuối. Không có chặng nào khuyến khích dùng AI để gian lận. |
+| **Song ngữ thuật ngữ** | Mọi thuật ngữ ghi song ngữ Việt–Anh ngay từ đầu, vì tài liệu chuyên sâu đều bằng tiếng Anh. |
+| **Sản phẩm kết thúc chặng** | Mỗi chặng kết thúc bằng một sản phẩm cụ thể (chương trình, notebook, báo cáo, mô hình) đưa vào portfolio cá nhân. |
 
-| Phần | Giai đoạn | Tên hành trình | Đối tượng chính | Đỉnh cột mốc |
-|------|-----------|----------------|-----------------|--------------|
-| **A** | 01–24 | Khởi động: Tư duy máy tính & Thế giới số | Tiểu học (lớp 3–5), người mới bắt đầu | Chứng nhận "Nhà thám hiểm AI tí hon" |
-| **B** | 25–52 | Lập trình nền tảng & Logic (Python, web, toán tư duy) | THCS đầu (lớp 6–7) | Chứng nhận "Lập trình viên tập sự" |
-| **C** | 53–76 | Dữ liệu & Nhận thức AI, đạo đức số | THCS (lớp 8–9) | Chứng nhận "Công dân AI thông thái" |
-| **D** | 77–100 | Python Khoa học dữ liệu (NumPy, Pandas, thống kê) | Cuối THCS – đầu THPT (lớp 9–10) | Chứng nhận "Nhà phân tích dữ liệu tập sự" |
-| **E** | 101–120 | Machine Learning nhập môn (scikit-learn) | THPT (lớp 10–11) | Chứng nhận "Kỹ sư ML tập sự" |
-| **F** | 121–140 | Deep Learning & AI hiện đại (CNN, Transformer, GenAI) | THPT (lớp 11–12) | Chứng nhận "Nhà phát triển Deep Learning" |
-| **G** | 141–158 | AI nâng cao & Triển khai (LLM, RAG, MLOps) | THPT cuối – sinh viên | Chứng nhận "Kỹ sư AI" |
-| **H** | 159–170 | Chuyên sâu, nghiên cứu & định hướng nghề nghiệp | Sinh viên, người đi làm | Chứng nhận "Nhà nghiên cứu AI tập sự" |
+## Bản đồ hành trình 170 chặng
 
-Xem chi tiết toàn bộ 170 giai đoạn tại **[ROADMAP.md](ROADMAP.md)**.
+| Phần | Chặng | Hành trình | Đỉnh cột mốc |
+|------|-------|-----------|--------------|
+| **A** | 01–24 | Khởi động: Tư duy máy tính & Thế giới số | Portfolio 24 sản phẩm nền |
+| **B** | 25–52 | Lập trình nền tảng & Logic (Python, web, toán tư duy) | Portfolio Python + web cá nhân |
+| **C** | 53–76 | Dữ liệu & Nhận thức AI, đạo đức số | Dự án "AI xung quanh tôi" |
+| **D** | 77–100 | Python Khoa học dữ liệu (NumPy, Pandas, thống kê) | Báo cáo phân tích dữ liệu end-to-end |
+| **E** | 101–120 | Machine Learning nhập môn (scikit-learn) | 3 mô hình ML + cuộc thi mini |
+| **F** | 121–140 | Deep Learning & AI hiện đại (CNN, Transformer, GenAI) | Mô hình CV + chatbot + fine-tune |
+| **G** | 141–158 | AI nâng cao & Triển khai (LLM, RAG, MLOps) | Ứng dụng AI triển khai thực tế |
+| **H** | 159–170 | Chuyên sâu, nghiên cứu & định hướng nghề nghiệp | Portfolio nghiên cứu + dự án xã hội |
 
-## Cách bắt đầu trong 5 phút
+Xem chi tiết toàn bộ 170 chặng tại **[ROADMAP.md](ROADMAP.md)**.
 
-1. **Mở [ROADMAP.md](ROADMAP.md)** — đọc phần "Nguyên tắc xây dựng" và bảng tổng quan 8 phần để chọn con đường học tập phù hợp (chi tiết trong [docs/00-huong-dan-su-dung.md](docs/00-huong-dan-su-dung.md)).
-2. **Vào thư mục giai đoạn đầu tiên của mình** — ví dụ học sinh tiểu học bắt đầu ở `phan-a-khoi-dong/giai-doan-01-lam-quen-voi-the-gioi-ai/`; người lớn có nền tảng có thể chuyển thẳng đến Phần D.
-3. **Học theo tệp README.md của giai đoạn**, làm hết `bai-tap-thuc-hanh.md`, tra thuật ngữ lạ trong `tu-dien-va-tai-nguyen.md`, rồi hoàn thành sản phẩm cuối giai đoạn trước khi sang giai đoạn kế tiếp.
+## Cách bắt đầu
+
+1. **Đọc [ROADMAP.md](ROADMAP.md)** để có bức tranh tổng thể 8 phần.
+2. **Đọc [docs/00-huong-dan-su-dung.md](docs/00-huong-dan-su-dung.md)** để chọn điểm xuất phát phù hợp với nền tảng hiện tại của bạn.
+3. **Vào chặng đầu tiên phù hợp** — người mới bắt đầu tuyệt đối vào `phan-a-khoi-dong/giai-doan-01-lam-quen-voi-the-gioi-ai/`; người đã có Python nền tảng có thể nhảy thẳng đến Phần D.
+4. **Học theo trình tự trong mỗi chặng**: đọc phần Kiến thức → làm phần Thực hành → tra cứu phần Thuật ngữ → hoàn thành sản phẩm cuối chặng → tự đánh giá trước khi sang chặng kế.
 
 ## Cấu trúc kho tài liệu
 
 ```
 learn-ai/
 ├── README.md                        ← Trang chủ (tệp này)
-├── ROADMAP.md                       ← Lộ trình đầy đủ 170 giai đoạn
-├── docs/                            ← Tài liệu chuẩn hóa & phương pháp
-│   ├── 00-huong-dan-su-dung.md            Cách sử dụng, 3 con đường học tập
-│   ├── 01-chuan-hoa-va-khung-chuong-trinh.md  Đối chiếu GDPT 2018, khung năng lực
-│   ├── 02-phuong-phap-day-va-hoc.md       Phương pháp sư phạm, vai trò phụ huynh/GV
-│   └── 03-he-thong-danh-gia-chung-nhan.md Đánh giá, rubric, huy hiệu, chứng nhận
-├── phan-a-khoi-dong/                ← Phần A (GĐ 01–24)
+├── ROADMAP.md                       ← Lộ trình đầy đủ 170 chặng
+├── docs/                            ← Tài liệu hướng dẫn tự học
+│   ├── 00-huong-dan-su-dung.md            Cách sử dụng, các con đường tự học
+│   ├── 01-chuan-hoa-va-khung-chuong-trinh.md  Ánh xạ kiến thức, tài liệu tham chiếu
+│   ├── 02-phuong-phap-tu-hoc.md           Phương pháp tự học hiệu quả
+│   └── 03-he-thong-danh-gia-chung-nhan.md Tự đánh giá, portfolio, chứng nhận
+├── phan-a-khoi-dong/                ← Phần A (chặng 01–24)
 │   └── giai-doan-01-lam-quen-voi-the-gioi-ai/
 │   └── giai-doan-02-tu-duy-giai-quyet-van-de/
 │   └── giai-doan-03-du-lieu-va-thong-tin/
 │   └── ...
-├── phan-b-lap-trinh-nen-tang/       ← Phần B (GĐ 25–52)
-├── phan-c-du-lieu-va-nhan-thuc-ai/  ← Phần C (GĐ 53–76)
-├── phan-d-python-khoa-hoc-du-lieu/  ← Phần D (GĐ 77–100)
-├── phan-e-machine-learning/         ← Phần E (GĐ 101–120)
-├── phan-f-deep-learning/            ← Phần F (GĐ 121–140)
-├── phan-g-ai-nang-cao-va-trien-khai/← Phần G (GĐ 141–158)
-└── phan-h-chuyen-sau-va-nghien-cuu/ ← Phần H (GĐ 159–170)
+├── phan-b-lap-trinh-nen-tang/       ← Phần B (chặng 25–52)
+├── phan-c-du-lieu-va-nhan-thuc-ai/  ← Phần C (chặng 53–76)
+├── phan-d-python-khoa-hoc-du-lieu/  ← Phần D (chặng 77–100)
+├── phan-e-machine-learning/         ← Phần E (chặng 101–120)
+├── phan-f-deep-learning/            ← Phần F (chặng 121–140)
+├── phan-g-ai-nang-cao-va-trien-khai/← Phần G (chặng 141–158)
+└── phan-h-chuyen-sau-va-nghien-cuu/ ← Phần H (chặng 159–170)
 ```
 
-Mỗi thư mục giai đoạn hoàn chỉnh gồm 3 tệp:
+Mỗi thư mục chặng hoàn chỉnh gồm 3 tệp:
 
 | Tệp | Nội dung |
 |-----|----------|
-| `README.md` | Thông tin chung, mục tiêu học tập, nội dung bài học chi tiết, sản phẩm, rubric đánh giá |
-| `bai-tap-thuc-hanh.md` | Bài tập, hoạt động unplugged, bài tập nâng cao, phiếu tự đánh giá |
-| `tu-dien-va-tai-nguyen.md` | Từ điển thuật ngữ Việt–Anh, câu hỏi gợi mở, tài nguyên học tập |
+| `README.md` | Toàn bộ kiến thức của chặng: khái niệm, định nghĩa, cơ chế, ví dụ, dẫn đến bài tập và sản phẩm |
+| `bai-tap-thuc-hanh.md` | Bài tập tự làm, dự án nhỏ, câu hỏi tự kiểm tra |
+| `tu-dien-va-tai-nguyen.md` | Thuật ngữ Việt–Anh, tài nguyên đọc thêm, kết nối với các chặng sau |
 
 ## Tiến độ phát hành
 
-| Phần | Giai đoạn | Trạng thái |
-|------|-----------|------------|
+| Phần | Chặng | Trạng thái |
+|------|-------|-----------|
 | A | 01–03 | **Đã phát hành nội dung chi tiết** |
 | A | 04–24 | Đang hoàn thiện |
 | B | 25–52 | Đang hoàn thiện |
@@ -87,21 +91,14 @@ Mỗi thư mục giai đoạn hoàn chỉnh gồm 3 tệp:
 | G | 141–158 | Đang hoàn thiện |
 | H | 159–170 | Đang hoàn thiện |
 
-## Ai có thể dùng bộ tài liệu này?
-
-- **Học sinh** — tự học theo lộ trình, mỗi giai đoạn là một "chặng chạy nhỏ" có sản phẩm rõ ràng.
-- **Giáo viên** — dùng làm kế hoạch bài dạy cho môn Tin học, hoạt động trải nghiệm, câu lạc bộ STEM.
-- **Phụ huynh** — đồng hành cùng con; mỗi giai đoạn có mục "Lưu ý cho phụ huynh" riêng.
-- **Người tự học người lớn** — đi theo "Con đường tăng tốc" (xem docs/00), nhịp 2–3 giai đoạn mỗi tuần.
-
 ## Quy ước chung
 
 - Thuật ngữ chuyên môn ghi theo mẫu: **thuật toán** (*algorithm*).
-- Thời lượng mỗi giai đoạn được quy ước theo từng phần (ví dụ Phần A: 2 buổi x 35 phút mỗi giai đoạn) — chi tiết tại ROADMAP.md.
-- Mọi hoạt động sử dụng công cụ AI trực tuyến đối với học sinh dưới 13 tuổi đều quy định **phải có sự đồng hành của người lớn**.
+- Đơn vị thời gian ở mỗi chặng chỉ là gợi ý cho nhịp tự học — bạn có thể nhanh hơn hoặc chậm hơn tùy khả năng, không có ai chấm điểm.
+- Mọi hoạt động sử dụng công cụ AI trực tuyến đều yêu cầu bạn tự đọc điều khoản và tự chịu trách nhiệm về dữ liệu cá nhân của mình.
 
 ## Giấy phép & góp ý
 
-Kho tài liệu phát hành với tinh thần mở cho giáo dục Việt Nam. Khi trích dẫn hoặc sử dụng lại, vui lòng ghi rõ nguồn "Học AI cùng Việt Nam — learn-ai". Mọi góp ý để cải thiện học liệu, vui lòng tạo Issue trên kho này.
+Kho tài liệu phát hành với tinh thần mở cho người Việt Nam tự học AI. Khi trích dẫn hoặc sử dụng lại, vui lòng ghi rõ nguồn "Học AI — learn-ai". Mọi góp ý để cải thiện học liệu, vui lòng tạo Issue trên kho này.
 
 **Bắt đầu hành trình của bạn tại [ROADMAP.md](ROADMAP.md).**

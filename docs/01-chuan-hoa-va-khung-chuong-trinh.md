@@ -1,59 +1,77 @@
-# Chuẩn hóa học liệu: đối chiếu khung chương trình
+# Ánh xạ kiến thức và tài liệu tham chiếu
 
-Tài liệu này trả lời câu hỏi: "Lộ trình 170 giai đoạn bám vào chuẩn giáo dục nào của Việt Nam và quốc tế?" — cần thiết cho nhà trường khi đưa học liệu vào kế hoạch dạy học, và cho phụ huynh muốn hiểu căn cứ sư phạm của từng nội dung.
+Tài liệu này trả lời câu hỏi: "Lộ trình 170 chặng dựa trên khung kiến thức nào, và đối chiếu với các chuẩn quốc tế nào?" — giúp bạn hiểu phạm vi覆盖 của lộ trình và biết tài liệu gốc nào đáng tin cậy để đọc sâu hơn.
 
-## 1. Đối chiếu với Chương trình GDPT 2018
+## 1. Khung kiến thức mà lộ trình này覆盖
 
-Chương trình Giáo dục phổ thông 2018 (ban hành kèm Thông tư 32/2018/TT-BGDĐT) chuyển từ hướng tiếp cận nội dung sang **hướng tiếp cận năng lực**. Lộ trình này được thiết kế để "kẹp" vừa vặn vào các môn và hoạt động giáo dục sau:
+Lộ trình này được xây dựng trên 5 miền kiến thức cốt lõi, đan xen qua 170 chặng:
 
-| Thành phần GDPT 2018 | Giai đoạn trong lộ trình | Sự tương ứng |
-|----------------------|--------------------------|--------------|
-| Môn Tin học tiểu học (lớp 3–5) | GĐ 04, 09–16, 21–22 | Kỹ thuật máy tính, tổ chức thông tin, ứng dụng tin học; chủ đề "Đạo đức với mạng máy tính" khớp trực tiếp với GĐ 21–22 |
-| Hoạt động trải nghiệm, hướng nghiệp | GĐ 01–03, 17–20, 24, 74 | Hoạt động quan sát – khám phá, rèn luyện năng lực sáng tạo, tìm hiểu nghề nghiệp thời đại mới |
-| Môn Toán THCS | GĐ 27, 41, 43, 48, 50–51, 93–98 | Số học, tỷ lệ, xác suất, thống kê, hệ tọa độ — nội dung song song và củng cố chương trình Toán |
-| Môn Tin học – Khoa học máy tính THCS | GĐ 25–44, 45–52, 53–60 | Lập trình Python, thuật toán, đạo đức trong môi trường số, quản lý dữ liệu |
-| Môn Tin học THPT | GĐ 77–120 | Khoa học máy tính, dữ liệu, thuật toán ở mức mở rộng |
-| Môn Khoa học tự nhiên / Toán THPT | GĐ 93–98, 103–106 | Thống kê – xác suất nâng cao, hàm số, mô hình hóa |
+| Miền kiến thức | Mô tả | Chặng chủ lực |
+|----------------|-------|---------------|
+| **Tư duy máy tính** (*Computational thinking*) | Phân rã, mẫu hình, trừu tượng hóa, thuật toán, gỡ lỗi — tư duy nền cho mọi kỹ năng AI | 02, 05–08, 34–43, 101–120 |
+| **Lập trình & công cụ** (*Programming & tooling*) | Python, Scratch, HTML/CSS, Git, Docker, cloud — công cụ để biến ý tưởng thành sản phẩm | 09–16, 25–52, 77–79, 152–156 |
+| **Dữ liệu & thống kê** (*Data & statistics*) | Thu thập, làm sạch, phân tích, trực quan hóa, suy luận thống kê — chất liệu của AI | 03, 23, 53–60, 77–100, 141–144 |
+| **Machine learning & Deep learning** (*ML & DL*) | Mô hình học từ dữ liệu — từ hồi quy tuyến tính đến Transformer | 61–76 (nhận thức), 101–140 (kỹ thuật) |
+| **Đạo đức, an toàn & xã hội AI** (*AI ethics, safety & society*) | Thiên vị, riêng tư, tin giả, an toàn triển khai, tác động xã hội — xuyên suốt | 21–22, 69–74, 139, 157, 169 |
 
-Bảng đối chiếu trên cho phép giáo viên "đặt" từng giai đoạn vào kế hoạch bài dạy hiện có: một giai đoạn ≈ một chủ đề bài dạy hoặc một chuỗi 2–4 tiết học.
+Không có miền nào đứng độc lập. Một mô hình ML tốt cần dữ liệu sạch (miền 3), cần tư duy phân rã để đặt bài toán (miền 1), cần Python để hiện thực (miền 2), và cần đánh giá đạo đức để triển khai (miền 5).
 
-## 2. Đối chiếu với Khung năng lực số cho người học
+## 2. Đối chiếu với khung năng lực số của UNESCO & DigComp
 
-Khung năng lực số cho người học do Bộ Giáo dục và Đào tạo ban hành (phát triển phù hợp với khung DigComp của EU) mô tả năng lực số theo các miền: dữ liệu và thông tin; giao tiếp và hợp tác; tạo lập nội dung số; an toàn số; giải quyết vấn đề; học tập và sáng tạo suốt đời. Lộ trình phủ từng miền như sau:
+Khung năng lực số cho người học của Bộ GD&ĐT Việt Nam (phát triển phù hợp với khung DigComp 2.2 của EU) mô tả năng lực số theo các miền sau. Lộ trình này phủ như sau:
 
-| Miền năng lực số | Giai đoạn chủ lực |
-|------------------|-------------------|
-| Dữ liệu và thông tin | GĐ 03, 05, 23, 53–60, 77–100, 141–144 |
-| Giao tiếp và hợp tác | GĐ 23, 60, 76, 120, 168, 169 (các dự án nhóm xuyên suốt) |
-| Tạo lập nội dung số | GĐ 09–16, 46–47, 88–92, 139, 167 |
-| An toàn số | GĐ 21–22, 49, 70–72, 157 |
-| Giải quyết vấn đề | GĐ 02, 05–08, 34–43, 101–120 |
-| Học tập và sáng tạo suốt đời | GĐ 139, 159–170 |
+| Miền năng lực số | Chặng chủ lực | Mức độ đạt được sau lộ trình |
+|------------------|---------------|------------------------------|
+| Dữ liệu và thông tin | 03, 05, 23, 53–60, 77–100, 141–144 | Tự thu thập, làm sạch, phân tích, trực quan hóa, đánh giá chất lượng dữ liệu |
+| Giao tiếp và hợp tác trên môi trường số | 23, 60, 76, 120, 168, 169 | Tự làm việc trên GitHub, cộng đồng mã nguồn mở, Kaggle |
+| Tạo lập nội dung số | 09–16, 46–47, 88–92, 139, 167 | Tự tạo sản phẩm số từ Scratch đến ứng dụng AI triển khai |
+| An toàn số | 21–22, 49, 70–72, 157 | Tự bảo vệ dữ liệu cá nhân, nhận biết tin giả, đánh giá rủi ro ứng dụng AI |
+| Giải quyết vấn đề | 02, 05–08, 34–43, 101–120 | Tư duy thuật toán, đặt bài toán ML, quy trình end-to-end |
 
-## 3. Đối chiếu với khung chính sách AI của Việt Nam
+Khung năng lực AI của UNESCO (2024) bổ sung 4 khía cạnh AI-cụ thể: nhận thức AI (*AI literacy*), áp dụng AI (*AI application*), đánh giá AI (*AI assessment*), và đạo đức AI (*AI ethics*). Lộ trình này覆盖 như sau:
 
-- **Chiến lược quốc gia về nghiên cứu, phát triển và ứng dụng AI đến năm 2030** (Quyết định 127/QĐ-TTg, 2021) xác định phổ cập kiến thức AI cho mọi người là một trong ba trụ cột. Lộ trình này trực tiếp phục vụ mục tiêu phổ cập đó, từ cấp độ nhận biết (tiểu học) đến cấp độ sáng tạo (sau phổ thông).
-- Kỹ năng AI được lộ trình tổ chức theo 4 bậc năng lực tăng tiến: **Nhận biết** (biết AI là gì, nhận ra AI xung quanh) → **Sử dụng** (dùng công cụ AI đúng cách, đúng đạo đức) → **Hiểu biết** (hiểu nguyên lý máy học, đọc được mô hình) → **Sáng tạo** (xây dựng và nghiên cứu hệ thống AI). Bốn bậc này tương thích với tinh thần Khung năng lực AI dành cho người học của UNESCO (2024).
+| Khía cạnh UNESCO | Chặng chủ lực |
+|------------------|---------------|
+| AI literacy — nhận thức AI | 01, 17–20, 61–68 |
+| AI application — áp dụng AI | 09–16, 25–52, 80–100, 101–140 |
+| AI assessment — đánh giá AI | 91, 104–106, 112, 116–117, 143, 144 |
+| AI ethics — đạo đức AI | 21–22, 69–74, 139, 157, 169 |
 
-## 4. Ma trận năng lực AI 4 bậc × 8 phần
+## 3. Đối chiếu với các khóa học và giáo trình quốc tế
 
-| Bậc năng lực | Phần A | Phần B–C | Phần D–E | Phần F–H |
-|--------------|--------|----------|----------|----------|
-| **Nhận biết** | Nhận ra AI trong đời sống; biết máy học từ dữ liệu | Hiểu lịch sử, phân loại AI; nhận biết tin giả, deepfake | Nhận ra đâu là bài toán ML hợp lệ | Nhận ra ranh giới kiến thức hiện tại của lĩnh vực |
-| **Sử dụng** | Dùng Scratch, trợ lý ảo có giám sát | Dùng bảng tính, SQL, chatbot học tập đúng quy tắc | Dùng scikit-learn theo quy trình chuẩn | Dùng PyTorch, LLM API, công cụ MLOps |
-| **Hiểu biết** | Hiểu lệnh, vòng lặp, thuật toán đời sống | Hiểu quy tắc vs dữ liệu; thiên vị trong dữ liệu | Hiểu overfitting, đánh giá mô hình, thống kê | Hiểu attention, transfer learning, drift |
-| **Sáng tạo** | Làm hoạt cảnh, mini game | Thiết kế CSDL, dự án điều tra AI | Xây mô hình dự đoán hoàn chỉnh | Fine-tune mô hình, sản phẩm RAG, nghiên cứu |
+Lộ trình này không sao chép, mà tổng hợp và liên kết với các nguồn chuẩn. Khi muốn đọc sâu hơn ở một chủ đề, hãy tra các tài liệu gốc sau:
 
-## 5. Nguyên tắc chuyển tiếp giữa các cấp học
+| Chủ đề | Nguồn chuẩn quốc tế | Chặng tương ứng |
+|--------|---------------------|-----------------|
+| Tư duy máy tính (CS Unplugged) | *Computer Science Unplugged* — Bell, Witten & Fellows | 02, 05–08 |
+| Lập trình Python nhập môn | *Automate the Boring Stuff with Python* — Al Sweigart | 25–44 |
+| Cấu trúc dữ liệu & thuật toán | *Grokking Algorithms* — Aditya Bhargava | 37–39 |
+| Khoa học dữ liệu Python | *Python Data Science Handbook* — Jake VanderPlas | 77–100 |
+| Thống kê nhập môn | *Statistical Thinking for the 21st Century* — Russell Poldrack | 93–98 |
+| Machine Learning | *Hands-On Machine Learning* — Aurélien Géron | 101–120 |
+| Deep Learning | *Dive into Deep Learning* — Zhang et al. | 121–140 |
+| LLM & GenAI | *Build a Large Language Model (From Scratch)* — Sebastian Raschka | 137–151 |
+| MLOps | *Designing Machine Learning Systems* — Chip Huyen | 141–158 |
+| Đạo đức AI | *Weapons of Math Destruction* — Cathy O'Neil; *Race After Technology* — Ruha Benjamin | 69–74 |
+| Đọc paper AI | *Papers with Code*; *The Illustrated Transformer* — Jay Alammar | 164–165 |
 
-1. **Tiểu học → THCS (qua Phần A → B):** chuyển từ ngôn ngữ khối lệnh (Scratch) sang ngôn ngữ văn bản (Python); giữ nguyên các khái niệm đã học bằng cách "dịch" lại chúng trong Python. Giáo viên nên bắt đầu Phần B bằng hoạt động "dịch chương trình Scratch sang Python" để học sinh thấy sự liên tục.
-2. **THCS → THPT (qua Phần C → D):** chuyển từ bảng tính sang notebook; từ dữ liệu "sạch có sẵn" sang dữ liệu thật bẩn. Đây là bước nhảy lớn nhất về tính kỷ luật làm việc, cần dành thời gian cho GĐ 77–79.
-3. **THPT → sau phổ thông (qua Phần G → H):** chuyển từ làm theo hướng dẫn sang tự đặt câu hỏi; sản phẩm chuyển từ "bài tập" sang "dự án có người dùng thật".
+## 4. Kỳ vọng năng lực sau từng phần
 
-## 6. Tính liên thông với chứng chỉ và kỳ thi
+| Sau phần... | Bạn có thể tự làm được... |
+|-------------|---------------------------|
+| A | Quan sát và mô tả được AI trong đời sống; viết chương trình Scratch đơn giản; thu thập và trực quan hóa dữ liệu nhỏ; biết bảo vệ thông tin cá nhân trên mạng |
+| B | Viết chương trình Python 100–300 dòng có cấu trúc (hàm, danh sách, tệp); hiểu 3 thuật toán kinh điển và độ phức tạp; làm trang web HTML/CSS cá nhân |
+| C | Làm sạch và phân tích dữ liệu trong Google Sheets; viết truy vấn SQL cơ bản; phân biệt AI/học máy/học sâu; nhận biết tin giả và dùng chatbot học tập có trách nhiệm |
+| D | Phân tích dữ liệu thật bằng Pandas/NumPy; vẽ biểu đồ chuyên nghiệp; làm báo cáo Jupyter notebook end-to-end; hiểu thống kê mô tả và suy luận nhập môn |
+| E | Huấn luyện, đánh giá, tinh chỉnh mô hình scikit-learn; hiểu overfitting, cross-validation; làm phân loại, hồi quy, phân cụm, NLP nhập môn |
+| F | Huấn luyện CNN, RNN, Transformer bằng PyTorch; transfer learning; fine-tune mô hình nhỏ; hiểu cách GPT/BERT vận hành |
+| G | Xây ứng dụng LLM (RAG, Agent, vector DB); đóng gói với Docker, FastAPI; CI/CD; giám sát mô hình production |
+| H | Đọc và tái hiện paper nghiên cứu; viết đề cương nghiên cứu; đóng góp mã nguồn mở; làm dự án AI vì cộng đồng; có portfolio nghề nghiệp |
 
-- Nền tảng Phần B–C tương thích nội dung thi **IC3 / ICDL** (năng lực số quốc tế).
-- Phần D–E chuẩn bị tốt cho kỳ thi học sinh giỏi Tin học ở dạng ứng dụng dữ liệu và cho các vòng nhập môn **Kaggle**.
-- Phần F–G chuẩn bị kỹ năng cho tuyển thực tập sinh AI và các khóa đại học chuyên ngành (môn học thuật toán, trí tuệ nhân tạo, khoa học dữ liệu).
+## 5. Quy ước phiên bản và cập nhật
 
-Nguyên tắc tổng quát: lộ trình không dạy "thi lấy chứng chỉ", mà dạy năng lực thật — chứng chỉ là hệ quả, không phải đích đến.
+Tài liệu này phát hành theo phiên bản. Mỗi phần phát hành xong sẽ được đánh version. Khi có cập nhật nội dung quan trọng (sửa lỗi khái niệm, bổ sung công cụ mới), version tăng và ghi tại [CHANGELOG.md](../CHANGELOG.md) (sẽ tạo khi bắt đầu phát hành phần mới).
+
+Hiện tại:
+- Phần A (chặng 01–03): v1.0
+- Phần A (chặng 04–24), Phần B–H: đang phát triển

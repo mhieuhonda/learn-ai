@@ -1,92 +1,170 @@
-# Hệ thống đánh giá, huy hiệu và chứng nhận
+# Tự đánh giá, portfolio và chứng nhận
 
-Đánh giá trong bộ học liệu này nhằm một mục đích duy nhất: **giúp người học thấy rõ mình đã tiến bộ đến đâu và cần chỉnh gì tiếp theo**. Không có điểm số so sánh giữa các em với nhau; có rubric rõ ràng, tự đánh giá, đánh giá bởi người lớn và hệ thống huy hiệu hành trình.
+Tài liệu này định nghĩa cách bạn tự đánh giá tiến độ, xây portfolio và — khi hoàn thành — tự cấp "chứng nhận" cho mình. Không có ai chấm điểm. Không có cơ quan nào cấp bằng. Điều duy nhất chứng minh bạn đã học được AI là **portfolio công khai** của bạn trên GitHub.
 
-## 1. Nguyên tắc đánh giá
+## 1. Nguyên tắc tự đánh giá
 
-1. **Đánh giá vì học tập, không đánh giá để xếp loại.** Mọi rubric được cho học sinh xem trước khi làm sản phẩm — học sinh luôn biết "tốt" trông như thế nào.
-2. **Đa nguồn bằng chứng:** sản phẩm, quá trình thực hiện, phần giải thích bằng lời, phiếu tự đánh giá, ghi chú của phụ huynh.
-3. **Cho phép làm lại không giới hạn.** Sản phẩm chưa đạt thì chỉnh rồi nộp lại; kỷ luật hoàn thiện quan trọng hơn tốc độ.
-4. **Không dùng AI để làm thay sản phẩm ở mọi cấp học.** AI có thể được dùng để gợi ý, kiểm tra, giải thích — và từ Phần C, học sinh ghi rõ phần nào mình nhờ AI hỗ trợ (trung thực học thuật là kỹ năng được đào tạo chính thức ở GĐ 72).
+1. **Đánh giá vì sự tiến bộ, không phải để xếp loại.** Mục đích của tự đánh giá là biết bạn đã hiểu đến đâu, còn thiếu gì, cần làm lại phần nào — không phải để tự khen hay tự chê.
+2. **Đa nguồn bằng chứng:** sản phẩm (file, notebook, mã), quá trình thực hiện (commit Git, lịch sử thay đổi), phần giải thích bằng văn bản (README, journal), và khả năng áp dụng ở chặng sau.
+3. **Cho phép làm lại không giới hạn.** Sản phẩm chưa đạt checklist thì sửa rồi nộp lại (đẩy commit mới). Kỷ luật hoàn thiện quan trọng hơn tốc độ.
+4. **Không dùng AI để làm thay sản phẩm ở mọi chặng.** AI có thể được dùng để gợi ý, kiểm tra, giải thích. Từ Phần C trở đi, ghi rõ phần nào mình nhờ AI hỗ trợ (trung thực học thuật là kỹ năng được đào tạo chính thức ở chặng 72).
 
-## 2. Rubric ba mức chuẩn
+## 2. Checklist tự kiểm tra cuối mỗi chặng
 
-Mọi giai đoạn dùng cùng bộ rubric 3 mức (chi tiết hóa theo sản phẩm cụ thể của từng giai đoạn):
-
-| Mức | Tên | Mô tả chung |
-|-----|-----|-------------|
-| 1 | Cần cố gắng | Sản phẩm mới có phần đầu; còn thiếu tiêu chí chính; cần người lớn hỗ trợ phần lớn các bước |
-| 2 | Đạt | Hoàn thành đủ tiêu chí bắt buộc; giải thích được ý chính bằng lời của mình |
-| 3 | Tốt | Hoàn thành đủ tiêu chí + ít nhất 1 mở rộng sáng tạo; giải thích được vì sao làm như vậy; tìm ra ít nhất 1 điều cần cải thiện ở chính sản phẩm mình |
-
-Quy tắc chuyển giai đoạn: đạt **mức 2 trở lên** ở sản phẩm cuối giai đoạn và làm xong **bài tập lõi** trong trang bài tập.
-
-## 3. Phiếu tự đánh giá (mẫu dùng cho mọi giai đoạn)
-
-Học sinh in hoặc sao chép phiếu dưới đây, điền sau mỗi giai đoạn:
+Mỗi chặng có một checklist ở cuối README. Dạng tổng quát:
 
 ```
-TÊN GIAI ĐOẠN: ______________________     NGÀY HOÀN THÀNH: ______________
-1. Sản phẩm của em: (mô tả 2–3 câu)
-2. Theo rubric, em tự chấm mình ở mức: [ ] 1  [ ] 2  [ ] 3
-   Lý do: ______________________________________________
-3. Bài tập em đã làm: lõi ( ) / nâng cao ( ) / câu hỏi mở ( )
-4. Điều em tự hào nhất: ______________________________
-5. Nếu làm lại, em sẽ khác ở điểm: ____________________
-6. Chữ ký xác nhận của giáo viên/phụ huynh: ____________
+□ Tôi đã đọc toàn bộ phần Kiến thức và hiểu các khái niệm chính
+□ Tôi có thể giải thích các khái niệm chính bằng lời của mình (Feynman)
+□ Tôi đã làm xong các bài tập sao ★ trong bai-tap-thuc-hanh.md
+□ Tôi đã hoàn thành Sản phẩm cuối chặng và lưu vào portfolio
+□ Tôi đã ghi nhật ký học tập (learning-journal.md) cho chặng này
+□ Tôi đã trả lời được câu hỏi "Kết nối về sau" trong tu-dien-va-tai-nguyen.md
 ```
 
-## 4. Hệ thống huy hiệu hành trình
+Bạn có thể in hoặc sao chép checklist này vào `learning-journal.md` sau mỗi chặng. Đánh dấu X vào mỗi ô khi đạt. Không có mức 1/2/3 — chỉ có "đạt" hoặc "chưa đạt". Chưa đạt thì làm lại.
 
-| Huy hiệu | Điều kiện đạt | Gợi ý trao |
-|----------|---------------|------------|
-| **Huy hiệu Giai đoạn** | Hoàn thành 1 giai đoạn (sản phẩm mức 2+) | Mỗi giai đoạn một con dấu/hình — có thể in thành "thẻ sưu tầm" |
-| **Huy hiệu Kiên trì** | Làm lại sản phẩm 2+ lần cho đến khi đạt | Ghi nhận đúng tinh thần "sai là dữ liệu" |
-| **Huy hiệu Đồng đội** | Hỗ trợ thành công 1 bạn hoàn thành sản phẩm | Trao trong giờ học, có lời cảm ơn của bạn được giúp |
-| **Huy hiệu Sáng tạo** | Sản phẩm có mở rộng ngoài yêu cầu (mức 3) | Nhiều giai đoạn có thể đạt |
-| **Huy hiệu An toàn số** | Hoàn thành GĐ 21–22 và giữ cam kết 4 tuần | Do phụ huynh xác nhận |
-| **Huy hiệu Thuật ngữ** | Thuộc 100 thuật ngữ song ngữ tích lũy | Kiểm tra dạng trò chơi, không phạt |
-| **Huy hiệu Portfolio** | Duy trì hồ sơ hành trình đầy đủ 12 tuần liên tiếp | Kỹ năng tổ chức được ghi nhận |
+## 3. Portfolio cá nhân
 
-## 5. Tám chứng nhận cột mốc
+Portfolio là thứ giá trị nhất bạn có sau lộ trình. Khi đi phỏng vấn, khi xin học bổng, khi thuyết phục sếp cho làm dự án AI — portfolio công khai trên GitHub nói lên tất cả. Bằng cấp thì ai cũng có thể có; portfolio thì không.
 
-Khi hoàn thành một Phần, người học được trao chứng nhận danh hiệu (in khung A5/A4, kèm chữ ký giáo viên + phụ huynh; hoặc làm hùng biện trao chứng nhận trong lớp/CLB):
-
-| Sau GĐ | Danh hiệu | Điều kiện chi tiết |
-|--------|-----------|--------------------|
-| 24 | Nhà thám hiểm AI tí hon | 20/24 huy hiệu giai đoạn; dự án GĐ 24 đạt mức 2+; thuộc 10 thuật ngữ đầu |
-| 52 | Lập trình viên tập sự | 2 dự án Python lớn (GĐ 33, 44); portfolio web; giải thích 3 thuật toán kinh điển |
-| 76 | Công dân AI thông thái | Dự án CSDL (GĐ 60); dự án "AI xung quanh em" (GĐ 76); vượt bài nhận biết tin giả |
-| 100 | Nhà phân tích dữ liệu tập sự | Báo cáo end-to-end trên GitHub; bảo vệ 5 phút |
-| 120 | Kỹ sư ML tập sự | 3 notebook mô hình; tham gia cuộc thi mini |
-| 140 | Nhà phát triển Deep Learning | 3 mô hình DL + báo cáo đánh giá trung thực |
-| 158 | Kỹ sư AI | Ứng dụng AI công khai + giám sát + checklist an toàn |
-| 170 | Nhà nghiên cứu AI tập sự | Poster nghiên cứu; dự án xã hội; portfolio tổng |
-
-Mẫu dòng chữ chứng nhận gợi ý:
-
-> *Chứng nhận trao cho ____________ vì đã hoàn thành Phần ___ của lộ trình học AI 170 giai đoạn "Học AI cùng Việt Nam", đạt danh hiệu **____________** với sản phẩm: ____________. Ngày ____ tháng ____ năm ____.*
-
-## 6. Hồ sơ hành trình (portfolio học tập)
-
-Portfolio là sản phẩm tổng hợp quan trọng nhất của cả hành trình — hơn cả điểm hay huy hiệu. Cấu trúc gợi ý:
+### Cấu trúc thư mục portfolio gợi ý
 
 ```
-HO-SO-HANH-TRINH/
-├── 00-gioi-thieu-ban-than.md      ← Tôi là ai, tôi học AI vì điều gì
-├── phan-a/ ... phan-h/            ← Mỗi thư mục: sản phẩm + ảnh chụp + phiếu tự đánh giá
-├── chung-nhan/                    ← 8 chứng nhận cột mốc
-├── so-tu-dien-cua-toi.md          ← Từ điển thuật ngữ tích lũy
-└── nhat-ky-hoc-tap.md             ← 3 câu phản tư sau mỗi giai đoạn
+portfolio-ai/
+├── README.md                          ← Giới thiệu bản thân, tóm tắt lộ trình đã đi
+├── learning-journal.md                ← Nhật ký học tập theo chặng
+├── lessons-learned.md                 ← Các cái bẫy đã qua
+├── notes/                             ← Ghi chú theo chặng (Zettelkasten nhẹ)
+│   ├── chặng-01-ai-la-gi.md
+│   ├── chặng-02-thuat-toan.md
+│   └── ...
+├── phan-a/                            ← Sản phẩm theo phần
+│   ├── chặng-01-nhat-ky-ai/
+│   ├── chặng-02-sach-thuat-toan/
+│   └── ...
+├── phan-b/
+│   ├── chặng-25-hello-python/
+│   └── ...
+├── ... (tương tự cho các phần C–H)
+└── final-portfolio/                   ← Tổng kết toàn lộ trình (chặng 170)
+    ├── personal-statement.md
+    ├── projects-showcase.md
+    └── career-roadmap.md
 ```
 
-Gợi ý sử dụng về sau: portfolio này là "dự án cá nhân" ready-made cho hồ sơ xét học bổng, thi tuyển thực tập, hoặc đơn giản là câu chuyện trọn vẹn về hành trình trưởng thành của người học — từ buổi đầu tìm ví dụ AI quanh nhà đến ngày bảo vệ dự án nghiên cứu của chính mình.
+### Yêu cầu tối thiểu cho mỗi sản phẩm trong portfolio
 
-## 7. Giám sát chất lượng học liệu (dành cho tổ chức triển khai)
+Mỗi sản phẩm cuối chặng được lưu trong một thư mục con, gồm:
 
-Trường/CLB triển khai lộ trình nên duy trì chu trình chất lượng 4 bước mỗi học kỳ:
+| Tệp | Mục đích |
+|-----|----------|
+| `README.md` | Mô tả sản phẩm: câu hỏi bài toán, cách tiếp cận, kết quả, học được gì |
+| Sản phẩm chính | File `.py`, `.ipynb`, hình ảnh, v.v. tùy loại |
+| (Tùy chọn) `process.md` | Quá trình thực hiện: thử gì, sai gì, sửa thế nào |
 
-1. **Thu thập dữ liệu:** tỉ lệ hoàn thành giai đoạn, các giai đoạn bị kẹt nhiều nhất, phiếu phản hồi của học sinh và phụ huynh.
-2. **Phân tích:** giai đoạn nào có nhiều học sinh dừng ở mức 1? Nội dung nào bị đánh giá "khó hiểu"?
-3. **Điều chỉnh:** bổ sung ví dụ, thêm hoạt động trung gian, hoặc tăng thời lượng giai đoạn đó.
-4. **Chia sẻ lại:** ghi nhận chỉnh sửa vào kho học liệu để toàn hệ thống cùng tiến bộ.
+Nếu chỉ có file sản phẩm mà không có README giải thích — đó chưa phải portfolio, đó chỉ là code vứt.
+
+## 4. Tự đánh giá cuối mỗi phần
+
+Cuối mỗi phần (sau chặng 24, 52, 76, 100, 120, 140, 158, 170), bạn thực hiện **Bài tự đánh giá phần** gồm 4 bước:
+
+### Bước 1: Đếm sản phẩm
+
+Đếm số chặng trong phần bạn đã hoàn thành checklist. Mục tiêu: ≥ 80% chặng trong phần (vd: Phần A có 24 chặng, tối thiểu 20 chặng đạt checklist).
+
+### Bước 2: Dự án tổng kết
+
+Mỗi phần có một chặng tổng kết (24, 52, 76, 100, 120, 140, 158, 170). Phải hoàn thành dự án tổng kết. Đây là bằng chứng bạn có thể tổng hợp kiến thức phần.
+
+### Bước 3: Bài kiểm tra Feynman
+
+Viết 1 bài 800–1500 chữ tổng kết: "Tôi đã học được gì trong Phần X". Bài viết phải:
+- Nêu được 5–10 khái niệm chính và định nghĩa bằng lời bạn
+- Cho ví dụ từ sản phẩm bạn đã làm
+- Nêu 3 khó khăn lớn nhất và cách vượt qua
+- Nêu 3 câu hỏi mở bạn muốn tìm hiểu tiếp
+
+Không ai đọc bài này — bạn tự đọc lại sau 6 tháng sẽ thấy tiến bộ của mình.
+
+### Bước 4: Cập nhật portfolio README
+
+Cập nhật `README.md` ở thư mục gốc portfolio:
+- Đánh dấu phần vừa hoàn thành
+- Thêm 1–2 dòng mô tả sản phẩm nổi bật nhất của phần
+- Cập nhật "Kế hoạch học tiếp theo"
+
+## 5. Chứng nhận tự cấp
+
+Lộ trình không cấp chứng nhận chính thức. Bạn tự cấp cho mình khi đáp ứng đủ điều kiện. Chứng nhận là một mục trong `README.md` của portfolio:
+
+```markdown
+## Chứng nhận lộ trình
+
+- ✅ Phần A — Nhà thám hiểm AI (hoàn thành ngày __/__/____)
+- ⬜ Phần B — Lập trình viên tập sự
+- ⬜ Phần C — Công dân AI thông thái
+- ⬜ Phần D — Nhà phân tích dữ liệu tập sự
+- ⬜ Phần E — Kỹ sư ML tập sự
+- ⬜ Phần F — Nhà phát triển Deep Learning
+- ⬜ Phần G — Kỹ sư AI
+- ⬜ Phần H — Nhà nghiên cứu AI tập sự
+```
+
+| Cột mốc | Sau chặng | Danh hiệu | Yêu cầu cốt lõi |
+|---------|-----------|-----------|------------------|
+| CK-A | 24 | Nhà thám hiểm AI | Portfolio 24 sản phẩm nền + poster tổng kết |
+| CK-B | 52 | Lập trình viên tập sự | 2 dự án Python + portfolio web |
+| CK-C | 76 | Công dân AI thông thái | Dự án CSDL + báo cáo "AI xung quanh tôi" |
+| CK-D | 100 | Nhà phân tích dữ liệu tập sự | Báo cáo end-to-end trên GitHub |
+| CK-E | 120 | Kỹ sư ML tập sự | 3 mô hình + cuộc thi mini |
+| CK-F | 140 | Nhà phát triển Deep Learning | 3 mô hình DL + báo cáo đánh giá |
+| CK-G | 158 | Kỹ sư AI | Ứng dụng AI chạy thật + giám sát |
+| CK-H | 170 | Nhà nghiên cứu AI tập sự | Poster nghiên cứu + dự án xã hội + portfolio |
+
+## 6. Mẫu nhật ký học tập
+
+Tạo tệp `learning-journal.md` từ chặng 01. Mỗi chặng thêm một mục. Mẫu:
+
+```markdown
+# Nhật ký học tập — [Tên bạn]
+
+## Chặng 01 — Làm quen với thế giới AI (hoàn thành __/__/____)
+
+**Hôm nay tôi học được:**
+- AI là ... (giải thích bằng lời mình, 2–3 dòng)
+- 3 loại AI: hẹp, tổng quát, siêu trí tuệ
+- 6 dấu chân AI trong đời sống: ...
+
+**Khó khăn lớn nhất:** Hiểu phân biệt AI hẹp và AI tổng quát — AI tổng quát chưa tồn tại thực sự, chỉ có trong lý thuyết.
+
+**Cách tôi vượt qua:** Đọc thêm bài "Narrow AI vs General AI" trên IBM blog; tự nhẩm lại bằng ví dụ.
+
+**Sản phẩm đã làm:** `portfolio-ai/phan-a/chặng-01-nhat-ky-ai/` — 5 trang ghi AI trong tuần.
+
+**Câu hỏi mở cho chặng sau:** Nếu AI học từ ví dụ, ai chọn ví dụ cho AI học? (Thấy sẽ quay lại ở chặng 69 — thiên vị dữ liệu.)
+
+**Checklist:**
+- [x] Đọc phần Kiến thức
+- [x] Feynman test
+- [x] Bài tập sao ★
+- [x] Sản phẩm cuối chặng
+- [x] Cập nhật journal
+- [x] Trả lời "Kết nối về sau"
+```
+
+## 7. Khi đánh giá bản thân "chưa đạt"
+
+Nếu checklist cuối chặng có ô chưa đánh dấu:
+
+1. **Đừng bỏ qua.** Lát nền móng hở, nhà sau sẽ nghiêng. Đặc biệt ở Phần A–C, mỗi chặng là nền cho 5–10 chặng sau.
+2. **Xác định ô cụ thể chưa đạt.** Ví dụ: "Chưa làm bài tập 3 vì chưa hiểu đệ quy".
+3. **Trở lại phần Kiến thức của chặng đó.** Đọc riêng phần liên quan đến ô chưa đạt.
+4. **Làm bài tập/hoàn thiện sản phẩm.** Nếu vẫn kẹt, áp dụng "Khi gặp khó khăn" trong [02-phuong-phap-tu-hoc.md](02-phuong-phap-tu-hoc.md).
+5. **Chỉ đánh dấu X khi thực sự đạt.** Tự lừa mình = tự đạp chân tại chỗ.
+
+## 8. Một lần nữa: portfolio > chứng chỉ
+
+Có người học xong đại học CNTT mà không code được ứng dụng 100 dòng. Có người chưa tốt nghiệp trung học mà có 50 repo GitHub chất lượng. Trong ngành AI — nơi thay đổi từng tháng — portfolio công khai là thước đo thực sự.
+
+170 chặng này đều hướng tới việc xây portfolio cho bạn. Mỗi sản phẩm cuối chặng là một artifact. Mỗi cột mốc cuối phần là một dự án lớn. Cuối lộ trình, bạn có 170 artifact và 8 dự án tổng kết. Đó là hồ sơ năng lực không cần bằng cấp chứng minh.

@@ -1,50 +1,139 @@
-# Giai đoạn 03 — Từ điển thuật ngữ & tài nguyên
+# Chặn 03 — Từ điển thuật ngữ & tài nguyên
 
-## Từ điển Việt–Anh của giai đoạn
+Tài liệu tra cứu cho chặng 03. Dùng khi quên thuật ngữ; đọc "Tài nguyên học tập" khi muốn mở rộng; đọc "Kết nối về sau" khi muốn biết chặng sau cần gì.
 
-| # | Thuật ngữ | Tiếng Anh | Nghĩa đơn giản | Ví dụ của em |
-|---|-----------|-----------|----------------|---------------|
-| 1 | Dữ liệu | Data | Thông tin được ghi lại: số, chữ, hình, âm thanh | Phiếu hỏi nước uống yêu thích |
-| 2 | Thông tin | Information | Dữ liệu khi được hiểu và có ý nghĩa | "4/11 bạn thích nước lọc" là thông tin từ dữ liệu |
-| 3 | Thu thập dữ liệu | Data Collection | Ghi lại dữ liệu bằng đếm, hỏi, đo | Đi hỏi 6 bạn về loại nước |
-| 4 | Khảo sát | Survey | Đặt câu hỏi cho nhiều người để thu dữ liệu | Câu hỏi "nước uống yêu thích" |
-| 5 | Ký hiệu đếm | Tally | Dấu gạch chéo đếm từng lượt | |||| nghĩa là 4 |
-| 6 | Bảng dữ liệu | Data Table | Dữ liệu xếp thành hàng, cột, có tiêu đề | Bảng "loại nước – số bạn chọn" |
-| 7 | Biểu đồ cột | Bar Chart | Hình các cột cao thấp thể hiện số liệu | Biểu đồ vẽ trên giấy kẻ ô |
-| 8 | Trục | Axis | Đường mốc của biểu đồ (ngang: tên mục, dọc: số lượng) | Trục dọc đánh số 0–4 |
-| 9 | Nhận xét | Insight | Kết luận rút ra từ dữ liệu, có số làm bằng chứng | "Nước lọc nhiều nhất: 4 bạn" |
-| 10 | Ý kiến cá nhân | Opinion | Suy nghĩ riêng, chưa có số liệu làm bằng chứng | "Phở ngon nhất" |
-| 11 | Dòng tổng | Total Row | Dòng cộng tất cả số liệu để kiểm tra khớp | Tổng = 11 |
-| 12 | Thông tin cá nhân | Personal Data | Dữ liệu riêng của mỗi người cần được bảo vệ | Số điện thoại, địa chỉ nhà |
+## Từ điển Việt–Anh của chặng
 
-## Sổ từ của Robot Bi — câu nói nên nhớ
+| # | Thuật ngữ | Tiếng Anh | Định nghĩa | Ví dụ |
+|---|-----------|-----------|------------|-------|
+| 1 | Dữ liệu | Data | Thông tin được ghi lại, có thể lưu trữ/truyền tải/xử lý | Cân nặng ghi trên giấy khám |
+| 2 | Dữ liệu số | Numerical data | Dữ liệu đo lường bằng số | 62kg, 28°C, 1.65m |
+| 3 | Dữ liệu chữ | Textual data | Dữ liệu dạng ký tự | Tên, địa chỉ, bài thơ |
+| 4 | Dữ liệu hình | Image data | Dữ liệu dạng ảnh | Ảnh chụp, bản vẽ |
+| 5 | Dữ liệu âm thanh | Audio data | Dữ liệu dạng sóng âm | Ghi âm giọng nói |
+| 6 | Dữ liệu định lượng | Quantitative data | Dữ liệu đo lường được bằng số | Cân nặng, nhiệt độ |
+| 7 | Dữ liệu định tính | Qualitative data | Dữ liệu mô tả đặc tính, không đo lường trực tiếp | Màu sắc, giới tính, đánh giá |
+| 8 | Dữ liệu liên tục | Continuous data | Dữ liệu có thể lấy mọi giá trị trong khoảng | Cân nặng: 62.357kg |
+| 9 | Dữ liệu rời rạc | Discrete data | Dữ liệu chỉ lấy giá trị đếm được | Số con: 0, 1, 2, 3 |
+| 10 | Dữ liệu có cấu trúc | Structured data | Sắp xếp theo hàng/cột, có lược đồ rõ | Bảng Excel, CSV, SQL |
+| 11 | Dữ liệu bán cấu trúc | Semi-structured data | Có thẻ/nhãn nhưng không theo bảng | JSON, XML, HTML |
+| 12 | Dữ liệu phi cấu trúc | Unstructured data | Không có cấu trúc cố định | Văn bản tự do, ảnh, video |
+| 13 | Thu thập dữ liệu | Data collection | Quá trình gom dữ liệu từ nguồn | Khảo sát, đo lường, quét |
+| 14 | Mẫu | Sample | Tập con của dân số được khảo sát | 100 người hỏi trong khảo sát |
+| 15 | Dân số | Population | Toàn bộ đối tượng quan tâm | Toàn dân Việt Nam 18+ |
+| 16 | Bias lấy mẫu | Sampling bias | Mẫu không đại diện cho dân số | Hỏi chỉ người giàu → bias thu nhập |
+| 17 | Bảng | Table | Cách sắp xếp dữ liệu theo hàng/cột | Bảng nước uống yêu thích |
+| 18 | Hàng | Row / Record | Mỗi hàng = 1 bản ghi | 1 người khảo sát = 1 hàng |
+| 19 | Cột | Column / Field | Mỗi cột = 1 trường dữ liệu | Cột "Tuổi", cột "Giới tính" |
+| 20 | Ô | Cell | Giao cột × hàng, chứa 1 giá trị | Ô (hàng 3, cột Tuổi) = 25 |
+| 21 | Biểu đồ cột | Bar chart | Biểu đồ dùng cột cao để so sánh giá trị | Nước uống yêu thích |
+| 22 | Trục | Axis | Đường đánh giá trị (x: ngang, y: dọc) | Trục y = "Số người" |
+| 23 | Trực quan hóa | Data visualization | Biểu diễn dữ liệu bằng hình ảnh | Vẽ biểu đồ cột |
+| 24 | Trọng tâm của dữ liệu | Central tendency | Giá trị "đại diện" cho dữ liệu | Trung bình, trung vị |
+| 25 | Tập dữ liệu | Dataset | Tập hợp dữ liệu có liên quan | Dataset iris, dataset Titanic |
+| 26 | Tập dữ liệu huấn luyện | Training set | Dữ liệu dùng để huấn luyện AI | 10.000 ảnh mèo để train |
+| 27 | Làm sạch dữ liệu | Data cleaning | Sửa dữ liệu thiếu, sai, trùng | Bỏ hàng có NaN |
+| 28 | Nhận xét từ dữ liệu | Data-driven observation | Câu nói có số liệu làm bằng chứng | "Nước lọc được 4/11 người chọn" |
+| 29 | Ý kiến cá nhân | Personal opinion | Câu nói phản ánh cảm nhận, không số liệu | "Nước lọc ngon nhất" |
 
-> "Không có dữ liệu thì không có AI. Cho mình dữ liệu trung thực, mình học đúng; cho mình dữ liệu lệch, mình học sai — trách nhiệm nằm ở người cho ăn đấy!"
+## Câu nói nên nhớ
 
-## Câu hỏi gợi mở trò chuyện cùng gia đình
+> "Không có dữ liệu, không có AI. Thu thập đúng + đủ + trung thực. Nhận xét phải có số liệu làm bằng chứng — không bịa, không phóng đại. Dữ liệu trong đầu bạn không phải dữ liệu theo nghĩa máy tính — chỉ khi ghi lại mới thành dữ liệu."
 
-1. "Hôm nay gia đình mình tạo ra những dữ liệu nào?" (bấm giờ, chụp ảnh, bước chân, hóa đơn mua hàng...)
-2. "Ai trong nhà quyết định dữ liệu nào được chia sẻ ra ngoài, dữ liệu nào giữ riêng?" (dẫn đến Giai đoạn 21)
-3. "Nếu hỏi 100 người thay vì 6 người, nhận xét của em sẽ đáng tin hơn không? Vì sao?"
-4. "Có lúc nào con nghĩ 'con số nói dối' không?" (dẫn đến ý tưởng biểu đồ có thể gây hiểu lầm — Giai đoạn 91)
+## Tài nguyên học tích
 
-## Tài nguyên học tập
+### Tài nguyên miễn phí
 
-**Hoạt động unplugged bổ trợ:**
-- "Đếm xe ở cổng trường" — 10 phút đếm xe máy/xe đạp/ô tô đi qua, lập bảng và biểu đồ. Bài học: cùng đếm cùng lúc vẫn ra số khác nhau! Đây là bài học "độ tin cậy dữ liệu" đời thực.
-- "Bộ sưu tập lá cây" — thu 10 lá, phân loại theo hình dạng, đếm từng loại, lập bảng. Kết nối tự nhiên: phân loại là bước đầu của phân cụm (Giai đoạn 65, 114).
-- "Biểu đồ cơ thể" — đo nhịp tim của 5 người trước và sau khi chạy tại chỗ, so sánh 2 bảng. Dữ liệu từ chính cơ thể em!
+**Khóa học online:**
+- *Google Data Analytics* (Coursera, có phần miễn phí) — khóa phân tích dữ liệu cho người mới.
+- *Data Visualization for All* (Trinity College, miễn phí) — khóa trực quan hóa dữ liệu.
+- *SQL for Data Science* (Coursera, có phần miễn phí) — sẽ dùng ở chặng 58.
 
-**Video gợi ý (người lớn chọn và xem cùng):**
-- Tìm "bar chart for kids" — video ngắn hướng dẫn vẽ biểu đồ cột.
-- Tìm "data collection for kids" — hoạt động khảo sát dành cho trẻ.
+**Sách:**
+- *Naked Statistics* — Charles Wheelan. Sách phổ thông về thống kê, dễ hiểu, hài hước. Khuyến nghị đọc trước Phần D.
+- *The Art of Statistics* — David Spiegelhalter. Sách về tư duy thống kê.
+- *Storytelling with Data* — Cole Nussbaumer Knaflic. Sách kinh điển về trực quan hóa dữ liệu cho người không chuyên.
+- *Factfulness* — Hans Rosling. Sách về cách đọc dữ liệu thế giới không bị cảm xúc lèo lái.
 
-**Kết nối đời sống Việt Nam:**
-- Biểu đồ thời tiết hàng ngày trên TV và ứng dụng: đó là dữ liệu được thu thập và trực quan hóa mỗi ngày.
-- Giá cả chợ: ngày nào cá rẻ, ngày nào đắt — bà con có "cảm nhận dữ liệu" rất chuẩn mà không cần biểu đồ. Thử lập bảng giá 1 món 5 ngày liền cùng bố mẹ đi chợ!
+**Video:**
+- *"How to spot a misleading graph"* — Lea Gaslowitz (TED-Ed). 4 phút, trực quan về biểu đồ nói dối.
+- *"The best stats you've ever seen"* — Hans Rosling (TED). Huyền thoại về trực quan hóa dữ liệu.
+- *"How to read a chart"* — tìm trên YouTube.
 
-**Lưu ý an toàn:** khi khảo sát người ngoài gia đình, luôn đi cùng người lớn; không ghi lại thông tin cá nhân của người được hỏi (tên đầy đủ, số điện thoại) khi không cần thiết.
+**Công cụ trực quan hóa miễn phí:**
+- [Google Sheets](https://sheets.google.com) — bảng tính + biểu đồ, miễn phí.
+- [Data Studio](https://datastudio.google.com) — dashboard miễn phí của Google.
+- [Flourish](https://flourish.studio) — biểu đồ tương tác miễn phí (có bản trả phí).
+- [RawGraphs](https://app.rawgraphs.io) — biểu đồ phức tạp miễn phí.
+
+### Tài nguyên tiếng Việt
+
+- **VnExpress mục Data** — bài phân tích dữ liệu tiếng Việt.
+- **The Data Story** — blog tiếng Việt về kể chuyện bằng dữ liệu.
+- **Học viện AI Việt Nam (AIO)** — có tài liệu về phân tích dữ liệu.
+
+### Bộ dữ liệu miễn phí để thực hành (sẽ dùng ở Phần D)
+
+- [Kaggle Datasets](https://www.kaggle.com/datasets) — hàng nghìn dataset miễn phí.
+- [Google Dataset Search](https://datasetsearch.research.google.com) — tìm dataset.
+- [UCI ML Repository](https://archive.ics.uci.edu) — dataset kinh điển cho ML.
+- [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets) — danh sách dataset chất lượng.
+
+### Tập dữ liệu Việt Nam (tùy chọn)
+
+- Tổng cục Thống kê [gso.gov.vn](https://www.gso.gov.vn) — dữ liệu kinh tế xã hội VN.
+- Our World in Data [ourworldindata.org](https://ourworldindata.org) — có dữ liệu Việt Nam so sánh thế giới.
+
+## Câu hỏi gợi mở
+
+Không có đáp án đúng — mục đích là tập đặt câu hỏi:
+
+1. Một dữ liệu bạn tạo ra mỗi ngày mà bạn không để ý là gì? (Gợi ý: lịch sử vị trí, lịch sử tìm kiếm, lịch sử mua hàng...)
+2. Dữ liệu cá nhân của bạn đang được ai thu thập? Bạn có kiểm soát không?
+3. Khi thấy một biểu đồ báo chí, bạn có thói quen xem nguồn dữ liệu không?
+4. Tại sao "trung thực" là quy tắc quan trọng nhất khi thu thập dữ liệu? Hậu quả của việc không trung thực là gì?
 
 ## Kết nối về sau
 
-Từ khóa của giai đoạn này sẽ "quay lại" ở: Giai đoạn 23 (khảo sát nhóm chuẩn hơn), Giai đoạn 53–60 (bảng tính và cơ sở dữ liệu), Giai đoạn 77–100 (khoa học dữ liệu thật với Python), Giai đoạn 112 (đánh giá mô hình — nơi nhận xét có bằng chứng trở thành kỹ năng sống còn). Nếu em ghi nhớ quy trình "hỏi – thu – bảng – biểu đồ – nhận xét có bằng chứng" hôm nay, em đã có bộ xương của toàn bộ ngành khoa học dữ liệu.
+Các thuật ngữ và khái niệm của chặng 03 sẽ xuất hiện lại ở:
+
+- **Bảng, cột, hàng** (chặng 53–56) — Google Sheets, công thức, pivot table.
+- **Bias lấy mẫu** (chặng 95) — phân tích chính thức bằng khái niệm thống kê.
+- **Làm sạch dữ liệu** (chặng 57, 85) — kỹ thuật Pandas.
+- **Trực quan hóa** (chặng 56, 88–92) — Matplotlib, Seaborn, dashboard.
+- **Nhận xét từ dữ liệu** (chặng 93–98) — thống kê suy luận, p-value, kiểm định.
+- **Tập dữ liệu huấn luyện** (chặng 64, 101) — ML formal definition.
+- **Thiên vị dữ liệu** (chặng 69) — bias mở rộng sang đạo đức AI.
+- **Quyền riêng tư** (chặng 70) — đạo đức dữ liệu chuyên sâu.
+
+Không cần học thuộc ngay — cứ gặp lại là nhớ thêm. Lặp xoáy ốc.
+
+## Gợi ý cập nhật nhật ký học tập
+
+```markdown
+## Chặn 03 — Dữ liệu và thông tin (hoàn thành __/__/____)
+
+**Hôm nay tôi học được:**
+- Dữ liệu = thông tin được ghi lại; 4 dạng (số, chữ, hình, âm)
+- Phân loại: định lượng/định tính, có cấu trúc/phi cấu trúc
+- 3 quy tắc thu thập: đúng, đủ, trung thực
+- Bias lấy mẫu = mẫu không đại diện dân số
+- Bảng để tra cứu, biểu đồ cột để thấy xu hướng
+- Nhận xét từ dữ liệu phải có số liệu làm bằng chứng
+
+**Khó khăn lớn nhất:** [...của bạn...]
+
+**Cách tôi vượt qua:** [...của bạn...]
+
+**Sản phẩm đã làm:** `portfolio-ai/phan-a/chặng-03-bao-cao-du-lieu/README.md`
+
+**Câu hỏi mở cho chặng sau:** [...của bạn...]
+
+**Checklist:**
+- [x] Đọc phần Kiến thức
+- [x] Feynman test
+- [x] Bài tập sao ★
+- [x] Sản phẩm cuối chặng
+- [x] Cập nhật journal
+- [x] Trả lời "Kết nối về sau"
+```

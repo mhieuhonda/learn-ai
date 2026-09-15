@@ -1,45 +1,60 @@
-# Phần A — Khởi động: Tư duy máy tính & Thế giới số (Giai đoạn 01–24)
+# Phần A — Khởi động: Tư duy máy tính & Thế giới số (Chặng 01–24)
 
-Chào mừng đến với chặng đầu tiên của hành trình "Học AI cùng Việt Nam". Phần A được thiết kế cho học sinh tiểu học (lớp 3–5) và bất kỳ ai mới bắt đầu — kể cả người lớn chưa từng học tin học. Ở chặng này, các em không cần biết gõ lệnh, không cần công thức: chỉ cần trí tò mò, giấy bút, và một chút vui chơi có mục đích.
+Đây là chặng đầu của hành trình tự học AI. Phần A không yêu cầu bạn biết gõ lệnh, không cần công thức, không cần máy cấu hình mạnh — chỉ cần trí tò mò, giấy bút, một máy tính có trình duyệt, và kỷ luật tự học.
 
-## Nhân vật dẫn đường: Robot Bi
+## Mục tiêu Phần A
 
-Xuyên suốt Phần A, người học đồng hành cùng **Robot Bi** — một robot tí hon đáng yêu, nói từng câu ngắn, làm việc rất đúng theo lệnh, và hay hỏi ngược lại "Vì sao?". Robot Bi hiện diện trong các tình huống học: khi cần minh họa "máy hiểu lệnh literal thế nào", khi hỏi các em câu hỏi thảo luận, và khi "khen" các em hoàn thành sản phẩm. Giáo viên và phụ huynh có thể "lồng tiếng" cho Robot Bi để giữ sự háo hức của trẻ.
+Sau 24 chặng, bạn có thể:
 
-## Đích đến của Phần A
+1. **Nhận biết AI** trong đời sống hằng ngày và mô tả chính xác AI hoạt động thế nào (chặng 01, 17–20).
+2. **Tư duy máy tính** (*computational thinking*): phân rã vấn đề, nhận mẫu hình, trừu tượng hóa, viết thuật toán, gỡ lỗi (chặng 02, 05–08).
+3. **Lập trình Scratch**: tự làm hoạt cảnh, trò chơi có điểm số, điều kiện, vòng lặp (chặng 09–16).
+4. **Làm việc với dữ liệu**: thu thập, lập bảng, vẽ và đọc biểu đồ cột (chặng 03, 23).
+5. **An toàn số**: bảo vệ thông tin cá nhân, ứng xử văn minh, nhận biết tin giả sơ lược (chặng 21–22).
 
-Sau 24 giai đoạn, người học có thể:
+Đích cuối: **Portfolio 24 sản phẩm nền** + dự án tổng kết "Thế giới AI của tôi" (chặng 24). Khi hoàn thành, bạn có đủ nền tảng để bước vào Phần B — lập trình Python.
 
-1. **Nhận biết AI** trong đời sống hằng ngày và mô tả đơn giản AI làm việc thế nào (GĐ 01, 17–20).
-2. **Tư duy máy tính**: phân rã vấn đề, nhận mẫu hình, trừu tượng hóa, viết thuật toán (GĐ 02, 05–08).
-3. **Lập trình Scratch**: tự làm hoạt cảnh, trò chơi có điểm số, điều kiện, vòng lặp (GĐ 09–16).
-4. **Làm việc với dữ liệu**: thu thập, lập bảng, vẽ và đọc biểu đồ cột (GĐ 03, 23).
-5. **An toàn số**: bảo vệ thông tin cá nhân, ứng xử văn minh, biết hỏi người lớn (GĐ 21–22).
+## Cấu trúc 24 chặng
 
-Đích cuối: **Dự án "Thế giới AI của em"** (GĐ 24) — poster + thuyết trình 3 phút + portfolio 24 sản phẩm. Đạt cột mốc sẽ nhận chứng nhận **"Nhà thám hiểm AI tí hon"**.
+| Nhóm | Chặng | Chủ đề |
+|------|-------|--------|
+| Nhận biết & tư duy nền | 01–08 | AI đời thường, tư duy giải quyết vấn đề, dữ liệu đầu tiên, tư duy máy tính unplugged |
+| Lập trình Scratch | 09–16 | Từ lệnh đầu tiên đến dự án kể chuyện |
+| AI đầu tiên & an toàn số | 17–23 | Máy học thế nào, an toàn số, dữ liệu nâng bước |
+| Tổng kết | 24 | Dự án tổng kết phần |
 
-## Cấu trúc 24 giai đoạn
+## Bạn cần chuẩn bị gì
 
-| Nhóm | GĐ | Chủ đề | Ghi chú dạy học |
-|------|----|--------|------------------|
-| Nhận biết & tư duy nền | 01–08 | AI đời thường, tư duy giải quyết vấn đề, dữ liệu đầu tiên, tư duy máy tính unplugged | Hơn một nửa hoạt động không cần máy tính |
-| Lập trình Scratch | 09–16 | Từ lệnh đầu tiên đến dự án kể chuyện | Cần máy tính + Scratch (scratch.mit.edu) |
-| AI đầu tiên & an toàn số | 17–23 | Máy học thế nào, an toàn số, dữ liệu nâng bước | Teachable Machine cần người lớn đồng hành |
-| Tổng kết | 24 | Dự án tổng kết phần | Trình bày trước lớp/gia đình |
+- **Máy tính hoặc laptop** có trình duyệt web (không cần cấu hình mạnh).
+- **Tài khoản miễn phí**: [scratch.mit.edu](https://scratch.mit.edu) để lập trình Scratch.
+- **Giấy A4, bút màu, thước kẻ** cho các chặng unplugged (không cần máy tính).
+- **Khoảng 2–4 giờ mỗi tuần** cho 1 chặng, tùy tốc độ của bạn.
+- Một **thư mục trên máy** tên `portfolio-ai/phan-a/` để lưu sản phẩm.
 
-## Chuẩn bị trước khi bắt đầu
+## Cách học Phần A
 
-- **Nguyên liệu giấy:** giấy A4, màu vẽ, thẻ giấy cắt vuông (khoảng 20–30 tấm để làm thẻ bài tập), bút dạ.
-- **Thiết bị (từ GĐ 09):** máy tính có trình duyệt; tài khoản Scratch do phụ huynh tạo và giám sát.
-- **Thời gian:** mỗi giai đoạn 2 buổi x 35 phút, cộng 15 phút cuối tuần cùng gia đình.
-- **Tài liệu hỗ trợ:** [docs/02-phuong-phap-day-va-hoc.md](../docs/02-phuong-phap-day-va-hoc.md) (cách dạy), [docs/03-he-thong-danh-gia-chung-nhan.md](../docs/03-he-thong-danh-gia-chung-nhan.md) (rubric và huy hiệu).
+Mỗi chặng trong Phần A có cấu trúc:
 
-## Giai đoạn đã phát hành
+1. **Kiến thức** (trong README.md) — định nghĩa, cơ chế, ví dụ. Đọc trước.
+2. **Thực hành** (trong bai-tap-thuc-hanh.md) — bài tập từ dễ đến khó. Làm sau khi đọc Kiến thức.
+3. **Thuật ngữ & tài nguyên** (trong tu-dien-va-tai-nguyen.md) — tra cứu khi quên; đọc mở rộng khi muốn sâu hơn.
+4. **Sản phẩm cuối chặng** (cuối README.md) — artifact đưa vào portfolio.
 
-| GĐ | Thư mục | Sản phẩm |
-|----|---------|----------|
-| 01 | [giai-doan-01-lam-quen-voi-the-gioi-ai](giai-doan-01-lam-quen-voi-the-gioi-ai/README.md) | Nhật ký AI của em |
-| 02 | [giai-doan-02-tu-duy-giai-quyet-van-de](giai-doan-02-tu-duy-giai-quyet-van-de/README.md) | Sách thuật toán của em |
-| 03 | [giai-doan-03-du-lieu-va-thong-tin](giai-doan-03-du-lieu-va-thong-tin/README.md) | Báo cáo dữ liệu đầu tiên |
+Khối lượng công việc mỗi chặng khoảng 2–4 giờ tổng cộng. Một số chặng unplugged (không cần máy) có thể hoàn thành trong 1–2 giờ; một số chặng Scratch hoặc dữ liệu cần 4–6 giờ.
 
-Các giai đoạn 04–24 sẽ được phát hành theo thứ tự; nội dung tóm tắt từng giai đoạn có sẵn trong [ROADMAP.md](../ROADMAP.md).
+## Mở đầu: ba ý cần giữ trong đầu khi đọc Phần A
+
+Phần A được viết theo quan điểm: **để hiểu AI, phải hiểu tư duy máy tính và dữ liệu**. Ba ý贯穿 24 chặng:
+
+1. **AI là máy tính làm được những việc từng cần trí tuệ người.** Cách tiếp cận phổ biến nhất là cho máy học từ rất nhiều ví dụ (chặng 01, 17–20).
+2. **Tư duy máy tính là kỹ năng nền cho mọi kỹ năng AI.** Phân rã vấn đề, viết thuật toán, gỡ lỗi — không cần máy tính cũng luyện được (chặng 02, 05–08).
+3. **Dữ liệu là chất liệu của AI.** Không có dữ liệu, không có AI. Thu thập sạch, trình bày gọn, đọc hiểu đúng — kỹ năng này bắt đầu ở chặng 03 và quay lại ở mọi phần sau.
+
+Đi từng chặng một. Khi bạn đến chặng 24, bạn sẽ ngạc nhiên vì mình đã hiểu nhiều hơn tưởng tượng.
+
+## Liệt kê chặng đã phát hành
+
+- [Chặng 01 — Làm quen với thế giới AI xung quanh ta](giai-doan-01-lam-quen-voi-the-gioi-ai/README.md)
+- [Chặng 02 — Tư duy giải quyết vấn đề: các bước nhỏ dẫn đến thành công](giai-doan-02-tu-duy-giai-quyet-van-de/README.md)
+- [Chặn 03 — Dữ liệu và thông tin xung quanh ta](giai-doan-03-du-lieu-va-thong-tin/README.md)
+- Chặn 04–24: đang hoàn thiện.

@@ -1,91 +1,97 @@
-# Hướng dẫn sử dụng lộ trình
+# Hướng dẫn sử dụng lộ trình tự học
 
-Tài liệu này giúp từng nhóm người dùng khác nhau tìm đúng điểm xuất phát và đi đúng nhịp trên lộ trình 170 giai đoạn. Trước khi đọc tiếp, hãy mở [ROADMAP.md](../ROADMAP.md) một lượt để có bức tranh tổng thể về 8 phần của hành trình.
+Tài liệu này giúp bạn tìm đúng điểm xuất phát và đi đúng nhịp trên lộ trình 170 chặng. Trước khi đọc tiếp, hãy mở [ROADMAP.md](../ROADMAP.md) một lượt để có bức tranh tổng thể về 8 phần của hành trình.
 
-## 1. Xác định con đường học tập của bạn
+## 1. Xác định con đường tự học của bạn
 
-Lộ trình thiết kế cho **một con đường duy nhất chia 170 chặng**, nhưng ba nhóm người dùng sẽ bước lên con đường đó với ba nhịp độ khác nhau:
+Lộ trình thiết kế cho **một con đường duy nhất chia 170 chặng**, nhưng bạn có thể bước lên con đường đó với ba nhịp độ khác nhau tùy nền tảng sẵn có:
 
-| Con đường | Dành cho | Điểm bắt đầu | Nhịp gợi ý |
-|-----------|----------|--------------|-------------|
-| **Học đường chuẩn** | Học sinh tiểu học → THCS → THPT | Giai đoạn 01 | 1 giai đoạn / 1–2 tuần |
-| **Tăng tốc** | Người lớn tự học, sinh viên, người chuyển ngành | Phần D (77) nếu đã biết Python; Phần C (53) nếu mới biết lập trình | 2–3 giai đoạn / tuần |
-| **Theo nhu cầu** | Giáo viên, phụ huynh, người làm nghề khác | Tùy mục tiêu (xem bảng bên dưới) | Tùy chọn giai đoạn |
+| Con đường | Phù hợp với | Điểm bắt đầu | Nhịp gợi ý |
+|-----------|-------------|--------------|------------|
+| **Tuần tự** | Người mới bắt đầu tuyệt đối, chưa từng lập trình | Chặng 01 | 1 chặng / 1–2 tuần |
+| **Tăng tốc** | Người đã biết Python cơ bản hoặc có nền tảng kỹ thuật | Phần D (chặng 77) nếu rành Python; Phần C (chặng 53) nếu mới biết lập trình | 2–3 chặng / tuần |
+| **Theo nhu cầu** | Người học có mục tiêu nghề nghiệp cụ thể | Tùy mục tiêu (xem bảng bên dưới) | Tùy chọn chặng |
 
-### Gợi ý chọn giai đoạn theo nhu cầu thực tế
+### Gợi ý chọn chặng theo nhu cầu thực tế
 
-| Bạn là... | Nên học | Bỏ qua | Lý do |
-|-----------|---------|--------|-------|
-| Giáo viên tiểu học | GĐ 01–24, 53–56 | B, D–H | Cần biết dạy tư duy máy tính và nhận biết AI cho trẻ |
-| Giáo viên THCS/THPT (Tin học) | GĐ 25–100 | A | Nền Python + dữ liệu phục vụ giảng dạy |
-| Phụ huynh đồng hành cùng con | GĐ 01–24 kèm con; tự học GĐ 61–76 | B, D+ | Hiểu AI để dẫn dắt con an toàn |
-| Nhân viên văn phòng | GĐ 53–56, 77–92, 146–149 | A, B, E–H | Bảng tính, phân tích dữ liệu, dùng LLM hiệu quả |
-| Sinh viên ngành khác muốn chuyển sang AI | GĐ 53–170 | A, B (kiểm tra trước) | Nền dữ liệu + ML + DL + triển khai |
-| Học sinh THPT mê AI | Toàn bộ theo số thứ tự | Không bỏ giai đoạn nào | Mỗi giai đoạn là viên gạch cho giai đoạn sau |
+| Bạn là... | Nên học | Có thể bỏ qua | Lý do |
+|-----------|---------|----------------|-------|
+| Người làm văn phòng muốn dùng AI hiệu quả | Chặng 53–56, 77–92, 146–149 | A, B, E–H | Bảng tính, phân tích dữ liệu, dùng LLM hiệu quả |
+| Sinh viên ngành khác muốn chuyển sang AI | Chặng 53–170 | A, B (sau khi tự kiểm tra) | Nền dữ liệu + ML + DL + triển khai |
+| Nhà báo, người làm truyền thông | Chặng 53–76, 71–72, 118–119 | A, B, D, E, F, G, H | Hiểu AI xã hội, đạo đức, phát hiện tin giả |
+| Người quản lý muốn hiểu AI ra quyết định | Chặng 61–76, 101–112, 141–145 | A, B, F, G, H | Hiểu quy trình ML, đánh giá, giải thích mô hình |
+| Lập trình viên muốn xây ứng dụng AI | Chặng 77–158 | A, B (sau khi kiểm tra) | Khoa học dữ liệu + ML + DL + triển khai |
+| Người muốn đi nghiên cứu | Toàn bộ theo số thứ tự | Không | Mỗi chặng là nền cho chặng sau |
 
-**Quy tắc vàng:** trước khi bỏ qua một phần nào đó, hãy tự làm bài tập cuối giai đoạn tiêu biểu của phần đó. Làm được trọn vẹn thì mới có quyền bỏ qua — đây là cách tránh "tự tin ảo" mà không cần ai phán xét.
+**Quy tắc vàng:** trước khi bỏ qua một phần, hãy tự làm bài tập cuối chặng tiêu biểu của phần đó. Làm được trọn vẹn thì mới có quyền bỏ qua — đây là cách tránh "tự tin ảo" mà không cần ai phán xét.
 
-## 2. Cách dùng một thư mục giai đoạn
+## 2. Cách dùng một thư mục chặng
 
-Mỗi giai đoạn đã phát hành gồm 3 tệp, dùng theo trình tự sau:
+Mỗi chặng đã phát hành gồm 3 tệp, dùng theo trình tự sau:
 
-1. **Đọc `README.md`** — xem "Thông tin chung" để chuẩn bị nguyên liệu; đọc mục tiêu học tập để biết đích đến; học theo từng bài trong "Nội dung bài học"; đối chiếu "Rubric đánh giá" trước khi làm sản phẩm.
-2. **Làm `bai-tap-thuc-hanh.md`** — bài tập được xếp từ dễ đến khó; bắt buộc làm bài tập lõi (đánh dấu sao), bài nâng cao là tùy chọn dành cho học sinh muốn đi nhanh hơn.
-3. **Tra `tu-dien-va-tai-nguyen.md`** khi gặp thuật ngữ lạ; dùng phần "Câu hỏi gợi mở" để trò chuyện với gia đình hoặc nhóm học tập.
+| Thứ tự | Tệp | Mục đích | Lời khuyên |
+|--------|-----|----------|-----------|
+| 1 | `README.md` | Đọc toàn bộ phần Kiến thức trước, không lướt qua | Ghi chú khái niệm mới bằng lời của mình |
+| 2 | `bai-tap-thuc-hanh.md` | Làm lần lượt bài tập từ dễ đến khó; bài sao ★ là bắt buộc | Không xem đáp án (nếu có) trước khi đã thử 30 phút |
+| 3 | `tu-dien-va-tai-nguyen.md` | Tra thuật ngữ khi quên; đọc tài nguyên mở rộng khi muốn sâu hơn | Đọc phần "Kết nối về sau" để biết chặng sau cần gì |
 
-Sau khi hoàn thành sản phẩm cuối giai đoạn: chụp ảnh hoặc sao lưu số hóa sản phẩm vào thư mục portfolio cá nhân, tự chấm theo rubric, xin chữ ký/xác nhận của phụ huynh hoặc giáo viên (với học sinh dưới 18 tuổi), rồi mới chuyển giai đoạn kế tiếp.
+Sau khi hoàn thành 3 tệp, bạn làm **Sản phẩm cuối chặng** mô tả trong README. Sản phẩm là bằng chứng bạn đã học — không phải bài kiểm tra ai chấm, mà là artifact đưa vào portfolio cá nhân.
 
-## 3. Thiết bị và tài khoản cần chuẩn bị
+## 3. Bốn thói quen tự học giúp bạn đi hết 170 chặng
 
-| Phần | Thiết bị tối thiểu | Tài khoản / phần mềm |
-|------|--------------------|----------------------|
-| A | Máy tính hoặc chỉ giấy bút (nhiều hoạt động unplugged) | Scratch (scratch.mit.edu) cho GĐ 09–16, có người lớn đồng hành |
-| B | Máy tính 4GB RAM | Python 3.10+ hoặc Google Colab; trình duyệt web |
-| C | Máy tính | Google Sheets; SQLite/DB Browser; tài khoản do phụ huynh tạo |
-| D | Máy tính 8GB RAM | Anaconda hoặc Colab; Git; tài khoản GitHub |
-| E | Máy tính 8GB RAM | scikit-learn; tài khoản Kaggle (có phụ huynh xác nhận nếu dưới 13 tuổi) |
-| F | Máy tính + GPU (Colab miễn phí) | PyTorch; Hugging Face |
-| G | Máy tính 16GB RAM | Docker; GitHub; dịch vụ LLM API (chỉ người 18+ hoặc có sự cho phép) |
-| H | Tùy dự án | Công cụ nghiên cứu, Kaggle, Hugging Face |
+### Thói quen 1: Ghi chú kiểu Feynman
 
-Lưu ý an toàn: học sinh **dưới 13 tuổi** không tự tạo tài khoản trực tuyến — phụ huynh tạo và giám sát. Mọi hoạt động chụp ảnh, ghi âm cần xin phép người được ghi nhận.
+Khi đọc xong phần Kiến thức của một chặng, hãy đóng tài liệu lại và viết lại khái niệm bằng lời của mình như đang giải thích cho một người không biết gì về AI. Nếu bạn không viết được — bạn chưa hiểu. Quay lại đọc. Lặp lại.
 
-## 4. Lên lịch học mẫu
+Ví dụ thay vì chép "AI là trí tuệ nhân tạo", hãy viết: *"AI là ngành xây dựng hệ thống máy tính làm được những việc cần trí tuệ khi người làm — như nhận dạng ảnh, hiểu ngôn ngữ, chơi cờ. Cách tiếp cận phổ biến nhất là cho máy học từ rất nhiều ví dụ thay vì viết quy tắc tay."*
 
-### Học sinh tiểu học (Phần A)
+### Thói quen 2: Một chặng, một sản phẩm
 
-- **Tuần học thông thường:** 2 buổi x 35 phút — buổi 1 học khái niệm mới, buổi 2 thực hành và hoàn thành sản phẩm.
-- **Cuối tuần gia đình:** 15 phút cùng phụ huynh làm bài tập thực hành và trò chuyện theo câu hỏi gợi mở.
+Không chặng nào kết thúc bằng "tôi đã đọc xong". Mỗi chặng đều có một sản phẩm cụ thể: nhật ký, chương trình, notebook, mô hình. Sản phẩm đưa vào một thư mục `portfolio/` trên máy bạn (và sau này đẩy lên GitHub từ Phần D). Khi đến chặng 170, bạn có 170 sản phẩm — đó là hồ sơ năng lực thực sự, giá trị hơn bất kỳ chứng chỉ nào.
 
-### Học sinh THCS – THPT (Phần B–F)
+### Thói quen 3: Sai là dữ liệu
 
-- **Học kỳ:** 1 giai đoạn / tuần = 2–3 buổi x 45–90 phút + 1 giờ tự làm bài tập.
-- **Hè:** tăng lên 2–3 giai đoạn / tuần; đây là lúc đẩy nhanh một phần lớn hành trình mà không ảnh hưởng việc học chính khóa.
+Khi làm bài tập mà code lỗi, mô hình cho kết quả sai, hoặc khái niệm khó hiểu — đừng nản. Thông báo lỗi của Python là tin nhắn từ hệ thống, kết quả sai là thí nghiệm thành công về "cách không làm". Ghi lại lỗi và nguyên nhân vào một tệp `lessons-learned.md` trong thư mục portfolio. Vài tháng sau bạn sẽ có một kho "những cái bẫy đã qua" — tài sản quý nhất của người tự học.
 
-### Người tự học (Phần D–H)
+### Thói quan 4: Lặp lại theo chu kỳ
 
-- **Nhịp 90 phút/ngày:** mỗi giai đoạn 2–3 ngày, mỗi phần 3–6 tuần, toàn lộ trình phần còn lại 6–12 tháng.
-- **Nhịp cuối tuần:** mỗi tuần 1 buổi x 4 giờ = 1 giai đoạn; phù hợp người đi làm.
+Khoa học não bộ chỉ ra rằng ôn lại kiến thức sau 1 ngày, 1 tuần, 1 tháng giúp chuyển vào trí nhớ dài hạn. Cuối mỗi tuần, giở lại danh sách thuật ngữ đã học trong tuần. Cuối mỗi tháng, đọc lại README của các chặng đã qua. Bạn sẽ nhận ra mình hiểu sâu hơn so với lần đầu — đó là dấu hiệu của lặp xoáy ốc.
 
-## 5. Theo dõi tiến độ
+## 4. Môi trường làm việc
 
-- In hoặc sao chép bảng 170 giai đoạn trong ROADMAP.md, dán ở bàn học; tô màu mỗi giai đoạn hoàn thành.
-- Giữ "Hồ sơ hành trình" (thư mục Google Drive/USB) với cấu trúc: `GD01-Nhat-ky-AI/`, `GD02-Sach-thuat-toan/`... Mỗi giai đoạn một thư mục chứa sản phẩm + ảnh chụp + phiếu tự đánh giá.
-- Mỗi khi qua một cột mốc (GĐ 24, 52, 76, 100, 120, 140, 158, 170), hãy "lên cấp" — tổ chức một buổi trình bày nhỏ cho gia đình hoặc lớp học (chi tiết trong [docs/03-he-thong-danh-gia-chung-nhan.md](03-he-thong-danh-gia-chung-nhan.md)).
+Bạn không cần máy cấu hình cao cho phần lớn lộ trình. Gợi ý tối thiểu:
 
-## 6. Câu hỏi thường gặp
+| Phần | Cấu hình tối thiểu | Công cụ bắt buộc | Tùy chọn |
+|------|-------------------|------------------|----------|
+| A | Bất kỳ máy tính/laptop nào có trình duyệt | Trình duyệt web, giấy bút | Tài khoản MIT Scratch (miễn phí) |
+| B–C | Laptop 4GB RAM | Python 3.10+, VS Code | Google Colab (miễn phí) |
+| D–E | Laptop 8GB RAM | Python, Jupyter, Git | Google Colab, Kaggle notebook |
+| F | Laptop 8GB RAM + GPU hoặc Colab miễn phí | PyTorch, CUDA (nếu có GPU) | Colab Pro (~150k/tháng) |
+| G | Laptop 8GB RAM + Docker | Docker, GitHub account | Cloud account (AWS/GCP/Azure miễn phí ban đầu) |
+| H | Linh hoạt | Tùy dự án | Tùy dự án |
 
-**Con tôi 8 tuổi, chưa biết đọc trôi chảy, có học được không?**
-Có. Các giai đoạn 01–03 và 17–18 được thiết kế hoạt động tốt kể cả khi phụ huynh đọc giúp. Kỹ năng đọc càng tốt, em càng tự chủ được — hãy đi chậm, ưu tiên hoạt động unplugged.
+Nếu bạn chỉ có điện thoại thông minh: vẫn học được Phần A và một phần Phần C (đọc + quan sát + ghi chú). Hãy cố gắng sắp xếp có máy tính từ Phần B trở đi.
 
-**Không có máy tính ở nhà thì học được đến đâu?**
-Phần A học được hơn một nửa (các hoạt động unplugged) và có thể mượn máy ở thư viện/trường cho phần Scratch. Các phần sau bắt buộc cần máy tính — đề nghị nhà trường hỗ trợ là cách làm phổ biến.
+## 5. Khi gặp khó khăn
 
-**Học xong lộ trình có được việc làm không?**
-Lộ trình đưa bạn tới trình độ "kỹ sư AI tập sự / nhà nghiên cứu tập sự" — đủ nền tảng thi tuyển thực tập sinh, tham gia dự án mã nguồn mở hoặc tiếp tục đại học chuyên ngành. Kho tài liệu không thay thế bằng cấp, nhưng portfolio 170 sản phẩm là lợi thế thật sự.
+Tự học không có nghĩa là cô lập. Khi mắc ở một chặng quá 2 ngày:
 
-**Nếu học bị kẹt ở một giai đoạn thì làm sao?**
-Không chuyển giai đoạn khi sản phẩm chưa xong — nhưng được giảm độ khó: làm lại bài tập lõi, xin gợi ý (không xin đáp án) từ AI hoặc giáo viên, hoặc học lại giai đoạn trước. Kẹt lâu hơn 3 buổi thì nghỉ 1 buổi rồi quay lại; thường sẽ "thông" ngay.
+1. **Đọc lại phần Tiên quyết** ở đầu README của chặng đó. Có thể bạn đang thiếu kiến thức nền của chặng trước.
+2. **Tra từ điển thuật ngữ** trong `tu-dien-va-tai-nguyen.md` — đôi khi chỉ là hiểu nhầm một khái niệm.
+3. **Tìm trên Google/Stack Overflow/arxiv** với từ khóa tiếng Anh (lý do lộ trình này ghi song ngữ). Phần lớn vấn đề đã có người gặp và giải thích.
+4. **Hỏi AI trợ lý** (ChatGPT, Claude, Gemini, DeepSeek) — đây cũng là một kỹ năng cần học (chặng 72). Hỏi cụ thể, kèm code lỗi và thông báo lỗi nguyên văn.
+5. **Tạm dừng 1–2 ngày rồi quay lại** — não cần thời gian xử lý ngầm. Nhiều vấn đề khó tự nhiên "bừng sáng" sau giấc ngủ.
 
-**AI có thay con người dạy học không?**
-Không trong thiết kế này. AI là công cụ thực hành và "người bạn hỏi bài", còn việc đặt mục tiêu, kỷ luật học tập, đạo đức và sự đồng cảm thuộc về con người — giáo viên và gia đình.
+Không có ai chấm điểm, không có deadline. Tốc độ của bạn là tốc độ của bạn. Quan trọng là đi tiếp, không phải đi nhanh.
+
+## 6. Đánh giá bản thân
+
+Xem [03-he-thong-danh-gia-chung-nhan.md](03-he-thong-danh-gia-chung-nhan.md) để biết cách tự đánh giá sau mỗi chặng và sau mỗi phần. Tóm tắt: mỗi chặng có một danh mục tự kiểm tra (checklist) thay cho rubric chấm điểm; mỗi phần có một sản phẩm tổng kết; toàn lộ trình kết thúc bằng portfolio 170 sản phẩm.
+
+## 7. Một số quy ước đọc
+
+- **In đậm** = thuật ngữ quan trọng xuất hiện lần đầu.
+- *In nghiêng* = thuật ngữ tiếng Anh tương đương.
+- `Monospace` = mã lệnh, tên tệp, hoặc output.
+- > Đoạn trong khối trích dẫn = định nghĩa chuẩn hoặc nguyên lý quan trọng cần ghi nhớ.
+- ★ sau tên bài tập = bài tập lõi, bắt buộc hoàn thành trước khi sang chặng sau.

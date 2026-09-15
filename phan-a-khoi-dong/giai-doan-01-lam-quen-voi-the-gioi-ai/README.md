@@ -1,149 +1,262 @@
-# Giai đoạn 01 — Làm quen với thế giới AI xung quanh ta
+# Chặng 01 — Làm quen với thế giới AI xung quanh ta
 
-> "Robot Bi chào bạn! Mình là Robot Bi, bạn đồng hành của bạn trong suốt hành trình khám phá AI. Giai đoạn đầu tiên này, chúng ta sẽ đi săn tìm các 'máy thông minh' đang sống ngay trong nhà bạn đấy. Sẵn sàng chưa?"
-
-## Thông tin chung
-
-| Mục | Chi tiết |
-|-----|----------|
-| Mã giai đoạn | GD-01 (Phần A — Khởi động) |
-| Đối tượng | Học sinh tiểu học lớp 3–5 (8–11 tuổi); phù hợp cả người lớn mới bắt đầu |
-| Thời lượng | 2 buổi x 35 phút + 15 phút cuối tuần cùng gia đình |
-| Tiên quyết | Không cần — đây là giai đoạn đầu tiên của hành trình |
-| Nguyên liệu | Giấy A4, bút màu, bút dạ, kéo, keo dán; điện thoại/máy tính của gia đình (dùng cùng phụ huynh) |
-| Sản phẩm cuối giai đoạn | **"Nhật ký AI của em"** — bộ 5 trang ghi lại các "máy thông minh" em tìm thấy |
-
-## Mục tiêu học tập
-
-**Kiến thức** — sau giai đoạn này, em có thể:
-1. Nói bằng câu đơn giản AI là gì (máy tính thông minh học từ ví dụ để làm việc giúp người).
-2. Chỉ ra ít nhất 5 công cụ AI em đã từng gặp hoặc dùng trong đời sống.
-3. Phân biệt được việc nào máy làm giúp người, việc nào người vẫn phải tự làm.
-
-**Kỹ năng:**
-1. Quan sát có mục đích xung quanh nhà và mô tả những gì thấy.
-2. Trình bày ý kiến của mình trước lớp/gia đình trong 1 phút.
-
-**Thái độ:**
-1. Hứng thú, tò mò về công nghệ; không sợ hãi máy móc.
-2. Bước đầu có ý thức: hỏi phép phụ huynh trước khi dùng thiết bị.
-
-**Đối chiếu chương trình:** phát triển năng lực tin học ở mức "nhận biết thiết bị và ứng dụng tin học trong đời sống" (Tin học tiểu học), năng lực tự chủ và giải quyết vấn đề (GDPT 2018).
-
-## Vị trí của giai đoạn này trong hành trình
-
-Đây là viên gạch đầu tiên. Giai đoạn 02 sẽ dạy em **tư duy giải quyết vấn đề** — thứ làm nên "một nửa con người" của máy tính; giai đoạn 03 dạy **dữ liệu** — "thức ăn" của máy học. Nói cách khác: giai đoạn 01 cho em biết AI **là ai**; hai giai đoạn sau sẽ cho em biết AI **hoạt động thế nào**.
+Đây là chặng đầu tiên của lộ trình 170 chặng. Bạn sẽ học AI là gì, gồm những loại nào, các lĩnh vực con của AI, các ví dụ AI trong đời sống xung quanh bạn, và giới hạn hiện tại của công nghệ này. Sau chặng này, bạn sẽ không còn nhầm AI với "chatbot" hay "phần mềm tự động" — bạn sẽ có một khung khái niệm chính xác để tiếp thu 169 chặng tiếp theo.
 
 ---
 
-## Nội dung bài học
+## Phần A — Kiến thức
 
-### Bài 1 (35 phút): AI là gì? — Khám phá cùng Robot Bi
+### A.1. Trí tuệ nhân tạo (AI) là gì
 
-**Khởi động (5 phút):** Giáo viên/phụ huynh "lồng tiếng" Robot Bi:
+**Trí tuệ nhân tạo** (*Artificial Intelligence*, viết tắt **AI**) là ngành khoa học máy tính nghiên cứu việc xây dựng các hệ thống máy tính có thể thực hiện những việc từng cần trí tuệ người — như nhận dạng hình ảnh, hiểu ngôn ngữ nói, chơi cờ, dịch văn bản, hay đưa ra quyết định trong điều kiện không chắc chắn.
 
-> "Chào các bạn! Mình là Robot Bi. Bạn có biết điều gì làm mình khác một cái ghế không? Cái ghế chỉ ngồi được, còn mình — mình **làm việc** theo lệnh: tính toán, trả lời, nhận biết. Nhưng có loại máy còn giỏi hơn mình nữa: chúng **học được từ ví dụ**, giống hệt bạn học chữ vậy. Người ta gọi chúng là máy AI. Trí tuệ nhân tạo, nghe ngầu lắm đúng không? Tiếng Anh là *Artificial Intelligence*, viết tắt là *AI*!"
+Định nghĩa chuẩn của Russell & Norvig trong giáo trình *Artificial Intelligence: A Modern Approach* (2020, 4th edition) là:
 
-**Khám phá (15 phút) — Trò chơi "Đoán xem ai thông minh":** Đọc từng câu, em đoán xem đó là con người hay máy:
+> "AI là nghiên cứu các *agent* (tác tử) nhận thông tin từ môi trường qua cảm biến và hành động qua cơ cấu tác động, sao cho hành động đó giúp đạt mục tiêu."
 
-| Câu hỏi | Trả lời gợi ý |
-|---------|----------------|
-| Ai tính 12.345 + 67.890 chỉ trong 1 giây? | Máy — máy tính cực nhanh với các phép tính |
-| Ai nhìn một bức ảnh ngay lập tức biết đó là mẹ hay là dì? | Con người (và máy AI hiện đại cũng học làm được điều này!) |
-| Ai nghe giọng nói và biết bạn đang hỏi "Trời mưa không?"? | Con người; trợ lý ảo là máy AI học được việc này |
-| Ai học đạp xe chỉ sau vài lần ngã? | Con người — máy không ngã được nhưng cũng không tự học cách đạp xe như trẻ |
-| Ai đọc 1 triệu trang sách trong 1 phút? | Máy |
+Định nghĩa này có hai ý quan trọng:
+1. AI là một **agent** — nó nhận input và tạo ra output có mục đích, không ngẫu nhiên.
+2. AI **tương tác với môi trường** — nó không tồn tại trong chân không, mà hành động dựa trên thông tin nhận được và ảnh hưởng trở lại môi trường.
 
-Kết luận của Bài 1: máy **nhanh** ở việc tính và nhớ, người **giỏi** ở việc hiểu và cảm nhận. AI là nỗ lực dạy máy làm được những việc từng chỉ người làm được — bằng cách cho máy **học từ nhiều ví dụ**.
+Một cách định nghĩa khác, phổ biến trong công nghiệp: **AI là tập hợp các kỹ thuật cho phép máy tính học từ dữ liệu để thực hiện việc cần trí tuệ người**. Khác với phần mềm truyền thống (người viết quy tắc rõ ràng), phần mềm AI tự rút ra quy tắc từ dữ liệu.
 
-**Chốt (5 phút):** Cùng nói lại thành 1 câu — "AI là máy tính thông minh, được học từ nhiều ví dụ để giúp con người làm việc." Mỗi em nói to câu này một lần cho Robot Bi "ghi vào bộ nhớ".
+### A.2. Ba cấp độ AI theo năng lực
 
-### Bài 2 (35 phút): Đi săn tìm AI xung quanh em
+Khi đọc báo chí, bạn sẽ thấy nhiều phân loại AI. Phân loại chuẩn nhất theo năng lực:
 
-**Chuẩn bị:** Phụ huynh mở sẵn vài ứng dụng trên điện thoại/máy tính (có xin phép trước), hoặc giáo viên trình chiếu màn hình lớp.
+| Cấp độ | Tên | Đặc điểm | Tình trạng hiện tại (2025) |
+|--------|-----|----------|----------------------------|
+| 1 | **AI hẹp** (*Narrow AI / Weak AI*) | Xử lý một việc cụ thể: nhận dạng ảnh, dịch văn bản, chơi cờ vua | Tồn tại và phổ biến. Mọi AI bạn dùng hằng ngày đều hẹp. |
+| 2 | **AI tổng quát** (*General AI / Strong AI / AGI*) | Học được mọi việc trí tuệ người có thể học, chuyển kiến thức giữa lĩnh vực | Chưa tồn tại. Là mục tiêu nghiên cứu dài hạn. |
+| 3 | **Siêu trí tuệ** (*Superintelligence*) | Vượt người trên mọi lĩnh vực trí tuệ | Hoàn toàn giả thuyết. |
 
-**Khám phá (20 phút) — "Đội săn AI" đi tìm 6 dấu chân:** Với mỗi dấu chân, người lớn điều khiển thiết bị, trẻ quan sát và trả lời: "Máy vừa làm gì giúp mình?"
+Lưu ý quan trọng: **không có AI tổng quát hay siêu trí tuệ tồn tại ở thời điểm hiện tại**, dù một số công ty (OpenAI, DeepMind, Anthropic) tuyên bố hướng tới AGI. Mọi "AI" bạn gặp — ChatGPT, Midjourney, Gemini, hệ thống tự lái Tesla — đều là AI hẹp, chỉ xử lý một (hoặc một vài) việc cụ thể rất giỏi.
 
-1. **Trợ lý ảo** (Google Assistant / Siri / Alexa): nói "Bây giờ mấy giờ?" — máy nghe giọng và trả lời. Máy **nghe** được!
-2. **Gợi ý video** (YouTube Kids): máy gợi ý video mới — ai bảo máy biết em thích gì? Máy **quan sát** lịch sử xem của em.
-3. **Dịch máy** (Google Dịch): gõ một câu tiếng Việt, xem nó biến thành tiếng Anh. Máy **đọc và dịch** ngôn ngữ.
-4. **Mở khóa bằng khuôn mặt**: điện thoại nhìn mặt bố/mẹ là tự mở. Máy **nhận ra khuôn mặt**.
-5. **Camera chụp ảnh tự tìm mặt người** (khung vàng quanh mặt): máy **tìm** khuôn mặt trong ảnh.
-6. **Chatbot** (hỏi bất kỳ trợ lý AI nào "Bạn là ai?"): máy **trò chuyện** bằng chữ.
+### A.3. Bốn lĩnh vực con chính của AI
 
-**Thảo luận (10 phút):** Ba câu hỏi cùng Robot Bi:
-- "Trong 6 dấu chân trên, dấu nào khiến em ngạc nhiên nhất? Vì sao?"
-- "Máy nào trong số đó chắc chắn phải 'học' nhiều mới làm được?" (Gợi ý: mở khóa khuôn mặt phải học từ ảnh mặt bố mẹ rất nhiều lần.)
-- "Nếu không có các máy này, việc gì em phải tự làm?" (Gợi ý: tự tra từ điển, tự nhớ giờ, tự chọn video...)
+AI không phải khối thống nhất — nó là một ngành gồm nhiều lĩnh vực con. Bốn lĩnh vực phổ biến nhất, và là trọng tâm lộ trình này:
 
-**Chốt (5 phút):** Robot Bi kết luận — "AI không ở trong phòng thí nghiệm đâu. Nó sống trong điện thoại, TV, xe của bố mẹ. Từ hôm nay, đôi mắt 'thợ săn AI' của các bạn đã mở rồi đấy!"
+#### A.3.1. Học máy (*Machine Learning*, ML)
 
-### Bài 3 (35 phút): Máy học như em học — từ ví dụ đến nhận biết
+ML là nhánh AI trong đó máy **tự học quy tắc từ dữ liệu** thay vì được người lập trình từng quy tắc. Ví dụ: để máy nhận dạng mèo, không ai viết quy tắc "có tai nhọn + có ria + 4 chân = mèo" — người ta cho máy xem 10.000 ảnh mèo và 10.000 ảnh không phải mèo, máy tự tìm quy luật phân biệt.
 
-**Hoạt động unplugged (20 phút) — "Huấn luyện Robot Bi nhận biết 'quả tròn'":**
+ML lại chia thành:
+- **Học có giám sát** (*supervised learning*): dữ liệu có nhãn (ảnh mèo có nhãn "mèo", ảnh chó có nhãn "chó"). Máy học ánh xạ input → nhãn.
+- **Học không giám sát** (*unsupervised learning*): dữ liệu không nhãn. Máy tìm cấu trúc ẩn (phân cụm khách hàng, giảm chiều dữ liệu).
+- **Học tăng cường** (*reinforcement learning*): máy học qua thử-sai với thưởng/phạt (chơi cờ, đi xe, robot).
 
-1. Chuẩn bị 10 tấm thẻ: 6 tấm vẽ/viết đồ vật (quả cam, quả bóng, quả bầu dục, cuốn sách, cái ly, viên gạch), 4 tấm trống.
-2. Người lớn đóng vai "Robot Bi biết bám lệnh": chỉ nhận biết bằng 2 tính chất được "dạy".
-3. Trẻ là "giáo viên của máy": nhìn 3–4 ví dụ quả tròn (cam, bóng...) và **tự phát hiện quy tắc**: "tròn là quả tròn".
-4. Sau đó kiểm tra: đưa thẻ "viên gạch" — robot hỏi "Đây là quả tròn không?" — trẻ phải trả lời kèm lý do quy tắc.
-5. Thử "dữ liệu xấu": nếu ban đầu chỉ cho robot xem quả cam và quả bóng to — robot có thể sẽ nói "to và tròn mới là quả tròn" rồi chối bỏ quả bầu dục nhỏ! Đây chính là lúc trò chuyện: **máy học đúng hay sai phụ thuộc vào ví dụ mình cho nó xem.**
+ML được học chuyên sâu ở Phần E (chặng 101–120).
 
-Đây là "hạt giống" của khái niệm học máy (*machine learning*): máy không được người viết từng quy tắc nhỏ, mà tự rút ra quy tắc từ ví dụ — và ví dụ càng đa dạng, quy tắc càng đúng.
+#### A.3.2. Học sâu (*Deep Learning*, DL)
 
-**Kết nối (10 phút):** Quay lại 6 dấu chân AI ở Bài 2 — với mỗi dấu chân, em đoán xem máy đã "xem" hàng nghìn ví dụ gì để học được? (Khuôn mặt: hàng nghìn ảnh mặt. Dịch máy: hàng triệu câu song ngữ. Trợ lý ảo: hàng triệu mẫu giọng nói.)
+DL là nhánh con của ML dùng **mạng nơ-ron nhân tạo nhiều lớp** (*deep neural networks*). "Sâu" ở đây không phải trí tuệ sâu — mà là mạng có nhiều lớp (lớp ẩn). DL đặc biệt mạnh với dữ liệu phi cấu trúc: ảnh, âm thanh, văn bản. ChatGPT, Midjourney, hệ thống tự lái — đều dùng DL.
 
-**Chốt (5 phút):** Câu thần chú của giai đoạn 01: **"Máy học từ ví dụ — ví dụ tốt làm máy khôn, ví dụ lệch làm máy sai."**
+DL được học chuyên sâu ở Phần F (chặng 121–140).
 
-### Bài 4 (35 phút): AI giỏi điều gì, chưa giỏi điều gì
+#### A.3.3. Thị giác máy tính (*Computer Vision*, CV)
 
-**Trò chơi "Nhanh hay chậm" (15 phút):** Giáo viên đọc tình huống, em giơ bảng: chữ **M** (máy làm tốt hơn) hoặc **N** (người làm tốt hơn):
+CV là nhánh AI xử lý dữ liệu hình ảnh/video: nhận dạng đối tượng, phân đoạn ảnh, phát hiện khuôn mặt, mô tả ảnh bằng văn bản. CV kết hợp kỹ thuật DL (đặc biệt CNN) với xử lý ảnh số học.
 
-| Tình huống | Đáp án gợi ý |
-|------------|--------------|
-| Nhân hai số 8 chữ số | M — máy tính nhanh và không mệt |
-| Nhớ lại 1 triệu hình ảnh để tìm hình con mèo | M — máy AI nhận dạng ảnh giỏi |
-| Biết bạn buồn chỉ qua nét mặt | N — người thấu cảm tốt hơn máy |
-| Quyết định bạn nào cùng nhóm chơi trò chơi để vui cả nhóm | N — cần hiểu tâm lý bạn bè |
-| Kiểm tra 10.000 bức ảnh tìm ảnh sai quy định | M — việc lặp lại nhiều, quy tắc rõ |
-| Sáng tác câu chuyện khiến cả lớp cười | N — dù AI sinh được câu chuyện, hiểu "vui" vẫn là của người |
+CV được giới thiệu sơ lược ở chặng 19, 66; chuyên sâu ở chặng 127–132, 160.
 
-**Thảo luận (10 phút):** "Vậy máy thông minh hoàn toàn như người chưa? Em nghĩ máy có 'hiểu' điều nó làm không, hay chỉ 'làm theo học được'?" — Không có đáp án đúng tuyệt đối; mục đích là em dám nêu ý và lắng nghe ý bạn. Robot Bi bày tỏ quan điểm: "Mình làm được nhiều việc, nhưng mình không biết 'vui' là gì đâu!"
+#### A.3.4. Xử lý ngôn ngữ tự nhiên (*Natural Language Processing*, NLP)
 
-**Hướng dẫn làm sản phẩm (10 phút):** Giới thiệu cách làm "Nhật ký AI của em" (xem mục Sản phẩm bên dưới), gấp 5 tờ giấy thành quyển nhỏ, viết bìa: tên, lớp, "Nhật ký AI của em".
+NLP là nhánh AI xử lý ngôn ngữ người (văn bản, lời nói): dịch máy, tóm tắt, phân loại cảm xúc, chatbot, hỏi-đáp. NLP kết hợp kỹ thuật DL (đặc biệt Transformer) với ngôn ngữ học.
+
+NLP được giới thiệu sơ lược ở chặng 20, 67; chuyên sâu ở chặng 133–140, 161.
+
+Ngoài bốn lĩnh vực trên, AI còn có các nhánh khác: **robot học** (*robotics*), **hệ chuyên gia** (*expert systems*), **lập luận tự động** (*automated reasoning*), **tìm kiếm và tối ưu** (*search and optimization*). Các nhánh này ít phổ biến hơn trong ứng dụng thương mại hiện nay, nhưng quan trọng về mặt lịch sử và lý thuyết.
+
+### A.4. AI quanh bạn — sáu dấu chân trong đời sống
+
+Để hiểu AI không phải thứ viễn tưởng, hãy xem sáu hệ thống AI bạn có thể đã dùng hôm nay:
+
+1. **Trợ lý ảo** (*virtual assistant*): Google Assistant, Siri, Alexa. Bạn nói "Bây giờ mấy giờ?" — máy nghe giọng bạn (NLP), chuyển thành chữ, hiểu ý định, tra dữ liệu, nói lại câu trả lời (TTS). Đây là pipeline NLP end-to-end.
+
+2. **Gợi ý video** (*recommendation system*): YouTube, TikTok, Netflix. Khi bạn xem xong một video, hệ thống dùng lịch sử xem của bạn và hàng triệu người dùng tương tự để dự đoán video tiếp theo bạn có thể thích. Đây là ML học có giám sát + học không giám sát.
+
+3. **Dịch máy** (*machine translation*): Google Dịch, DeepL. Bạn gõ câu tiếng Việt, hệ thống mã hóa câu thành vector số, dịch chuyển ngữ nghĩa qua không gian vector, rồi giải mã ra tiếng Anh. Đây là DL với kiến trúc Transformer (chặng 137).
+
+4. **Mở khóa bằng khuôn mặt** (*face unlock*): điện thoại nhìn mặt bạn, so với khuôn mặt đã đăng ký. Hệ thống dùng CV (đặc biệt CNN) để trích đặc trưng khuôn mặt thành vector, so khoảng cách vector mới với vector đã lưu. Đây là DL + CV.
+
+5. **Camera tự tìm mặt** (*face detection*): khung vàng quanh mặt khi chụp ảnh. Hệ thống quét ảnh theo cửa sổ trượt, mỗi cửa sổ đưa qua mạng CNN đã huấn luyện nhận "đây có phải mặt người không". Đây là CV + DL.
+
+6. **Chatbot** (*chatbot*): ChatGPT, Claude, Gemini. Bạn hỏi bằng văn bản, hệ thống dự đoán token tiếp theo có xác suất cao nhất dựa trên văn bản đã có, lặp lại nhiều lần để tạo câu trả lời. Đây là DL + NLP với mô hình ngôn ngữ lớn (LLM).
+
+Điểm chung của sáu hệ thống: **mỗi cái đều "học" từ lượng dữ liệu khổng lồ** trước khi hoạt động. Không có hệ thống nào được lập trình bằng tay từng quy tắc. Đây là đặc trưng của AI hiện đại.
+
+### A.5. AI giỏi việc gì, chưa giỏi việc gì
+
+Hiểu giới hạn AI quan trọng không kém hiểu năng lực của nó. Bảng sau tổng kết:
+
+| Việc | AI hiện nay giỏi? | Lý do |
+|------|-------------------|-------|
+| Tính toán số học trên lượng lớn | Rất giỏi | Máy tính vốn sinh ra để tính |
+| Tìm mẫu hình trong dữ liệu lớn | Rất giỏi | ML thiết kế cho việc này |
+| Nhận dạng ảnh/âm thanh ở quy mô lớn | Rất giỏi | DL với CNN/Transformer đã vượt người |
+| Dịch văn bản giữa ngôn ngữ phổ biến | Khá giỏi | Nhưng vẫn sai ở ngữ cảnh tinh tế |
+| Hiểu cảm xúc người khác | Kém | Cần lý thuyết tâm trí, AI chưa có |
+| Đưa ra quyết định đạo đức | Kém | Không có "hàm đạo đức" để tối ưu |
+| Sáng tạo kiến thức mới | Kém | AI tổng hợp từ dữ liệu đã có, không kiến tạo |
+| Học một việc mới từ 1–2 ví dụ | Rất kém | AI cần hàng nghìn/triệu ví dụ |
+| Chuyển kiến thức giữa lĩnh vực khác nhau | Rất kém | Đây là ranh giới với AGI |
+
+Nguyên lý sâu xa: AI hiện nay giỏi việc **lặp lại quy luật đã có trong dữ liệu**, kém việc **hiểu ngữ cảnh và chuyển ý nghĩa**. Khi đọc tin "AI sắp thay thế X", hãy hỏi: "X có phải việc lặp quy luật dữ liệu, hay việc hiểu ngữ cảnh?". Câu trả lời cho biết mức độ đáng tin của tin.
+
+### A.6. Học máy khác lập trình truyền thống ở đâu
+
+Để thực sự hiểu AI, phải hiểu sự khác biệt với lập trình truyền thống:
+
+**Lập trình truyền thống**: người lập trình viết **quy tắc** rõ ràng. Ví dụ phần mềm tính thuế: `if (thu_nhap > 11e6) then thue = ... ` — mỗi trường hợp một dòng code. Ưu điểm: rõ ràng, kiểm chứng được. Nhược điểm: không khả thi với việc phức tạp (nhận dạng mèo cần bao nhiêu quy tắc?).
+
+**Học máy**: người lập trình không viết quy tắc. Họ viết **thuật toán học**, cung cấp **dữ liệu** (input + nhãn), thuật toán tự tìm ra quy tắc. Ưu điểm: mở rộng được cho việc phức tạp. Nhược điểm: quy tắc tìm được không dễ giải thích ("tại sao máy đoán đây là mèo?").
+
+Bảng so sánh:
+
+| Khía cạnh | Lập trình truyền thống | Học máy |
+|-----------|------------------------|---------|
+| Người viết quy tắc | Lập trình viên | Thuật toán (tự rút từ dữ liệu) |
+| Dữ liệu | Input cho chương trình | Vừa input vừa "giáo viên" của thuật toán |
+| Khi quy luật phức tạp | Code rất dài, khó bảo trì | Thuật toán vẫn ngắn, chỉ cần thêm dữ liệu |
+| Khi cần giải thích | Code chính là giải thích | Cần kỹ thuật riêng (SHAP, LIME — chặng 143) |
+| Phù hợp khi | Quy luật rõ, cố định | Quy luật ẩn trong dữ liệu, khó viết tay |
+
+Lộ trình này bắt đầu bằng lập trình truyền thống (Phần B) trước khi sang ML (Phần E) — vì hiểu lập trình là nền cho hiểu ML.
+
+### A.7. Một câu thần chú để nhớ
+
+Sau khi đọc phần Kiến thức, hãy nhẩm một câu tóm tắt:
+
+> **AI là ngành xây dựng agent thông minh. Cách tiếp cận phổ biến nhất là cho máy học quy tắc từ rất nhiều dữ liệu (thay vì viết tay quy tắc). AI hiện nay đều là AI hẹp — giỏi việc lặp quy luật dữ liệu, kém việc hiểu ngữ cảnh.**
+
+Nếu bạn có thể viết lại câu này bằng lời của mình mà không xem tài liệu — bạn đã hiểu phần Kiến thức. Nếu không, hãy đọc lại A.1–A.6 trước khi sang phần Thực hành.
 
 ---
 
-## Sản phẩm cuối giai đoạn: "Nhật ký AI của em"
+## Phần B — Thực hành
 
-**Yêu cầu:** một quyển mini gồm 5 trang:
+Để biến kiến thức thành trực giác, bạn cần tự tay quan sát và phản xạ. Bài tập sau xếp từ dễ đến khó. Bài sao ★ là bắt buộc; bài không sao là tùy chọn mở rộng.
 
-| Trang | Nội dung | Điều kiện đạt |
-|-------|----------|---------------|
-| Bìa | Tên em, lớp, ngày làm, 1 hình Robot Bi vẽ tay | Đầy đủ thông tin |
-| 1 | "AI là gì?" — 1–2 câu định nghĩa bằng lời của em + hình minh họa | Định nghĩa có nhắc máy **học từ ví dụ** và **giúp người** |
-| 2–3 | 5 "dấu chân AI" em tìm thấy tại nhà: vẽ hoặc dán hình + 1 câu mô tả "Máy này giúp mình..." | Đủ 5 ví dụ, mỗi ví dụ có 1 câu mô tả đúng |
-| 4 | "Máy giỏi / Người giỏi" — bảng 2 cột, mỗi cột 2 ý | 4 ý đúng logic |
-| 5 | "Điều em muốn máy AI học thêm" — 1 câu + hình | Có 1 mong muốn cụ thể (ví dụ: "máy dịch tiếng Ê Đê") |
+### Bài 1 ★: Săn tìm 6 dấu chân AI trong đời sống bạn
 
-**Trình bày:** mỗi em giới thiệu nhật ký trong 1 phút trước lớp hoặc gia đình. Đây là lần thuyết trình đầu tiên của hành trình — ngắn thôi, quan trọng là dám nói.
+Mở một tệp markdown `portfolio-ai/phan-a/chặng-01-nhat-ky-ai/observations.md`. Trong 3 ngày tiếp theo, mỗi ngày quan sát ít nhất 2 hệ thống AI bạn dùng. Mỗi lần quan sát, ghi:
 
-## Tiêu chí đánh giá (rubric)
+| Hệ thống | Input của nó | Output của nó | Dữ liệu nó đã học từ đâu | Lĩnh vực AI (ML/DL/CV/NLP) |
+|----------|--------------|---------------|--------------------------|----------------------------|
+| Gợi ý video YouTube | Lịch sử xem của tôi | Danh sách video gợi ý | Lịch sử xem hàng tỷ người | ML (học có giám sát) |
+| ... | ... | ... | ... | ... |
 
-| Tiêu chí | Mức 1 — Cần cố gắng | Mức 2 — Đạt | Mức 3 — Tốt |
-|----------|---------------------|-------------|--------------|
-| Nhận biết AI | Chỉ ra 1–2 ví dụ, cần gợi ý | 5 ví dụ đúng với mô tả ngắn | 5 ví dụ + tự tìm thêm ví dụ mới ngoài gợi ý |
-| Hiểu "máy học từ ví dụ" | Nói lại chưa trọn câu thần chú | Nói đúng ý "máy học từ ví dụ" | Nêu được thêm "ví dụ lệch làm máy sai" với ví dụ của riêng em |
-| Nhật ký AI | Có bìa và 1–2 trang | Đủ 5 trang đúng yêu cầu | Đủ 5 trang + trang trí đẹp + ví dụ mang cá tính riêng (địa phương, gia đình) |
-| Thuyết trình | Đọc thông báo, chưa nhìn người nghe | Nói 1 phút, nhìn người nghe | Nói 1 phút trôi chảy, mời bạn hỏi thêm 1 câu |
+Cố gắng thu được ít nhất 6 hệ thống. Đừng dán ví dụ của tài liệu — hãy quan sát đời sống bạn.
 
-## Lưu ý cho phụ huynh và giáo viên
+### Bài 2 ★: Phân biệt AI vs không-AI
 
-- **Đồng hành là chính, không kiểm tra là chính.** Mục tiêu lớn nhất của giai đoạn này là niềm hứng thú. Nếu em chỉ ra được 3 ví dụ nhưng đang rất háo hức — đó là thành công, đừng ép đủ 5 ngay.
-- **Quy tắc thiết bị:** trẻ dùng điện thoại chỉ khi có người lớn bên cạnh; người lớn điều khiển, trẻ quan sát và trả lời. Vô tình tạo thói quen này ngay từ giai đoạn đầu sẽ giúp các giai đoạn sau (dùng Teachable Machine, trợ lý ảo) suôn sẻ hơn.
-- **Tránh nói quá lên:** không nói "AI là thần thánh" cũng như "máy chỉ là đồ vô tri". Câu chuẩn mực của giai đoạn: máy học được một số việc từ ví dụ, giỏi việc đó, nhưng không phải biết hết mọi thứ như người.
-- **Học sinh lớp 1–2 chưa đọc trôi chảy:** phụ huynh đọc giúp toàn bộ, em nói — phụ huynh ghi lại. Sản phẩm được tính như bình thường.
-- **Người lớn tự học:** hãy làm sản phẩm theo phiên bản người lớn (định nghĩa sâu hơn 1 chút, ví dụ trong công việc của bạn) — quy trình vẫn vậy.
+Đánh dấu X vào cột phù hợp cho mỗi tình huống dưới đây. Cố gắng suy nghĩ trước khi xem đáp án ở cuối tệp.
 
-## Bước tiếp theo
+| Tình huống | Có dùng AI | Không dùng AI |
+|------------|------------|----------------|
+| 1. Máy tính thường cộng 25 + 75 | | |
+| 2. Điện thoại gợi ý từ tiếp theo khi bạn nhắn tin | | |
+| 3. Quạt quay theo nút bấm cấp 1, 2, 3 | | |
+| 4. Ứng dụng bản đồ vẽ lộ trình tránh đường kẹt | | |
+| 5. Đồng hồ báo thức reo đúng 6 giờ sáng mỗi ngày | | |
+| 6. Ứng dụng học tiếng Anh chấm giọng đọc của bạn | | |
+| 7. Máy lạnh tự tăng giảm theo nhiệt độ phòng và thói quen nhà | | |
+| 8. Cái kéo cắt giấy | | |
+| 9. ChatGPT trả lời câu hỏi của bạn | | |
+| 10. Email được tự động phân vào "Spam" | | |
 
-Khi nhật ký đã hoàn thành và được xác nhận trên phiếu tự đánh giá — chúc mừng em đã có sản phẩm đầu tiên trong portfolio! Hẹn gặp ở [Giai đoạn 02: Tư duy giải quyết vấn đề](../giai-doan-02-tu-duy-giai-quyet-van-de/README.md), nơi Robot Bi sẽ đột ngột trở nên... rất "cứng đầu": chỉ làm chính xác từng bước em bảo, không thêm không bớt. Em sẽ hiểu vì sao máy cần những chỉ dẫn cực kỳ rõ ràng — đó là kỹ năng quan trọng nhất để sau này nói chuyện với máy tính.
+Sau khi đánh dấu, viết 1 đoạn 100 chữ giải thích: **Điểm khác cốt lõi giữa hệ thống có AI và không AI là gì?** (Gợi ý: AI phải "học" từ dữ liệu; không AI thì làm theo quy tắc cố định.)
+
+### Bài 3 (tùy chọn): Phân tích 1 hệ thống AI sâu hơn
+
+Chọn 1 hệ thống AI bạn dùng nhiều (vd: ChatGPT, gợi ý YouTube, Google Dịch). Viết 1 bài 300–500 chữ trả lời:
+
+1. Input chính của hệ thống là gì?
+2. Output chính là gì?
+3. Bạn đoán hệ thống đã học từ đâu? (kiểu dữ liệu, nguồn, lượng dữ liệu ước lượng)
+4. Một việc hệ thống làm tốt — vì sao?
+5. Một việc hệ thống làm kém — vì sao?
+6. Nếu bạn là kỹ sư của hệ thống, bạn sẽ thu thập thêm dữ liệu gì để cải thiện?
+
+Bài này không có đáp án "đúng". Mục đích là tập tư duy ngược: từ trải nghiệm người dùng → đoán thiết kế bên trong.
+
+### Bài 4 (tùy chọn): Trò chơi "Huấn luyện máy từ thẻ hình"
+
+Trò chơi này giúp bạn trải nghiệm trực giác về học máy — không cần máy tính.
+
+Chuẩn bị 10 tấm thẻ: 6 tấm vẽ đồ vật (quả cam, quả bóng, cuốn sách, cái ly, viên gạch, quả bầu dục), 4 tấm trống để bạn tự điền.
+
+Cách chơi:
+1. Đóng vai "máy" — chỉ nhận biết bằng 2 tính chất bạn chọn.
+2. Bạn (vai "người dạy") xem 3–4 ví dụ quả tròn (cam, bóng...) và tự phát hiện quy tắc: "tròn là quả tròn".
+3. Đưa thẻ "viên gạch" — bạn (vai máy) hỏi "Đây là quả tròn không?" và trả lời kèm lý do dựa trên quy tắc đã học.
+4. Thử "dữ liệu xấu": nếu ban đầu chỉ cho máy xem quả cam và quả bóng to — máy sẽ nói "to và tròn mới là quả tròn" rồi chối quả bầu dục nhỏ. Đây là hiện tượng **overfitting** — máy học quá khít vào ví dụ cụ thể, không khái quát được.
+
+Sau khi chơi, viết 2–3 dòng vào `observations.md`: bạn rút ra được gì về mối quan hệ giữa dữ liệu huấn luyện và hành vi của "máy"? Đây là nền tảng trực giác cho chặng 105 (Overfitting & Underfitting) sau này.
+
+### Bài 5 (tùy chọn): Báo cáo "Ví dụ xấu"
+
+Nghĩ 1 tình huống: nếu huấn luyện máy nhận biết "cán bộ" chỉ bằng ảnh những người đeo kính, máy sẽ kết luận gì về người không đeo kính? Viết 2 câu:
+
+1. Máy học sai khi: __________________________________
+2. Để máy học đúng hơn, ta cần cho nó xem: __________________________________
+
+Đây là lần đầu bạn chạm vào ý tưởng quan trọng: **dữ liệu không tốt làm máy đối xử không công bằng**. Lộ trình sẽ quay lại ý tưởng này ở chặng 69 (thiên vị dữ liệu) — khi bạn đã có đủ công cụ để phân tích sâu.
+
+---
+
+## Phần C — Sản phẩm cuối chặng
+
+### "Nhật ký AI" — 5 trang ghi lại hệ thống AI trong đời sống bạn
+
+**Yêu cầu:** tạo một tệp markdown `portfolio-ai/phan-a/chặng-01-nhat-ky-ai/README.md` gồm 5 phần:
+
+| Phần | Nội dung | Điều kiện đạt |
+|------|----------|---------------|
+| 1. Định nghĩa AI | 1–2 câu định nghĩa bằng lời bạn, không chép tài liệu | Có nhắc "học từ dữ liệu" và "làm việc cần trí tuệ người" |
+| 2. Bảng phân loại AI | 3 cấp độ (hẹp/tổng quát/siêu trí tuệ) + tình trạng hiện tại | Đúng theo bảng A.2 |
+| 3. Bảng 4 lĩnh vực con | ML, DL, CV, NLP — 1 dòng mô tả mỗi lĩnh vực | Đúng định nghĩa |
+| 4. 6 dấu chân AI | Bảng 6 hệ thống AI bạn quan sát được trong 3 ngày (theo mẫu Bài 1) | Đủ 6 ví dụ với 5 cột điền đủ |
+| 5. Câu hỏi mở | 1 câu hỏi về AI bạn muốn tìm hiểu tiếp (vd: "Làm sao máy học được ngữ cảnh?") | Câu hỏi cụ thể, có thể trả lời dần qua lộ trình |
+
+Lưu tệp vào portfolio. Đây là artifact đầu tiên trong hành trình 170 chặng.
+
+---
+
+## Phần D — Tự đánh giá
+
+Checklist cuối chặng. Đánh dấu X vào mỗi ô khi đạt.
+
+```
+□ Tôi đã đọc toàn bộ phần Kiến thức (A.1–A.7)
+□ Tôi có thể giải thích AI bằng lời của mình (Feynman test)
+□ Tôi có thể phân biệt AI hẹp, tổng quát, siêu trí tuệ
+□ Tôi có thể liệt kê 4 lĩnh vực con của AI kèm ví dụ
+□ Tôi đã làm xong Bài 1 và Bài 2 (sao ★)
+□ Tôi đã hoàn thành "Nhật ký AI" và lưu vào portfolio
+□ Tôi đã ghi 1 mục vào learning-journal.md cho chặng này
+□ Tôi đã trả lời được câu hỏi "Kết nối về sau" trong tu-dien-va-tai-nguyen.md
+```
+
+Nếu 8/8 ô được đánh dấu — chúc mừng, bạn đã hoàn thành chặng 01. Sang [Chặn 02](../giai-doan-02-tu-duy-giai-quyet-van-de/README.md).
+
+Nếu có ô chưa đánh dấu — đừng sang chặng sau. Trở lại phần tương ứng.
+
+---
+
+## Phần E — Đáp án Bài 2
+
+| Tình huống | Có AI | Không AI | Lý do |
+|------------|-------|----------|-------|
+| 1. Máy tính cộng 25 + 75 | | X | Tính toán cố định, không học |
+| 2. Gợi ý từ nhắn tin | X | | Học từ lịch sử nhắn của hàng triệu người |
+| 3. Quạt quay theo nút | | X | Quy tắc cơ học |
+| 4. Bản đồ tránh kẹt | X | | Học từ dữ liệu giao thông thời gian thực |
+| 5. Đồng hồ báo thức | | X | Quy tắc cố định |
+| 6. Chấm giọng đọc tiếng Anh | X | | Học từ hàng triệu mẫu giọng |
+| 7. Máy lạnh theo thói quen | X | | Học từ dữ liệu sử dụng |
+| 8. Kéo cắt giấy | | X | Vật lý, không phải máy tính |
+| 9. ChatGPT | X | | LLM dự đoán token từ dữ liệu huấn luyện |
+| 10. Email vào Spam | X | | Học từ hàng triệu email đã được đánh dấu |
+
+Điểm cốt lõi: **hệ thống có AI học từ dữ liệu để đưa ra quyết định; hệ thống không AI làm theo quy tắc cố định do người viết**.

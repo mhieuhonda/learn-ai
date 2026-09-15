@@ -1,125 +1,427 @@
-# Giai đoạn 02 — Tư duy giải quyết vấn đề: các bước nhỏ dẫn đến thành công
+# Chặn 02 — Tư duy giải quyết vấn đề: các bước nhỏ dẫn đến thành công
 
-> "Robot Bi có một bí mật nè: mình hiểu được bạn nói gì đó... nhưng chỉ khi bạn nói ĐÚNG từng bước thôi đấy! Cứ nói 'hãy nấu mì cho mình' là mình bối rối ngay. Giai đoạn này, bạn sẽ học cách nói chuyện với một người 'cứng đầu' như mình — đó chính là kỹ năng quan trọng nhất của người làm máy tính!"
+Đây là chặng nền tảng quan trọng nhất của Phần A. Bạn sẽ học **tư duy máy tính** (*computational thinking*) — kỹ năng tư duy mà mọi lập trình viên, kỹ sư AI, nhà nghiên cứu đều dùng hằng ngày. Không cần máy tính; không cần biết gõ lệnh; cần duy nhất sự kiên nhẫn để phân rã việc lớn thành các bước nhỏ rõ ràng.
 
-## Thông tin chung
-
-| Mục | Chi tiết |
-|-----|----------|
-| Mã giai đoạn | GD-02 (Phần A — Khởi động) |
-| Đối tượng | Học sinh tiểu học lớp 3–5; người mới bắt đầu mọi lứa tuổi |
-| Thời lượng | 2 buổi x 35 phút + 15 phút cuối tuần cùng gia đình |
-| Tiên quyết | Giai đoạn 01 (biết AI học từ ví dụ; có tinh thần quan sát) |
-| Nguyên liệu | Giấy A4, bút màu, 2 tờ giấy kẻ ô vuông (lưới 5x5), 1 món đồ chơi nhỏ làm "mục tiêu", mì gói/khẩu phần đồ ăn đơn giản (cho hoạt động thực tế, tùy chọn) |
-| Sản phẩm cuối giai đoạn | **"Sách thuật toán của em"** — bộ 3 trang vẽ quy trình làm 3 việc hằng ngày |
-
-## Mục tiêu học tập
-
-**Kiến thức** — sau giai đoạn này, em có thể:
-1. Phân rã một việc lớn thành các bước nhỏ theo trình tự đúng.
-2. Nói được thuật toán là dãy các bước rõ ràng để làm một việc.
-3. Hiểu máy tính chỉ làm đúng theo từng lệnh, không tự "đoán ý".
-
-**Kỹ năng:**
-1. Viết/mô tả quy trình từng bước bằng lời và bằng hình vẽ.
-2. Tìm được lỗi (bước sai, bước thiếu, bước thừa) trong quy trình của bạn và sửa lại.
-
-**Thái độ:**
-1. Kiên nhẫn với sai sót — sai là phát hiện quý giá, sửa là tiến bộ.
-2. Thích giúp bạn: khen được ý hay, góp ý được chỗ chưa rõ.
-
-**Đối chiếu chương trình:** năng lực giải quyết vấn đề và sáng tạo (GDPT 2018); chủ đề "tổ chức thông tin, giải quyết vấn đề với sự trợ giúp của máy tính" (Tin học tiểu học).
-
-## Vị trí của giai đoạn này trong hành trình
-
-Giai đoạn 01 cho em biết AI **là gì**. Giai đoạn này cho em công cụ tư duy số 1 của cả ngành máy tính: **chia việc lớn thành các bước nhỏ, rõ ràng, có thứ tự** — người ta gọi đó là tư duy thuật toán. Giai đoạn 03 sẽ thêm viên gạch thứ hai: **dữ liệu**. Ba viên gạch này hợp thành nền móng cho toàn bộ 167 giai đoạn phía sau.
+Sau chặng này, bạn sẽ hiểu vì sao máy tính chỉ làm đúng khi được chỉ dẫn chính xác, vì sao "đoán ý" là đặc quyền của người chứ không phải máy, và vì sao "gỡ lỗi" là kỹ năng quan trọng hơn "viết đúng ngay lần đầu".
 
 ---
 
-## Nội dung bài học
+## Phần A — Kiến thức
 
-### Bài 1 (35 phút): Việc lớn — các bước nhỏ
+### A.1. Tư duy máy tính là gì
 
-**Khởi động (5 phút):** Robot Bi "giao nhiệm vụ" ngược đời: "Hãy làm giúp mình việc 'tổ chức sinh nhật cho bạn' — đi thôi!" Lớp/gia đình sẽ bối rối: tổ chức ở đâu? mời ai? mua gì? Đây là trải nghiệm: **chỉ dẫn quá chung chung thì không làm được**.
+**Tư duy máy tính** (*computational thinking*, viết tắt **CT**) là quá trình tư duy để giải quyết vấn đề theo cách mà máy tính có thể thực hiện — gồm 4 thành phần:
 
-**Khám phá (15 phút) — Phân rã "bức tường khổng lồ":** Đặt câu hỏi: "Làm sao ăn hết một cái bánh rất to?" — "Cắt nhỏ ra!" Đúng vậy, mọi việc lớn đều cắt được thành các bước nhỏ. Cùng làm "máy cắt việc" cho 3 việc sau (mỗi em chọn 1, viết/vẽ thành 5–7 bước):
+| Thành phần | Tiếng Anh | Định nghĩa |
+|-----------|-----------|------------|
+| Phân rã | Decomposition | Chia vấn đề lớn thành các phần nhỏ dễ giải quyết |
+| Mẫu hình | Pattern recognition | Tìm quy luật lặp lại trong vấn đề hoặc giữa các vấn đề |
+| Trừu tượng hóa | Abstraction | Lọc thông tin quan trọng, bỏ chi tiết thừa |
+| Thiết kế thuật toán | Algorithm design | Viết dãy bước rõ ràng, đúng thứ tự để giải quyết |
 
-- *Tổ chức sinh nhật cho bạn:* chọn ngày → lập danh sách bạn mời → viết thiệp → chuẩn bị bánh và trò chơi → trang trí → đón bạn → chơi và cắt bánh → dọn dẹp và cảm ơn.
-- *Đi học đúng giờ:* nghe chuông báo thức → rửa mặt, đánh răng → mặc đồng phục → ăn sáng → kiểm tra cặp sách → đi đến trường → vào lớp trước giờ học.
-- *Làm sạch bàn học:* gom sách vở xếp vào ngăn → bỏ rác vào thùng → lau bụng → xếp bút vào hộp → đặt lại chỗ đèn/nước.
+CT không phải "tư duy như máy" — nó là **tư duy để giao tiếp với máy**. Khi bạn giải thích một việc cho máy, bạn phải làm theo 4 bước trên vì máy không có trực giác, không có ngữ cảnh, không "đoán ý" được.
 
-**Chốt (10 phút):** So sánh các bước của em với bạn bên cạnh: ai thiếu bước nào, ai thừa bước nào? Rồi Robot Bi giới thiệu khái niệm: **Phân rã** (*decomposition*) — chia việc lớn thành các việc nhỏ có thứ tự. Nửa sau của bài: gọi tên một khái niệm mới — **Thuật toán** (*algorithm*): dãy các bước rõ ràng, đúng thứ tự để hoàn thành một việc. Công thức nấu ăn, hướng dẫn lắp ghép, quy tắc an toàn giao thông — tất cả đều là thuật toán của đời sống!
+Lộ trình 170 chặng này xây toàn bộ kỹ năng AI trên nền CT — bạn sẽ gặp lại 4 thành phần này ở mọi chặng.
 
-### Bài 2 (35 phút): Lệnh chính xác — máy không đoán ý
+### A.2. Phân rã vấn đề (*decomposition*)
 
-**Trò chơi chính (25 phút) — "Chỉ lệnh cho Robot Bi" (phiên bản lưới ô vuông):**
+Một việc lớn luôn có thể chia thành các việc nhỏ hơn. **Phân rã** là kỹ năng chia việc lớn thành các phần nhỏ sao cho:
 
-1. Chuẩn bị: 2 tờ giấy kẻ lưới 5x5 đặt cạnh nhau. Em giữ tờ của mình (bản đồ) — trên đó có đặt "mục tiêu" ở ô nào đó và "Robot Bi" (hình tròn) ở ô góc.
-2. Người thân/bạn cầm tờ giấy trắng (bản đồ trống), đóng vai Robot Bi — không nhìn bản đồ của em.
-3. Em ra lệnh, Robot Bi làm đúng từng lệnh: "Tiến 1 ô", "Rẽ phải", "Tiến 2 ô"...
-4. Kết thúc, đối chiếu 2 tờ: Robot Bi có đến đúng ô mục tiêu không?
+- Mỗi phần đủ nhỏ để giải quyết một mình
+- Các phần có ranh giới rõ (không chồng lấn)
+- Thứ tự các phần rõ ràng (nếu có phụ thuộc)
+- Tổng các phần = việc lớn ban đầu
 
-**Lần 2 — chơi "bẫy lệnh":** Người lớn điều khiển Robot Bi cực kỳ literal: lệnh "Tiến đến gần cái ghế" → robot hỏi "Gần là bao nhiêu ô?"; lệnh "Đi quanh bàn" → "Quanh mấy bước? Đi ngược chiều nào?" Trẻ sẽ bật cười và rút ra bài học vàng: **lệnh cho máy phải chính xác, rõ ràng, không để máy đoán.**
+**Ví dụ — Phân rã "Tổ chức sinh nhật cho bạn":**
 
-**Chốt (10 phút):** Ba điều em vừa học — gọi tên chính thức:
-- **Lệnh** (*command/instruction*): chỉ dẫn một hành động cụ thể.
-- **Trình tự** (*sequence*): thứ tự các lệnh — đổi thứ tự là đổi kết quả.
-- **Gỡ lỗi** (*debug*): khi Robot Bi đi sai, ta xem lại từng lệnh tìm chỗ sai rồi sửa — hành động này gọi là gỡ lỗi, và nó là công việc hằng ngày của mọi lập trình viên trên thế giới!
+1. Chọn ngày tổ chức
+2. Lập danh sách bạn mời
+3. Viết thiệp mời và gửi
+4. Đặt bánh kem
+5. Chuẩn bị trò chơi
+6. Trang trí phòng
+7. Đón bạn đến
+8. Cắt bánh và ăn
+9. Dọn dẹp sau tiệc
+10. Gửi lời cảm ơn
 
-### Bài 3 (35 phút): Thuật toán trong đời sống — sửa lỗi thuật toán
+Mỗi bước trên lại có thể phân rã tiếp. Ví dụ "Đặt bánh kem":
+1. Hỏi bạn thích vị gì
+2. Tìm tiệm bánh gần nhà
+3. Gọi điện đặt cọc
+4. Đến lấy bánh đúng giờ
 
-**Hoạt động 1 (15 phút) — "Thuật toán nấu mì bị hỏng":** Đưa cho em một quy trình có cài sẵn 3 lỗi:
+**Nguyên lý phân rã:** nếu một bước còn quá phức tạp để làm một lần — chưa đủ nhỏ. Phân rã tiếp cho đến khi mỗi bước bạn có thể làm trong vài phút.
 
-1. Đun 1 nồi nước lạnh.
-2. Thả mì vào **nước lạnh** ngay.
+**Sai lầm phổ biến khi phân rã:**
+- Bước quá lớn ("chuẩn bị tiệc") — không hành động được
+- Bước quá nhỏ ("mở mắt, ngồi dậy, đi đánh răng, v.v.") — quá chi tiết, mất trọng tâm
+- Bước mơ hồ ("tổ chức tốt") — không có tiêu chí hoàn thành
+- Thiếu bước trung gian ("mua bánh → ăn bánh" — thiếu "đặt bánh, đến lấy bánh")
+
+### A.3. Thuật toán (*algorithm*)
+
+**Thuật toán** (*algorithm*) là **dãy các bước rõ ràng, đúng thứ tự, có thể thực hiện được, để giải quyết một vấn đề hoặc hoàn thành một việc**.
+
+Một dãy bước được gọi là thuật toán khi nó thỏa 4 điều kiện:
+
+| Điều kiện | Diễn giải |
+|-----------|-----------|
+| Đầu vào rõ | Biết trước dữ liệu gì cần có (vd: nguyên liệu nấu mì) |
+| Đầu ra rõ | Biết trước kết quả mong đợi (vd: tô mì ăn được) |
+| Mỗi bước thực hiện được | Mỗi bước là hành động cụ thể, không mơ hồ |
+| Dừng được | Sau hữu hạn bước, thuật toán kết thúc (không lặp vô hạn) |
+
+**Ví dụ — Thuật toán nấu mì gói:**
+1. Đun 500ml nước trong nồi đến khi sôi
+2. Mở gói mì và gói gia vị
+3. Khi nước sôi, thả mì vào nồi
+4. Đun thêm 3 phút, khuấy nhẹ
+5. Tắt bếp, đổ mì ra tô
+6. Cho gói gia vị vào tô, trộn đều
+7. Thưởng thức
+
+**Thuật toán không phải duy nhất:** cùng một việc có nhiều thuật toán. Nấu mì có thể cho gia vị vào nồi trước khi tắt bếp, hoặc cho vào tô sau — cả hai đều đúng. Sự khác biệt nằm ở **trật tự bước** — đổi trật tự, đổi kết quả.
+
+### A.4. Trật tự các bước (*sequence*)
+
+Máy tính thực hiện lệnh theo **trật tự chính xác** như đã viết. Đổi trật tự — đổi kết quả. Đây là điểm khác biệt cốt lõi giữa giao tiếp với máy và giao tiếp với người:
+
+- Người có thể hiểu "nấu mì rồi ăn" dù bạn nói ngược "ăn rồi nấu mì" — vì người có ngữ cảnh.
+- Máy tính thực hiện đúng như bạn nói. Nếu bạn nói "ăn mì" trước "nấu mì" — máy sẽ cố ăn khi chưa có mì. Lỗi.
+
+**Ví dụ trật tự quan trọng:** Thuật toán "sai trật tự" nấu mì:
+1. Ăn mì
+2. Nấu mì
+3. Đun nước
+
+Hiển nhiên vô lý — nhưng máy tính sẽ làm đúng theo thứ tự này nếu bạn ra lệnh vậy.
+
+**Bài học:** Khi viết thuật toán cho máy, luôn tự hỏi "Trật tự này có ý nghĩa không? Đổi trật tự có ảnh hưởng kết quả không?". Đây là reflexe bạn cần rèn.
+
+### A.5. Lệnh chính xác — máy không đoán ý
+
+Máy tính thực hiện lệnh **đúng theo nghĩa đen** (*literal interpretation*). Nếu bạn nói "tiến đến gần cái bàn", máy sẽ hỏi: "Gần là bao nhiêu cm?". Nếu bạn nói "đi quanh phòng", máy sẽ hỏi: "Quanh theo chiều nào? Mấy bước?".
+
+Khác với người — có thể "đoán ý" từ ngữ cảnh — máy cần **mọi lệnh đều cụ thể, đo lường được, không mơ hồ**.
+
+**Ví dụ:** Bạn nói với trợ lý ảo "đặt báo thức sáng mai". Trợ lý sẽ hỏi:
+- "Mấy giờ?"
+- "Báo thức loại gì?" (chuông, nhạc, rung?)
+- "Lặp lại không?"
+
+Đây không phải vì trợ lý "ngu" — mà vì nó cần thông tin cụ thể để thực hiện. Người thì tự đoán "sáng mai chắc là 6 giờ" — nhưng đoán có thể sai.
+
+**Nguyên lý giao tiếp với máy:**
+- Lệnh cụ thể, không mơ hồ
+- Số liệu rõ (khoảng cách, thời gian, số lượng)
+- Điều kiện rõ ("nếu X thì làm Y, ngược lại làm Z")
+- Không kỳ vọng máy "hiểu ý" khi bạn nói chung chung
+
+Kỹ năng này trở thành phản xạ khi bạn lập trình (Phần B trở đi). Nhưng rèn ngay từ bây giờ — bằng bài tập phần B.
+
+### A.6. Điều kiện (*condition*)
+
+Nhiều việc thực tế không phải lúc nào cũng giống nhau. Có lúc cần quyết định: "nếu A thì làm X, nếu B thì làm Y". Đây là **điều kiện rẽ nhánh**.
+
+**Ví dụ:** Thuật toán nấu mì có thể có điều kiện:
+- **Nếu** nước chưa sôi → đợi thêm 1 phút rồi kiểm tra lại
+- **Nếu** nước đã sôi → thả mì vào
+
+Cấu trúc điều kiện phổ biến: `NẾU <điều kiện> THÌ <hành động>`. Có thể thêm `NẾU KHÔNG THÌ <hành động khác>`.
+
+Điều kiện cho phép thuật toán **thích ứng với tình huống** thay vì chạy cứng theo một đường. Đây là nền tảng của mọi chương trình có logic phức tạp — và là khái niệm bạn sẽ viết bằng Scratch ở chặng 12, bằng Python ở chặng 29.
+
+### A.7. Gỡ lỗi (*debugging*)
+
+**Gỡ lỗi** (*debugging* hoặc *debug*) là quá trình tìm và sửa lỗi trong thuật toán hoặc chương trình. Đây không phải việc "xui xẻo" — đây là việc **hằng ngày** của mọi lập trình viên. Có ước tính: lập trình viên dành 50–80% thời gian gỡ lỗi, không phải viết code mới.
+
+**Quy trình gỡ lỗi 4 bước:**
+
+1. **Xác định triệu chứng:** kết quả sai kiểu gì? Khác mong đợi ở điểm nào?
+2. **Cô lập vị trí lỗi:** bước nào trong thuật toán gây ra sai? (Chạy từng bước, kiểm tra kết quả trung gian.)
+3. **Tìm nguyên nhân:** vì sao bước đó sai? (Nhập sai dữ liệu? Trật tự sai? Điều kiện sai?)
+4. **Sửa và kiểm tra lại:** sửa lỗi, chạy lại toàn bộ, xác nhận kết quả đúng. Nếu vẫn sai — lặp lại quy trình.
+
+**Ví dụ gỡ lỗi — thuật toán nấu mì bị sai:**
+- Triệu chứng: mì bị nhão, không ngon
+- Cô lập: bước 4 "Đun thêm 3 phút" — có thể quá lâu
+- Nguyên nhân: mì gói thường chỉ cần 2 phút; 3 phút làm mì nhũn
+- Sửa: đổi 3 phút thành 2 phút; nếm thử trước khi tắt bếp
+
+**Tư duy quan trọng:** Lỗi không phải thất bại — lỗi là **dữ liệu**. Mỗi lần gặp lỗi và sửa được, bạn học thêm một "cái bẫy" để tránh sau này. Ghi lại vào `lessons-learned.md`. Vài tháng sau bạn có một kho "những cái bẫy đã qua" — tài sản quý nhất của người tự học.
+
+### A.8. Mã giả (*pseudocode*) — viết thuật toán không cần ngôn ngữ lập trình
+
+Trước khi viết code thật (Python, Scratch...), người ta thường viết **mã giả** (*pseudocode*) — dạng văn bản gần ngôn ngữ người, có cấu trúc gần ngôn ngữ máy. Mã giả không có cú pháp cố định; mục đích là làm rõ thuật toán trước khi hiện thực.
+
+**Ví dụ mã giả cho "Tìm số lớn nhất trong 3 số":**
+
+```
+INPUT: a, b, c (3 số)
+OUTPUT: số lớn nhất
+
+largest = a
+IF b > largest THEN
+    largest = b
+IF c > largest THEN
+    largest = c
+RETURN largest
+```
+
+Mã giả giúp bạn:
+- Suy nghĩ thuật toán mà không vướng cú pháp ngôn ngữ
+- Trao đổi thuật toán với người khác (không phụ thuộc ngôn ngữ lập trình)
+- Chuyển sang code thật dễ hơn (mỗi dòng mã giả → 1–2 dòng code)
+
+Từ chặng 25 (Python) trở đi, bạn sẽ viết mã giả trước khi code. Đây là thói quen quan trọng.
+
+### A.9. Một câu thần chú để nhớ
+
+> **Tư duy máy tính = phân rã + mẫu hình + trừu tượng hóa + thuật toán. Máy chỉ hiểu lệnh cụ thể, không đoán ý. Lỗi là dữ liệu quý — gỡ lỗi là kỹ năng hằng ngày.**
+
+Nếu bạn viết lại được câu này bằng lời của mình mà không xem tài liệu — bạn đã hiểu phần Kiến thức.
+
+---
+
+## Phần B — Thực hành
+
+### Bài 1 ★: Phân rã 3 việc hằng ngày
+
+Chọn 3 việc từ danh sách dưới (hoặc tự chọn). Mỗi việc, phân rã thành 5–8 bước nhỏ, rõ ràng, đúng trật tự.
+
+**Việc đề xuất:**
+- Tổ chức sinh nhật cho bạn
+- Đi học đúng giờ (từ lúc ngủ dậy đến lúc vào lớp)
+- Làm sạch bàn học
+- Nấu một món bạn biết (nếu không biết nấu, chọn việc khác)
+- Mua sắm weekly ở siêu thị
+- Lập kế hoạch đi du lịch 2 ngày
+
+**Format trả lời:**
+```
+Việc: [tên việc]
+Bước 1: [hành động cụ thể]
+Bước 2: [hành động cụ thể]
+...
+Bước N: [hành động cụ thể]
+```
+
+Lưu vào `portfolio-ai/phan-a/chặng-02-sach-thuat-toan/decomposition.md`.
+
+**Tiêu chí đạt:** mỗi việc ≥ 5 bước, mỗi bước là hành động cụ thể (có động từ rõ), trật tự đúng logic.
+
+### Bài 2 ★: Sửa thuật toán "nấu mì bị hỏng"
+
+Đây là thuật toán có 3 lỗi cài sẵn. Tìm và sửa.
+
+```
+Thuật toán nấu mì gói:
+
+1. Đun 500ml nước trong nồi.
+2. Thả mì vào nước lạnh ngay.
 3. Đợi 5 phút, tắt bếp.
-4. **Sau đó mới mở gói gia vị bỏ vào.**
+4. Sau đó mới mở gói gia vị bỏ vào.
 5. Đổ mì ra tô và thưởng thức.
+```
 
-Nhiệm vụ: gạch chân các bước sai/thiếu và viết lại đúng. (Lỗi: thả mì vào nước lạnh trước khi sôi; thiếu bước "chờ nước sôi"; gia vị phải cho sau khi tắt bếp hoặc trước khi múc ra tô — tùy loại mì; thiếu bước chuẩn bị tô.) Học sinh mạnh dạn có thể phát hiện thêm lỗi thiếu "chuẩn bị tô trước".
+**Yêu cầu:**
+- Gạch chân mỗi bước sai
+- Viết lý do sai
+- Viết lại toàn bộ thuật toán đúng
+- Có thể thêm bước thiếu nếu cần
 
-**Hoạt động 2 (15 phút) — Điều kiện xuất hiện:** Trò chuyện về các bước có "nếu... thì...": "Nếu nước chưa sôi thì đợi thêm"; "Nếu mì đã mềm thì tắt bếp". Robot Bi giải thích: máy tính xử lý được cả những bước có điều kiện này — em sẽ tự tay viết chúng bằng Scratch ở Giai đoạn 12! Trẻ ghi vào sổ: **Điều kiện** (*condition*) — bước chỉ thực hiện khi thoả "nếu...".
+**Gợi ý:** ít nhất 3 lỗi — về trật tự, về điều kiện thiếu, về bước thiếu.
 
-**Chốt (5 phút):** Lặp lại khái niệm 4 từ khóa của giai đoạn: phân rã – thuật toán – lệnh/trình tự – gỡ lỗi. Em tự đặt cho mình 1 sao cho mỗi từ nhớ được.
+### Bài 3 ★: Trò chơi "Chỉ lệnh cho máy" — phiên bản lưới ô vuông
 
-### Bài 4 (35 phút): Làm sách thuật toán của em
+Trò chơi giúp bạn trải nghiệm trực tiếp việc giao tiếp với máy không đoán ý.
 
-**Thực hiện sản phẩm (30 phút):** Làm "Sách thuật toán của em" gồm 3 trang (xem mục Sản phẩm). Phụ huynh/giáo viên đi vòng quanh hỗ trợ bằng câu hỏi, không thay em vẽ: "Bước này làm gì?", "Bước 3 và bước 4 đổi chỗ được không?", "Nếu em đi ngủ trước khi đánh răng thì sao?"
+**Chuẩn bị:**
+- 2 tờ giấy kẻ ô vuông (lưới 5×5 hoặc 8×8)
+- 1 vật nhỏ làm "mục tiêu" (đồng xu, cục tẩy)
+- 1 vật nhỏ làm "robot" (hòn đá, cục tẩy khác)
 
-**Trình bày và kết (5 phút):** Mỗi em giới thiệu 1 trang sách trong 30 giây. Kết giai đoạn, Robot Bi tặng câu nói: "Người giỏi máy tính không phải người trả lời nhanh nhất — mà là người nói rõ từng bước nhất!"
+**Cách chơi:**
+
+Lần 1 — bạn đóng vai "người ra lệnh":
+1. Đặt "robot" ở ô góc dưới trái của tờ 1. Đặt "mục tiêu" ở một ô khác (bạn chọn).
+2. Bạn giữ tờ 1 (có robot và mục tiêu). Tờ 2 để trống, đặt cạnh.
+3. Bây giờ bạn sẽ chỉ lệnh cho "máy" (chính bạn, đóng vai máy) di chuyển robot đến mục tiêu — nhưng bạn không được nhìn tờ 1, chỉ dùng tờ 2 để vẽ lại vị trí robot sau mỗi lệnh.
+
+Đây khó hơn tưởng tượng. Bạn phải ra lệnh rất cụ thể:
+- "Tiến 1 ô lên trên" — cụ thể ✓
+- "Tiến đến gần mục tiêu" — mơ hồ ✗ (gần là bao nhiêu ô?)
+- "Rẽ phải" — cụ thể ✓
+- "Đi quanh phòng" — mơ hồ ✗ (quanh theo chiều nào?)
+
+Lần 2 — bẫy lệnh:
+- Bạn cố tình ra lệnh mơ hồ và quan sát "máy" hỏi lại. Ví dụ:
+  - "Đi chậm thôi" → máy: "Chậm là bao nhiêu ô/lượt?"
+  - "Đi vòng qua cái bàn" → máy: "Vòng qua bên nào? Mấy bước?"
+- Mục đích: rèn phản xạ viết lệnh cụ thể, không kỳ vọng máy đoán.
+
+**Sau khi chơi, viết 2–3 dòng vào `decomposition.md`:**
+- Việc gì khiến bạn nhận ra lệnh cần cụ thể?
+- Một loại lệnh mơ hồ bạn thường vô tình dùng là gì?
+
+### Bài 4 ★: Viết thuật toán có điều kiện
+
+Chọn 1 việc từ Bài 1. Viết lại thuật toán thêm ít nhất 2 bước có điều kiện "NẾU... THÌ...".
+
+**Ví dụ:** thuật toán "đi học đúng giờ" có thể thêm:
+- NẾU trời mưa THÌ mang theo ô
+- NẾU đồng hồ báo 6:45 mà chưa ăn sáng THÌ ăn nhanh bánh mì thay vì bún
+- NẾU quên sách THÌ gọi điện cho mẹ nhờ mang tới
+
+Mục đích: tập viết điều kiện — nền tảng của lập trình rẽ nhánh (chặng 12, 29).
+
+### Bài 5 (tùy chọn): Mã giả cho "tìm số lớn nhất"
+
+Viết mã giả (theo mẫu A.8) cho thuật toán tìm số lớn nhất trong **4 số** a, b, c, d.
+
+Đừng xem gợi ý A.8 cho 3 số cho đến khi bạn đã thử 15 phút.
+
+### Bài 6 (tùy chọn): Trò chơi tháp Hà Nội với 3 đĩa
+
+Nếu có 3 đĩa kích thước khác nhau (dùng 3 đồng xu kích cỡ khác, hoặc 3 cuốn sách) và 3 cọc, thử giải bài toán tháp Hà Nội 3 đĩa:
+- Đưa 3 đĩa từ cọc A sang cọc C, dùng cọc B làm trung gian
+- Quy tắc: mỗi lần chỉ搬 1 đĩa, không đặt đĩa lớn lên đĩa nhỏ
+
+Ghi lại các bước bạn làm. Đây là bài toán đệ quy kinh điển — bạn sẽ học phân tích sâu ở chặng 39.
+
+### Bài 7 (tùy chọn): Gỡ lỗi thuật toán "đi siêu thị"
+
+Đây là thuật toán đi siêu thị có 2 lỗi cài sẵn. Tìm và sửa.
+
+```
+Thuật toán đi siêu thị:
+
+1. Lên danh sách cần mua.
+2. Ra siêu thị, vào cửa.
+3. Bỏ tất cả đồ vào giỏ mà không nhìn giá.
+4. Đến quầy tính tiền, thanh toán.
+5. Về nhà, cất đồ vào tủ lạnh.
+```
+
+**Lỗi tiềm năng:**
+- Thiếu bước so sánh giá / chọn hàng
+- Thiếu bước kiểm tra hạn sử dụng
+- Thiếu bước xử lý khi hết hàng
+- Thiếu bước kiểm tra túi tiền trước khi đi
+
+Viết lại thuật toán đầy đủ.
 
 ---
 
-## Sản phẩm cuối giai đoạn: "Sách thuật toán của em"
+## Phần C — Sản phẩm cuối chặng
 
-**Yêu cầu:** bộ 3 trang giấy A4 (có thể ghép thành quyển), mỗi trang một thuật toán của em:
+### "Sách thuật toán" — 3 thuật toán của bạn
+
+**Yêu cầu:** tạo tệp `portfolio-ai/phan-a/chặng-02-sach-thuat-toan/README.md` gồm 3 thuật toán bạn tự viết.
 
 | Trang | Thuật toán | Điều kiện đạt |
 |-------|-----------|---------------|
-| 1 | Việc hằng ngày ở nhà (đánh răng, gấp chăn, tưới cây...) | 5–7 bước, đúng thứ tự, có hình minh họa |
-| 2 | Việc ở trường (chuẩn bị bài, làm việc nhóm, dọn lớp...) | 5–7 bước + có ít nhất 1 bước "nếu... thì..." |
-| 3 | Việc em tự chọn mà có thử nghiệm thật (nấu 1 món đơn giản cùng người lớn, gấp máy bay giấy...) | 6–8 bước + đã thử làm theo chính thuật toán của em 1 lần và ghi "sửa lỗi" đã làm |
+| 1 | Việc hằng ngày ở nhà (đánh răng, gấp chăn, tưới cây...) | 5–7 bước, đúng trật tự, mỗi bước có động từ cụ thể |
+| 2 | Việc phức tạp hơn (lập kế hoạch tuần, đi siêu thị, dọn nhà...) | 6–10 bước + ít nhất 2 bước điều kiện "NẾU... THÌ..." |
+| 3 | Việc bạn thực sự làm theo thuật toán của mình (nấu 1 món đơn giản, gấp máy bay giấy, lắp đồ chơi...) | 6–10 bước + đã thực sự làm theo + ghi chú ít nhất 1 chỗ bạn phải sửa (gỡ lỗi) |
 
-**Điểm nhấn của trang 3:** em phải **chạy thử** thuật toán của chính mình (như chạy thử chương trình!) và ghi chú lại chỗ cần sửa. Đây chính là vòng đời "viết – chạy – gỡ lỗi" trong thực tế.
+**Điểm nhấn trang 3:** Bạn phải **thực sự chạy thử** thuật toán của chính mình (như chạy thử chương trình!) và ghi chú lại chỗ cần sửa. Đây là vòng đời "viết → chạy → gỡ lỗi" trong thực tế.
 
-## Tiêu chí đánh giá (rubric)
+**Format gợi ý:**
 
-| Tiêu chí | Mức 1 — Cần cố gắng | Mức 2 — Đạt | Mức 3 — Tốt |
-|----------|---------------------|-------------|--------------|
-| Phân rã việc lớn | Còn viết theo cụm chung chung ("chuẩn bị xong") | Các bước nhỏ, rõ, đúng thứ tự | Bước chi tiết vừa đủ + tự phát hiện và ghi chú bước có thể đổi chỗ |
-| Lệnh chính xác | Lệnh còn mơ hồ ("làm đẹp bàn học") | Lệnh cụ thể, máy "không cần đoán" | Tự nhận ra lệnh mơ hồ của chính mình và sửa ngay khi trình bày |
-| Điều kiện "nếu... thì..." | Chưa có bước điều kiện | Có 1+ bước điều kiện hợp lý | Dùng 2+ điều kiện và giải thích được vì sao cần |
-| Gỡ lỗi | Chưa phát hiện lỗi trong thuật toán mẫu | Tìm đủ 3 lỗi thuật toán nấu mì | Tìm đủ 3 lỗi + chỉ ra thêm 1 cải tiến |
-| Sách thuật toán | 1–2 trang, cần hỗ trợ nhiều | Đủ 3 trang đúng yêu cầu | Đủ 3 trang + trang trí + ghi chú "sửa lỗi" có thật ở trang 3 |
+```markdown
+# Sách thuật toán của tôi
 
-## Lưu ý cho phụ huynh và giáo viên
+## Thuật toán 1: [tên việc]
 
-- **Dùng ngôn ngữ của em trước, thuật ngữ sau:** giới thiệu thuật ngữ "phân rã", "thuật toán", "gỡ lỗi" chỉ sau khi em đã làm trải nghiệm xong. Tên gọi đến sau, trải nghiệm đến trước — nguyên tắc chung của cả bộ học liệu.
-- **Chơi bẫy lệnh vui vẻ:** mục đích của trò chơi "bẫy lệnh" là tiếng cười, không phải trêu chọc. Người lớn điều khiển robot nên nghiêm túc "máy móc" — càng nghiêm túc càng vui.
-- **An toàn thực hành:** nếu làm thuật toán nấu ăn thật, người lớn luôn cùng làm, xa lửa/nước sôi với trẻ nhỏ.
-- **Đừng sửa giúp, hãy hỏi:** khi thuật toán của em có lỗi, hỏi "Chạy thử chưa? Lỗi ở bước mấy?" thay vì chỉ chỗ sai. Kỹ năng tự gỡ lỗi chỉ hình thành khi em được tự tìm.
-- **Người lớn tự học:** hãy thử viết thuật toán cho một công việc chuyên môn của bạn (ví dụ: quy trình xử lý đơn hàng) theo 5–7 bước — bạn sẽ dùng kỹ năng này sớm thôi ở mọi giai đoạn lập trình phía sau.
+Bước 1: ...
+Bước 2: ...
+...
+Bước N: ...
 
-## Bước tiếp theo
+## Thuật toán 2: [tên việc] (có điều kiện)
 
-Em đã có "ngôn ngữ tư duy" của máy tính. Nhưng máy tính sống bằng gì? Bằng **dữ liệu** — số, chữ, hình ảnh, âm thanh được ghi lại. Giai đoạn 03 sẽ dạy em thu thập, sắp xếp và "đọc" dữ liệu như một nhà khoa học tí hon — và hiểu vì sao dữ liệu chính là "thức ăn" nuôi máy học mà em đã gặp ở giai đoạn 01. Hẹn gặp em ở [Giai đoạn 03: Dữ liệu và thông tin xung quanh ta](../giai-doan-03-du-lieu-va-thong-tin/README.md).
+Bước 1: ...
+Bước 2: ...
+Bước 3: NẾU <điều kiện> THÌ <hành động A>, NẾU KHÔNG THÌ <hành động B>
+...
+Bước N: ...
+
+## Thuật toán 3: [tên việc thực sự làm] (có gỡ lỗi)
+
+### Bản gốc:
+Bước 1: ...
+...
+Bước N: ...
+
+### Đã thực hiện ngày: __/__/____
+
+### Lỗi phát hiện khi chạy thử:
+- Bước X sai vì: ...
+- Bước Y thiếu vì: ...
+
+### Bản sửa:
+Bước 1: ...
+...
+Bước N: ...
+
+### Bài học rút ra: [1–2 dòng]
+```
+
+Lưu tệp vào portfolio. Đây là artifact thứ 2 của bạn trong hành trình 170 chặng.
+
+---
+
+## Phần D — Tự đánh giá
+
+Checklist cuối chặng:
+
+```
+□ Tôi hiểu 4 thành phần của tư duy máy tính (phân rã, mẫu hình, trừu tượng hóa, thuật toán)
+□ Tôi có thể giải thích thuật toán là gì kèm 4 điều kiện
+□ Tôi hiểu vì sao máy cần lệnh chính xác, không đoán ý
+□ Tôi đã làm xong Bài 1, 2, 3, 4 (sao ★)
+□ Tôi đã hoàn thành "Sách thuật toán" và lưu vào portfolio
+□ Tôi đã thực sự "chạy thử" thuật toán trang 3 và ghi chú lỗi
+□ Tôi đã ghi 1 mục vào learning-journal.md cho chặng này
+□ Tôi đã trả lời được "Kết nối về sau" trong tu-dien-va-tai-nguyen.md
+```
+
+Nếu 8/8 ô được đánh dấu — chúc mừng, bạn đã hoàn thành chặng 02. Sang [Chặn 03](../giai-doan-03-du-lieu-va-thong-tin/README.md).
+
+Nếu có ô chưa đánh dấu — đừng sang chặng sau. Trở lại phần tương ứng.
+
+---
+
+## Phần E — Đáp án Bài 2
+
+**Thuật toán gốc:**
+```
+1. Đun 500ml nước trong nồi.
+2. Thả mì vào nước lạnh ngay.
+3. Đợi 5 phút, tắt bếp.
+4. Sau đó mới mở gói gia vị bỏ vào.
+5. Đổ mì ra tô và thưởng thức.
+```
+
+**3 lỗi:**
+
+| Bước | Lỗi | Sửa |
+|------|-----|-----|
+| 2 | Thả mì vào nước lạnh — mì sẽ nhũn, không săn | Đợi nước sôi mới thả mì |
+| 3 | Đợi 5 phút là quá lâu — mì thường chỉ cần 2–3 phút | Đợi 2–3 phút, khuấy nhẹ; nếm thử trước khi tắt bếp |
+| Thiếu | Thiếu bước "Chuẩn bị tô, đũa" trước khi đổ mì ra | Thêm bước 0: chuẩn bị tô, đũa, gói gia vị |
+
+**Bản sửa gợi ý:**
+```
+0. Chuẩn bị: nồi, 500ml nước, tô, đũa, gói mì, gói gia vị.
+1. Đun 500ml nước trong nồi đến khi sôi (NẾU chưa sôi THÌ đợi thêm).
+2. Khi nước sôi, mở gói mì, thả mì vào nồi.
+3. Đun thêm 2–3 phút, khuấy nhẹ. NẾU mì đã mềm THÌ tắt bếp.
+4. Đổ mì ra tô (đã chuẩn bị ở bước 0).
+5. Cho gói gia vị vào tô, trộn đều.
+6. Thưởng thức.
+```
+
+Lưu ý: có nhiều cách nấu mì đúng — đây là một. Quan trọng là đủ 4 điều kiện thuật toán: đầu vào rõ, đầu ra rõ, mỗi bước cụ thể, dừng được.

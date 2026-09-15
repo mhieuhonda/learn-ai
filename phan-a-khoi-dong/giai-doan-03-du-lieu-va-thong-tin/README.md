@@ -1,147 +1,365 @@
-# Giai đoạn 03 — Dữ liệu và thông tin xung quanh ta
+# Chặn 03 — Dữ liệu và thông tin xung quanh ta
 
-> "Robot Bi đói quá! Nhưng mình không ăn cơm đâu — mình ăn... DỮ LIỆU! Số, chữ, hình ảnh, âm thanh ghi lại được đều là đồ ăn của mình. Giai đoạn này, bạn sẽ học cách gom dữ liệu, xếp dữ liệu vào bảng, và vẽ biểu đồ — còn cuối cùng bạn sẽ hiểu: muốn mình khôn, cho mình dữ liệu tốt nhé!"
+Chặn 01 bạn học AI học từ dữ liệu. Chặn 02 bạn học cách tư duy thuật toán để ra lệnh cho máy. Chặn này bạn học **chất liệu của AI** — dữ liệu. Bạn sẽ học dữ liệu là gì, các loại dữ liệu, cách thu thập, sắp xếp vào bảng, và trực quan hóa bằng biểu đồ cột. Đây là nền tảng cho mọi kỹ năng dữ liệu sau này: bảng tính (chặng 53–56), Pandas (chặng 80–87), SQL (chặng 58–60), thống kê (chặng 93–98).
 
-## Thông tin chung
-
-| Mục | Chi tiết |
-|-----|----------|
-| Mã giai đoạn | GD-03 (Phần A — Khởi động) |
-| Đối tượng | Học sinh tiểu học lớp 3–5; người mới bắt đầu mọi lứa tuổi |
-| Thời lượng | 2 buổi x 35 phút + 15 phút cuối tuần cùng gia đình |
-| Tiên quyết | Giai đoạn 01 (máy học từ ví dụ), Giai đoạn 02 (trình tự các bước) |
-| Nguyên liệu | Giấy kẻ ô vuông, bút màu, thước kẻ, phiếu hỏi nhỏ (tự làm), băng keo |
-| Sản phẩm cuối giai đoạn | **"Báo cáo dữ liệu đầu tiên"** — 1 bảng dữ liệu + 1 biểu đồ cột vẽ tay + 2 nhận xét |
-
-## Mục tiêu học tập
-
-**Kiến thức** — sau giai đoạn này, em có thể:
-1. Nói được dữ liệu là thông tin được ghi lại (số, chữ, hình ảnh, âm thanh).
-2. Thu thập dữ liệu bằng cách đếm, hỏi và ghi chép.
-3. Sắp xếp dữ liệu vào bảng có hàng, cột, tiêu đề; đọc và vẽ biểu đồ cột đơn giản.
-
-**Kỹ năng:**
-1. Thiết kế một câu hỏi khảo sát đơn giản và thu thập trả lời từ 6–10 người.
-2. Rút ra một nhận xét đúng từ dữ liệu mình thu thập.
-
-**Thái độ:**
-1. Trung thực khi ghi dữ liệu — ghi đúng số đếm được, không bịa.
-2. Lịch sự khi hỏi người khác (chào, hỏi, cảm ơn).
-
-**Đối chiếu chương trình:** môn Toán tiểu học (thống kê: thu thập, bảng, biểu đồ), môn Tin học (tổ chức thông tin), năng lực "dữ liệu và thông tin" trong Khung năng lực số.
-
-## Vị trí của giai đoạn này trong hành trình
-
-Giai đoạn 01 em biết máy **học từ ví dụ** — ví dụ đó chính là **dữ liệu**. Giai đoạn này em học quản lý "thức ăn" của máy: thu thập sạch, sắp xếp gọn, đọc hiểu đúng. Chủ đề dữ liệu sẽ quay lại xoáy ốc xuyên suốt lộ trình: bảng tính ở Phần C, phân tích dữ liệu ở Phần D, và feature engineering ở Phần G. Nền được đúc ngay từ đây: **số liệu trung thực, trình bày ngay ngắn, nhận xét cẩn trọng.**
+Sau chặng này, bạn có thể thu thập dữ liệu một cách có kỷ luật, trình bày dữ liệu vào bảng chuẩn, và rút ra nhận xét đúng từ dữ liệu — không bịa, không phóng đại.
 
 ---
 
-## Nội dung bài học
+## Phần A — Kiến thức
 
-### Bài 1 (35 phút): Dữ liệu là gì?
+### A.1. Dữ liệu là gì
 
-**Khởi động (5 phút):** Robot Bi đưa ra "đồ ăn" của mình để em đoán: "1,2 kilogram" (cân nặng của em), "hình bạn chụp lúc 7 tuổi", "âm thanh tiếng cười", "chữ 'Việt Nam'". Tất cả đều là dữ liệu!
+**Dữ liệu** (*data*) là **thông tin được ghi lại dưới dạng có thể lưu trữ, truyền tải và xử lý**. Bốn dạng dữ liệu phổ biến:
 
-**Khám phá (15 phút) — Săn tìm 4 loại dữ liệu:** Cùng liệt kê vào 4 cột trên bảng/paper:
+| Dạng | Ví dụ |
+|------|-------|
+| Dữ liệu số | Cân nặng (62kg), chiều cao (1.65m), tuổi (25), nhiệt độ (28°C) |
+| Dữ liệu chữ | Tên ("Nguyễn Văn A"), địa chỉ ("12 Lê Lợi"), bài thơ |
+| Dữ liệu hình | Ảnh chụp, bản vẽ, chữ ký scan |
+| Dữ liệu âm thanh | Ghi âm giọng nói, bài nhạc, tiếng chim hót |
 
-| Dữ liệu dạng số | Dữ liệu dạng chữ | Dữ liệu dạng hình | Dữ liệu dạng âm thanh |
-|------------------|-------------------|--------------------|------------------------|
-| Cân nặng, chiều cao, số điện thoại (không đọc to!), tuổi | Tên, địa chỉ, bài thơ, lời bài hát | Ảnh, bản vẽ, chữ ký | Giọng nói, tiếng chim hót, bài hát |
+**Điểm quan trọng:** thông tin "trong đầu" bạn không phải dữ liệu theo nghĩa máy tính — vì máy không tiếp cận được. Thông tin chỉ thành dữ liệu khi được **ghi lại** (trên giấy, trong tệp, trong database).
 
-**Điểm vàng của bài:** máy tính không phân biệt dữ liệu "đẹp xấu" — máy chỉ hiểu **dữ liệu được ghi lại**. Cân nặng ghi trên giấy là dữ liệu; cân nặng "trong đầu" thì máy không dùng được. Vì sao điều này quan trọng? Vì AI cần dữ liệu đã ghi lại để học!
+Ví dụ:
+- Cân nặng của bạn "trong đầu" = không phải dữ liệu (máy không dùng được).
+- Cân nặng ghi trên giấy khám bệnh = dữ liệu (máy có thể scan/đánh số).
+- Cân nặng trong tệp Excel = dữ liệu (máy xử lý trực tiếp).
 
-**Kết nối AI (10 phút):** Quay lại 6 "dấu chân AI" ở giai đoạn 01. Hỏi: trợ lý ảo học nghe giọng từ dữ liệu gì? (hàng triệu mẫu giọng nói) — nhận dạng khuôn mặt học từ dữ liệu gì? (hàng nghìn ảnh khuôn mặt) — gợi ý video học từ dữ liệu gì? (lịch sử xem của hàng triệu người). Kết luận: **không có dữ liệu, không có AI. Dữ liệu là thức ăn của máy học.**
+### A.2. Phân loại dữ liệu
 
-**Chốt (5 phút):** Em nói lại: "Dữ liệu là ______ được ghi lại" (điền: thông tin). Robot Bi khen: đúng rồi — và hôm nay mình sẽ đi gom "thức ăn"!
+Dữ liệu được phân loại theo nhiều chiều. Hai chiều quan trọng nhất:
 
-### Bài 2 (35 phút): Thu thập dữ liệu — dự án "Nước uống yêu thích của lớp"
+#### A.2.1. Dữ liệu định tính vs định lượng
 
-**Chuẩn bị (10 phút) — Ba quy tắc của người thu thập dữ liệu:**
+| Loại | Đặc điểm | Ví dụ |
+|------|----------|-------|
+| **Định lượng** (*quantitative*) | Đo lường được bằng số | Cân nặng, chiều cao, nhiệt độ, giá tiền |
+| **Định tính** (*qualitative*) | Mô tả đặc tính, không đo lường trực tiếp | Màu sắc, giới tính, đánh giá ("tốt"/"trung bình"/"kém") |
 
-1. **Đúng:** ghi đúng ý/số người nói, không sửa theo ý mình.
-2. **Đủ:** hỏi đủ số người đã định, không bỏ dở.
-3. **Lịch sự:** chào hỏi trước, cảm ơn sau, không ép người khác trả lời.
+Định lượng lại chia:
+- **Liên tục** (*continuous*): có thể lấy mọi giá trị trong khoảng (cân nặng: 62.3kg, 62.35kg, 62.357kg...)
+- **Rời rạc** (*discrete*): chỉ lấy giá trị đếm được (số con: 0, 1, 2, 3 — không có 2.5 con)
 
-**Thiết kế câu hỏi (5 phút):** Câu hỏi khảo sát: *"Trong các loại nước sau — nước lọc, nước cam, trà đào, sữa — bạn thích loại nào nhất?"* Lưu ý sư phạm: giới hạn 4 lựa chọn để dữ liệu gọn, dễ vẽ biểu đồ.
+#### A.2.2. Dữ liệu có cấu trúc vs phi cấu trúc
 
-**Thu thập (15 phút):** Mỗi em nhận phiếu hỏi, đi hỏi 6 bạn (hoặc thành viên gia đình nếu học tại nhà). Ghi vào phiếu dạng ký hiệu đếm (tally):
+| Loại | Đặc điểm | Ví dụ |
+|------|----------|-------|
+| **Có cấu trúc** (*structured*) | Sắp xếp theo hàng/cột, có lược đồ rõ | Bảng Excel, bảng SQL, CSV |
+| **Bán cấu trúc** (*semi-structured*) | Có thẻ/nhãn nhưng không theo bảng | JSON, XML, HTML |
+| **Phi cấu trúc** (*unstructured*) | Không có cấu trúc cố định | Văn bản tự do, ảnh, âm thanh, video |
 
-```
-Nước lọc   : ||||  
-Nước cam   : ||
-Trà đào    : |||
-Sữa        : ||
-```
+80% dữ liệu thế giới hiện là phi cấu trúc (ảnh, video, văn bản). ML/DL hiện đại mạnh vì xử lý được dữ liệu phi cấu trúc. Bạn sẽ học sâu ở Phần F (CV, NLP).
 
-**Kiểm tra chéo (5 phút):** Đếm lại phiếu của em: tổng số ký hiệu có đúng bằng số người đã hỏi không? Đây là kiểm tra dữ liệu đầu tiên trong đời — phụ huynh/giáo viên hỏi: "Nếu tổng không khớp thì làm sao?" (Trả lời: đi đếm lại, không tự thêm bớt!)
+### A.3. Thu thập dữ liệu — 3 quy tắc của người làm dữ liệu
 
-### Bài 3 (35 phút): Xếp dữ liệu vào bảng
+Thu thập dữ liệu đúng là 80% chất lượng phân tích. Sai ở khâu này, mọi phân tích sau sai theo. Ba quy tắc:
 
-**Từ ký hiệu sang bảng (15 phút):** Cùng xếp dữ liệu phiếu hỏi vào bảng chuẩn:
+| Quy tắc | Diễn giải | Ví dụ |
+|---------|-----------|-------|
+| **Đúng** | Ghi đúng ý/số người nói, không sửa theo ý mình | Người khảo sát nói "trà" không ghi thành "trà đào" |
+| **Đủ** | Hỏi đủ số người đã định, không bỏ dở | Định khảo sát 10 người, không dừng ở 7 vì lười |
+| **Trung thực** | Ghi đúng kết quả quan sát, không bịa | Người khảo sát trả lời "không biết" — ghi "không biết", không tự điền |
 
-| Loại nước | Số bạn chọn |
-|-----------|-------------|
+**Lưu ý về quyền riêng tư:** khi thu thập dữ liệu từ người khác, chỉ hỏi những thông tin thực sự cần cho bài toán. **Không** hỏi số điện thoại, CCCD, địa chỉ nhà trừ khi có lý do rõ ràng và được đồng ý. Đây là nền tảng đạo đức dữ liệu — sẽ học sâu ở chặng 70.
+
+### A.4. Bias lấy mẫu (*sampling bias*)
+
+Khi thu thập dữ liệu, bạn thường không thể hỏi **tất cả** dân số — bạn hỏi một **mẫu** (*sample*). Mẫu phải **đại diện** cho dân số, nếu không kết luận bị sai.
+
+**Ví dụ bias lấy mẫu:**
+- Muốn biết "người Việt thích thể thao gì", chỉ hỏi bạn cùng lớp → bias (mẫu chỉ là thanh niên cùng độ tuổi, không đại diện cho người già, trẻ em, người nông thôn).
+- Muốn biết "ai sẽ thắng cử", chỉ gọi điện cho người có điện thoại cố định → bias (người giàu có điện thoại cố định nhiều hơn người nghèo).
+
+**Cách tránh bias (cơ bản):**
+1. Xác định dân số mục tiêu rõ ("người Việt 18+ toàn quốc")
+2. Chọn mẫu sao cho mọi nhóm trong dân số đều có cơ hội được hỏi
+3. Cỡ mẫu đủ lớn (thường ≥ 30 cho thống kê cơ bản; ≥ 400 cho khảo sát dân số lớn)
+
+Bạn sẽ học sâu về lấy mẫu ở chặng 95.
+
+### A.5. Bảng dữ liệu — cách sắp xếp dữ liệu
+
+**Bảng** (*table*) là cách phổ biến nhất để sắp xếp dữ liệu có cấu trúc. Bảng gồm:
+
+| Thành phần | Diễn giải |
+|-----------|-----------|
+| **Tiêu đề bảng** | Đặt trên cùng, mô tả bảng về cái gì |
+| **Tên cột** (header) | Mô tả trường dữ liệu mỗi cột |
+| **Hàng** (row) | Mỗi hàng = 1 bản ghi (1 đối tượng, 1 sự kiện) |
+| **Ô** (cell) | Giao cột × hàng, chứa 1 giá trị |
+| **Dòng tổng** (tùy chọn) | Tổng/Trung bình của cột số |
+
+**Ví dụ — Bảng khảo sát nước uống yêu thích:**
+
+| Loại nước | Số người chọn |
+|-----------|---------------|
 | Nước lọc | 4 |
 | Nước cam | 2 |
 | Trà đào | 3 |
 | Sữa | 2 |
 | **Tổng** | **11** |
 
-Đặt tên các thành phần: tiêu đề bảng (đặt trên đầu), tên cột, dòng tổng. Bảng là cách **sắp xếp** dữ liệu để nhìn một cái là hiểu — cũng giống như tủ đồ có ngăn: quần áo ở ngăn này, sách ở ngăn kia.
+Lý do dùng bảng:
+- **Tra cứu nhanh:** "Trà đào được mấy người chọn?" — nhìn bảng trả lời tức thì.
+- **So sánh:** nhìn thấy ngay loại nào nhiều nhất, ít nhất.
+- **Tổng hợp:** tính tổng, trung bình bằng cách nhìn cột.
 
-**Trò chơi "Tìm nhanh" (10 phút):** Che bảng đi, hỏi: "Trà đào được mấy bạn chọn?" — nhớ được không? Mở bảng: trả lời tức thì. So sánh: bảng giúp tra cứu nhanh hơn ký hiệu đếm nhiều!
+### A.6. Trực quan hóa dữ liệu — biểu đồ cột
 
-**Chuyển tiếp (10 phút):** Robot Bi thắc mắc: "Mình thấy bảng rồi, nhưng mình vẫn muốn NHÌN thấy loại nào đang thắng một cách nhanh nhất cơ!" — dẫn dắt tự nhiên sang Bài 4: biểu đồ.
+Bảng tốt cho tra cứu, nhưng **biểu đồ** tốt hơn cho "nhìn một cái là hiểu xu hướng". Loại biểu đồ phổ biến nhất cho dữ liệu phân loại là **biểu đồ cột** (*bar chart*).
 
-### Bài 4 (35 phút): Vẽ và đọc biểu đồ cột
+**Cách vẽ biểu đồ cột:**
 
-**Vẽ biểu đồ (20 phút) trên giấy kẻ ô vuông:**
+1. Vẽ trục ngang (x-axis): mỗi loại dữ liệu là 1 cột, cách đều nhau.
+2. Vẽ trục dọc (y-axis): thang số, từ 0 đến giá trị lớn nhất (+ biên độ).
+3. Với mỗi loại, vẽ 1 cột cao bằng giá trị tương ứng.
+4. Thêm tiêu đề trên cùng, nhãn trục, chú thích (nếu cần).
 
-1. Vẽ trục ngang: ghi 4 tên loại nước, cách nhau đều.
-2. Vẽ trục dọc bên trái: đánh số 0, 1, 2, 3, 4... (mỗi ô = 1 người).
-3. Với mỗi loại nước, tô cột cao bằng số người chọn.
-4. Viết tiêu đề trên cùng: "Nước uống yêu thích của nhóm em" và ghi "Số người" cạnh trục dọc.
+**Ví dụ — Biểu đồ cột cho bảng trên:**
 
-**Đọc biểu đồ (15 phút) — bốn câu hỏi vàng:**
-1. Loại nước nào được chọn nhiều nhất? (cột cao nhất)
-2. Loại nào ít nhất?
-3. Nước lọc hơn trà đào bao nhiêu người? (so sánh 2 cột)
-4. Tổng cộng có bao nhiêu người tham gia? (cộng tất cả cột — phải khớp với bảng!)
+```
+Số người chọn
+4 |  ■
+3 |  ■       ■
+2 |  ■   ■   ■   ■
+1 |  ■   ■   ■   ■
+0 +─────────────────
+    Lọc Cam Đào Sữa
+        Loại nước
+```
 
-**Kết AI (5 phút):** Robot Bi tiết lộ: "Biểu đồ em vừa vẽ chính là thứ máy tính vẽ cho người xem dữ liệu hàng ngày. Và máy học sâu hơn em tưởng từ biểu đồ: nhìn 4 cột, máy lập tức biết cột nào 'thắng' — không cần ai bảo!"
+**Đọc biểu đồ — 4 câu hỏi vàng:**
+1. Cột cao nhất → loại được chọn nhiều nhất
+2. Cột thấp nhất → loại ít nhất
+3. So sánh 2 cột → chênh lệch bao nhiêu
+4. Tổng các cột → tổng số người tham gia (phải khớp với bảng)
+
+### A.7. Phân biệt "nhận xét từ dữ liệu" và "ý kiến cá nhân"
+
+Đây là kỹ năng quan trọng nhất của người làm dữ liệu — và là kỹ năng nhiều người thiếu.
+
+**Nhận xét từ dữ liệu:** câu nói có **số liệu làm bằng chứng**, rút ra từ bảng/biểu đồ.
+- ✓ "Nước lọc được 4 người chọn, nhiều nhất trong nhóm."
+- ✓ "Trà đào được chọn nhiều gấp 1.5 lần nước cam (3 vs 2)."
+- ✓ "Tổng có 11 người tham gia khảo sát."
+
+**Ý kiến cá nhân:** câu nói phản ánh cảm nhận, không có số liệu.
+- ✗ "Nước lọc ngon nhất." (không có số liệu; "ngon" là cảm nhận)
+- ✗ "Trà đào chắc chắn sẽ thắng." (dự đoán, không phải dữ liệu)
+- ✗ "Nhóm này thích đồ uống lành mạnh." (suy diễn, không phải dữ liệu)
+
+**Nguyên lý:** phân tích dữ liệu chỉ trả lời "cái gì" và "bao nhiêu" — không trả lời "tại sao" hoặc "có nên". Phân tích dữ liệu không thay thế phán đoán đạo đức hoặc quyết định giá trị.
+
+### A.8. Vì sao dữ liệu quan trọng cho AI
+
+Quay lại chặng 01: AI học từ dữ liệu. Hệ thống AI nào cũng cần **dữ liệu huấn luyện**:
+
+| Hệ thống AI | Dữ liệu huấn luyện (ước lượng) |
+|-------------|--------------------------------|
+| FaceID điện thoại | 100+ ảnh khuôn mặt của bạn + biến đổi |
+| Gợi ý YouTube | Lịch sử xem của hàng tỷ người |
+| Google Dịch (EN-VI) | Hàng triệu cặp câu song ngữ |
+| ChatGPT | ~500 tỷ token văn bản (khoảng 4 TB text) |
+| Midjourney | ~5 tỷ cặp ảnh + chú thích |
+
+**Hệ quả:**
+- **Không có dữ liệu = không có AI.** AI không "hiểu" nếu không có dữ liệu học.
+- **Dữ liệu sai = AI sai.** Dữ liệu huấn luyện có thiên vị → AI có thiên vị (chặng 69).
+- **Dữ liệu ít = AI kém.** Học từ 10 ví dụ không khái quát được bằng học từ 1 triệu ví dụ.
+
+Lộ trình sẽ quay lại dữ liệu ở mọi phần:
+- Phần C (chặng 53–60): bảng tính, làm sạch, SQL
+- Phần D (chặng 77–100): Pandas, thống kê, trực quan hóa
+- Phần E (chặng 99, 101): feature engineering
+- Phần G (chặng 141–144): dữ liệu drift, giám sát
+
+Nền bạn đúc ngay từ chặng 03 này: **số liệu trung thực, trình bày ngay ngắn, nhận xét cẩn trọng**.
+
+### A.9. Một câu thần chú để nhớ
+
+> **Dữ liệu = thông tin được ghi lại. Thu thập đúng + đủ + trung thực. Bảng để tra cứu, biểu đồ để thấy xu hướng. Nhận xét phải có số liệu làm bằng chứng — không bịa, không phóng đại.**
 
 ---
 
-## Sản phẩm cuối giai đoạn: "Báo cáo dữ liệu đầu tiên"
+## Phần B — Thực hành
 
-**Yêu cầu:** 1 trang A4 (mặt trước) gồm 4 phần:
+### Bài 1 ★: Săn tìm 4 loại dữ liệu trong đời sống bạn
+
+Trong 1 ngày, ghi lại ít nhất 3 ví dụ cho mỗi loại dữ liệu:
+
+| Loại | Ví dụ của bạn |
+|------|---------------|
+| Số | 1. Cân nặng của tôi: 62kg<br>2. Số bước chân hôm nay: 7.234<br>3. Nhiệt độ ngoài trời: 28°C |
+| Chữ | 1. Tên tôi: ...<br>2. Địa chỉ nhà: ...<br>3. Tên bài hát đang nghe: ... |
+| Hình | 1. Ảnh chụp bữa trưa<br>2. Ảnh tự sướng sáng nay<br>3. Bản vẽ sơ đồ phòng |
+| Âm thanh | 1. Ghi âm giọng nói của tôi<br>2. Tiếng chuông điện thoại<br>3. Bài hát đang nghe |
+
+Lưu vào `portfolio-ai/phan-a/chặng-03-bao-cao-du-lieu/data-types.md`.
+
+### Bài 2 ★: Khảo sát mini "Nước uống yêu thích"
+
+Thực hiện 1 khảo sát nhỏ để thu thập dữ liệu thực.
+
+**Câu hỏi khảo sát:** *"Trong các loại nước sau — nước lọc, nước cam, trà đào, sữa — bạn thích loại nào nhất?"*
+
+**Quy trình:**
+
+1. **Lên kế hoạch:** chọn 6–10 người để hỏi (bạn bè, người nhà, đồng nghiệp). Tránh bias — đừng chỉ hỏi người cùng độ tuổi.
+2. **Hỏi lịch sự:** chào hỏi, giới thiệu mục đích ("Tôi đang học về dữ liệu, xin phép hỏi 1 câu"), cảm ơn sau.
+3. **Ghi tally:** dùng ký hiệu đếm:
+
+```
+Nước lọc   : ||||
+Nước cam   : ||
+Trà đào    : |||
+Sữa        : ||
+```
+
+4. **Kiểm tra chéo:** đếm lại tổng ký hiệu có bằng số người đã hỏi không? Nếu không — đếm lại, không tự thêm bớt.
+
+### Bài 3 ★: Lập bảng dữ liệu từ khảo sát
+
+Từ tally của Bài 2, lập bảng chuẩn:
+
+| Loại nước | Số người chọn |
+|-----------|---------------|
+| Nước lọc | ? |
+| Nước cam | ? |
+| Trà đào | ? |
+| Sữa | ? |
+| **Tổng** | **?** |
+
+Lưu vào `data-types.md`. Kiểm tra: tổng cột phải bằng tổng số người đã hỏi.
+
+### Bài 4 ★: Vẽ biểu đồ cột trên giấy kẻ ô vuông
+
+Từ bảng Bài 3, vẽ biểu đồ cột trên giấy kẻ ô vuông (hoặc dùng tool online như [datastudio.google.com](https://datastudio.google.com), Excel, Google Sheets).
+
+**Quy trình vẽ:**
+1. Vẽ trục ngang: ghi 4 tên loại nước, cách đều nhau.
+2. Vẽ trục dọc bên trái: đánh số 0, 1, 2, 3, 4... (mỗi ô = 1 người).
+3. Với mỗi loại nước, tô cột cao bằng số người chọn.
+4. Viết tiêu đề trên cùng: "Nước uống yêu thích — khảo sát nhóm tôi".
+5. Ghi "Số người" cạnh trục dọc; "Loại nước" dưới trục ngang.
+
+**Trả lời 4 câu hỏi vàng:**
+1. Loại nước nào được chọn nhiều nhất? (cột cao nhất)
+2. Loại nào ít nhất?
+3. Nước lọc hơn trà đào bao nhiêu người?
+4. Tổng cộng có bao nhiêu người tham gia? (cộng tất cả cột — phải khớp với bảng!)
+
+### Bài 5 ★: Viết 2 nhận xét từ dữ liệu
+
+Từ bảng + biểu đồ, viết 2 nhận xét. Mỗi nhận xét phải **có số liệu làm bằng chứng**.
+
+**Ví dụ nhận xét đúng:**
+- "Nước lọc được 4 người chọn, nhiều nhất trong nhóm 11 người khảo sát."
+- "Trà đào (3 người) gấp 1.5 lần nước cam (2 người)."
+
+**Ví dụ nhận xét SAI (ý kiến cá nhân, không phải dữ liệu):**
+- "Nước lọc ngon nhất." (cảm nhận, không có số liệu)
+- "Nhóm này thích đồ uống lành mạnh." (suy diễn, không có số liệu)
+
+Lưu vào `data-types.md`.
+
+### Bài 6 (tùy chọn): Khảo sát câu hỏi thứ 2
+
+Lặp lại Bài 2–5 với câu hỏi khác, ví dụ:
+- *"Bạn thường xem video trên nền tảng nào nhất?"* (YouTube, TikTok, Facebook, Instagram)
+- *"Bạn thường đi làm/đi học bằng phương tiện nào?"* (xem máy, xe buýt, đi bộ, ô tô)
+- *"Bạn uống mấy ly nước mỗi ngày?"* (1, 2, 3, 4, 5+)
+
+So sánh kết quả 2 khảo sát. Có mẫu hình gì thú vị không?
+
+### Bài 7 (tùy chọn): Phát hiện bias lấy mẫu
+
+Trong khảo sát Bài 2, trả lời:
+1. Ai bạn đã hỏi? (độ tuổi, giới tính, nghề nghiệp...)
+2. Nhóm này đại diện cho ai? (toàn dân Việt Nam? Thanh niên Hà Nội? Người ở nhà bạn?)
+3. Nếu kết quả khảo sát được tuyên bố là "người Việt thích loại nước X nhất" — có bias không?
+4. Để tránh bias, bạn cần thay đổi gì trong cách chọn người khảo sát?
+
+Đây là nền tảng cho chặng 95 (lấy mẫu và tổng thể).
+
+### Bài 8 (tùy chọn): Đọc 1 biểu đồ báo chí
+
+Tìm 1 bài báo tiếng Việt có biểu đồ (VnExpress, Tuổi Trẻ thường có). Trả lời:
+1. Biểu đồ loại gì? (cột, đường, tròn, area...)
+2. Dữ liệu từ đâu?
+3. Trục x và y thể hiện gì?
+4. 2 nhận xét chính từ biểu đồ
+5. Có gì đáng nghi không? (trục bị cắt, tỷ lệ không trung thực, thiếu nguồn...)
+
+Đây là nền tảng cho chặng 91 (nguyên tắc trực quan hóa trung thực).
+
+---
+
+## Phần C — Sản phẩm cuối chặng
+
+### "Báo cáo dữ liệu đầu tiên"
+
+**Yêu cầu:** tạo tệp `portfolio-ai/phan-a/chặng-03-bao-cao-du-lieu/README.md` gồm 4 phần:
 
 | Phần | Nội dung | Điều kiện đạt |
 |------|----------|---------------|
-| 1. Câu hỏi khảo sát | Viết câu hỏi em đã dùng + ghi ai được hỏi (lớp / nhóm / gia đình, số người) | Câu hỏi rõ, có đối tượng và số người |
+| 1. Câu hỏi khảo sát | Viết câu hỏi bạn đã dùng + ghi ai được hỏi (nhóm, số người) | Câu hỏi rõ, có đối tượng và số người |
 | 2. Bảng dữ liệu | Bảng có tiêu đề, tên cột, số liệu, dòng tổng | Đủ cấu phần; tổng khớp số người |
-| 3. Biểu đồ cột | Biểu đồ vẽ tay có tiêu đề, trục, cột đúng tỉ lệ | Cột đúng chiều cao theo số liệu bảng |
+| 3. Biểu đồ cột | Biểu đồ vẽ (giấy scan/ảnh HOẶC vẽ trên tool) có tiêu đề, trục, cột đúng tỉ lệ | Cột đúng chiều cao theo số liệu bảng |
 | 4. Hai nhận xét | 2 câu nhận xét rút ra từ dữ liệu | Mỗi câu có số liệu làm bằng chứng |
 
-**Ví dụ nhận xét đúng:** "Nước lọc được 4 bạn chọn, nhiều nhất trong nhóm." — có số liệu làm bằng chứng. **Nhận xét cần tránh:** "Nước lọc ngon nhất" — đó là ý kiến về vị (mỗi người một gu), không phải nhận xét từ dữ liệu. Phân biệt "nhận xét từ dữ liệu" và "ý kiến cá nhân" là bài học đạo đức dữ liệu đầu tiên!
+**Điểm nhấn:** Nếu bạn ghi sai số rồi sửa — tuyệt vời, đó là gỡ lỗi dữ liệu. **Đừng** sửa cho "báo cáo đẹp" — sản phẩm mục đích là sự thật, không phải thẩm mỹ.
 
-## Tiêu chí đánh giá (rubric)
+Lưu tệp vào portfolio. Đây là artifact thứ 3 của bạn trong hành trình 170 chặng.
 
-| Tiêu chí | Mức 1 — Cần cố gắng | Mức 2 — Đạt | Mức 3 — Tốt |
-|----------|---------------------|-------------|--------------|
-| Thu thập dữ liệu | Phiếu còn thiếu, cần người lớn nhắc | Thu đủ số người, quy tắc đúng/lịch sự | Tự thiết kế thêm câu hỏi thứ 2 và thu thêm 1 bộ |
-| Bảng dữ liệu | Thiếu tiêu đề hoặc tổng sai | Đủ cấu phần, số đúng | Bảng sạch + xếp hàng từ nhiều đến ít |
-| Biểu đồ cột | Cột không đúng tỉ lệ | Cột đúng, đủ trục và tiêu đề | Biểu đồ đẹp + ghi chú rõ ràng cho người lạ đọc hiểu |
-| Nhận xét | Ý kiến cá nhân, chưa có số liệu | 2 nhận xét có số liệu | 2 nhận xét + tự phát hiện 1 điều "dữ liệu này không nói lên được" |
+---
 
-## Lưu ý cho phụ huynh và giáo viên
+## Phần D — Tự đánh giá
 
-- **Trung thực > đẹp.** Nếu em ghi sai số rồi sửa — tuyệt vời, đó là gỡ lỗi dữ liệu. Đừng bao giờ sửa giúp cho "báo cáo đẹp": sản phẩm mục đích là sự thật.
-- **Bảo vệ thông tin cá nhân ngay từ bài này:** khi hỏi dữ liệu, chỉ hỏi sở thích (loại nước), **không** hỏi/ghi số điện thoại, địa chỉ nhà của bạn bè. Đây là dịp nhắc tự nhiên về thông tin cá nhân — chủ đề chính của Giai đoạn 21.
-- **Không so biểu đồ của em với nhau:** mỗi em khảo sát một nhóm khác nhau nên số khác nhau là bình thường. So sánh chỉ dẫn đến "dữ liệu ai đúng hơn" sai lầm về tư duy.
-- **Danh sách 4 lựa chọn nên "Việt hóa":** thay trà đào bằng nước mía, trà xanh... theo vùng miền — dữ liệu gần gũi với em hơn.
-- **Người lớn tự học:** hãy làm đúng quy trình với câu hỏi công việc (ví dụ: "Thứ nào trong tuần bạn bận nhất?") — quy trình thu thập – bảng – biểu đồ – nhận xét y hệt những gì bạn sẽ làm bằng Pandas ở Giai đoạn 86–92.
+Checklist cuối chặng:
 
-## Bước tiếp theo
+```
+□ Tôi hiểu dữ liệu là gì, 4 dạng dữ liệu phổ biến
+□ Tôi phân biệt được dữ liệu định lượng vs định tính, có cấu trúc vs phi cấu trúc
+□ Tôi biết 3 quy tắc thu thập dữ liệu (đúng, đủ, trung thực)
+□ Tôi hiểu bias lấy mẫu là gì và vì sao cần tránh
+□ Tôi đã làm xong Bài 1, 2, 3, 4, 5 (sao ★)
+□ Tôi đã hoàn thành "Báo cáo dữ liệu đầu tiên" và lưu vào portfolio
+□ Tôi phân biệt được "nhận xét từ dữ liệu" và "ý kiến cá nhân"
+□ Tôi đã ghi 1 mục vào learning-journal.md cho chặng này
+□ Tôi đã trả lời được "Kết nối về sau" trong tu-dien-va-tai-nguyen.md
+```
 
-Em đã biết "nuôi" Robot Bi bằng dữ liệu sạch! Tiếp theo, Giai đoạn 04 sẽ cho em làm quen với người bạn số 1 của cả hành trình: **máy tính và các thiết bị số** — em sẽ hiểu máy tính gồm những gì, hệ điều hành là gì, và tập những thao tác nền tảng trước khi gặp Scratch ở Giai đoạn 09. Hẹn gặp em ở [Giai đoạn 04: Máy tính và thiết bị số](../README.md).
+Nếu 9/9 ô được đánh dấu — chúc mừng, bạn đã hoàn thành chặng 03. Phần A tiếp tục với chặng 04 (đang hoàn thiện).
+
+---
+
+## Phần E — Gợi ý phân tích thêm
+
+### Tại sao không nên so sánh biểu đồ của bạn với người khác
+
+Mỗi người khảo sát một nhóm khác nhau, nên số khác là bình thường. So sánh "biểu đồ của tôi đúng hơn của bạn" sai về tư duy — không có "đúng" tuyệt đối, chỉ có "đại diện cho nhóm nào".
+
+### Nếu muốn khảo sát nghiêm túc hơn
+
+Để khảo sát có giá trị thống kê:
+1. Cỡ mẫu ≥ 30 (lý tưởng ≥ 100)
+2. Chọn mẫu ngẫu nhiên từ dân số mục tiêu
+3. Câu hỏi trung lập (không gợi ý đáp án)
+4. Bảo vệ thông tin cá nhân (không hỏi tên, số điện thoại)
+
+Bạn sẽ học kỹ thuật khảo sát nghiêm túc ở Phần D (chặng 95 — mẫu và tổng thể).
+
+### Mở rộng — biểu đồ khác ngoài biểu đồ cột
+
+Biểu đồ cột phù hợp dữ liệu phân loại (loại nước, thành phố, giới tính). Các loại dữ liệu khác cần loại biểu đồ khác:
+
+| Loại dữ liệu | Biểu đồ phù hợp | Ví dụ |
+|--------------|------------------|-------|
+| Phân loại (ít loại) | Biểu đồ cột | Nước uống, giới tính |
+| Tỷ lệ phần trăm | Biểu đồ tròn | Cơ cấu chi tiêu |
+| Theo thời gian | Biểu đồ đường | Nhiệt độ 7 ngày |
+| Quan hệ 2 biến | Biểu đồ phân tán (scatter) | Chiều cao vs cân nặng |
+| Phân phối | Histogram | Phân bố điểm kiểm tra |
+
+Bạn sẽ học các loại biểu đồ này ở chặng 56 (bảng tính), chặng 88–90 (Matplotlib/Seaborn).
