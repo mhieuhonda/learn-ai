@@ -113,5 +113,5 @@ Repo được chia sẻ với tinh thần mở cho cộng đồng người Việ
 <p align="center">Hãy đọc chậm, hiểu sâu và giữ cho mình một bản đồ tri thức AI thật rõ ràng.</p>
 
 <p align="center">
-  <a href="01_toan_canh/README.md">Bắt đầu bài 01</a> | <a href="02_lich_su/README.md">Sang bài 02</a> | <a href="03_triet_hoc_nhan_thuc/README.md">Sang bài 03</a>
+  <a href="01_toan_canh/README.md">Bắt đầu bài 01</a> | <a href="02_lich_su/README.md">Sang bài 02</a> | <a href="03_triet_hoc_nhan_thuc/README.md">Sang bài 03</a> | <a href="04_toan_y_tuong/README.md">Sang bài 04</a> | <a href="05_du_lieu_khai_niem/README.md">Sang bài 05</a> | <a href="06_hoc_may_ly_thuyet/README.md">Sang bài 06</a>
 </p>

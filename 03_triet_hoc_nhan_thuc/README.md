@@ -25,5 +25,5 @@ Hiểu biết của con người bao gồm trải nghiệm, năng lực hành đ
 Chặng tiếp theo trình bày dữ liệu ở mức khái niệm, bao gồm bản chất, vai trò quyết định đối với chất lượng suy luận và cơ chế sai lệch lan truyền từ dữ liệu sang kết quả.
 
 <p align="center">
-  <a href="../02_lich_su/README.md">Về bài 02</a> | <a href="../README.md">Về mục lục</a>
+  <a href="../02_lich_su/README.md">Về bài 02</a> | <a href="../README.md">Về mục lục</a> | <a href="../04_toan_y_tuong/README.md">Sang bài 04</a>
 </p>
