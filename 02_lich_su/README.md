@@ -1,30 +1,28 @@
 # 02. AI từ đâu mà có
 
-Bạn có thể đọc bài này trong 25 phút. Đọc xong bạn kể được câu chuyện AI trong năm phút mà không cần nhớ năm tháng. Bài này chỉ giúp bạn hiểu mạch chuyện, không cần máy tính, không cần thực hành.
+Bài này trình bày tiến trình hình thành AI qua các bước ngoặt tư tưởng và điều kiện công nghệ. Thời lượng đọc khoảng 25 phút. Nội dung thuần lý thuyết, không yêu cầu ghi nhớ niên biểu chi tiết.
 
-## 1. Hai con đường từ lúc bắt đầu
+## 1. Hai hướng tiếp cận nền tảng
 
-Ngay từ đầu đã có hai cách nghĩ đối nhau. Một bên nói trí khôn là suy luận theo quy tắc. Nếu viết đủ quy tắc rõ ràng thì máy sẽ thông minh, giống như dạy em bé bằng bộ luật thật dày. Bên còn lại nói trí khôn là học dần từ ví dụ. Thay vì viết luật bằng tay, hãy cho máy xem nhiều ví dụ để máy tự rút quy luật, giống như cho em bé xem hàng nghìn ảnh mèo rồi em tự nhận ra mèo.
+Lịch sử AI khởi đầu từ hai giả thuyết đối lập về bản chất trí tuệ. Hướng thứ nhất cho rằng trí tuệ là suy luận theo quy tắc. Nếu hình thức hóa đầy đủ tri thức thành luật rõ ràng thì máy sẽ thông minh. Hướng thứ hai cho rằng trí tuệ là khả năng khái quát từ ví dụ. Thay vì viết luật thủ công, hãy cung cấp đủ dữ liệu để máy tự trích xuất quy luật.
 
-Một phép thử nổi tiếng đã biến câu hỏi khó thành trò cụ thể. Cho một người trò chuyện bằng chữ với hai đối tượng giấu mặt, một là người thật và một là máy. Nếu người hỏi không phân biệt được đâu là máy thì máy đã đạt một mức trí khôn nào đó trong trò chuyện. Phép thử này không hoàn hảo nhưng mở ra tranh luận đến hôm nay. Trả lời trôi chảy có đồng nghĩa với hiểu thật không. Bạn giữ câu hỏi này để gặp lại ở bài số 03.
+Phép thử Turing (Turing test) đã chuyển tranh luận trừu tượng thành tình huống đánh giá cụ thể. Một người đối thoại bằng văn bản với hai đối tượng ẩn danh là người thật và máy. Nếu không phân biệt được đâu là máy thì hệ thống đạt một mức năng lực hội thoại nhất định. Giá trị của phép thử không nằm ở tính hoàn hảo mà ở việc đặt ra chuẩn mực thảo luận về bắt chước hành vi và hiểu biết thực chất. Câu hỏi mà phép thử để lại vẫn nguyên giá trị. Trả lời trôi chảy có đồng nghĩa với thấu hiểu hay không.
 
-Thuật ngữ tiếng Anh duy nhất của bài này là Turing test, nghĩa là phép thử Turing. Nhớ tên để khi nghe nhắc tới thì biết người ta đang nói về trò trò chuyện giấu mặt này.
+## 2. Từ hệ dựa trên quy tắc sang học từ dữ liệu
 
-## 2. Vì sao lúc lên cao lúc xuống thấp
+Giai đoạn hệ chuyên gia thể hiện rõ hướng quy tắc thủ công. Tri thức của chuyên gia được chuyển thành tập luật cho các bài toán chẩn đoán, xét duyệt và sửa lỗi kỹ thuật. Phương pháp này hiệu quả trong miền hẹp có quy tắc ổn định và dễ diễn đạt, nhưng bộc lộ giới hạn trong môi trường mở với nhiều ngoại lệ và tri thức ngầm khó hình thức hóa. Chi phí viết luật tăng nhanh trong khi độ bao phủ không theo kịp thực tế. Khi kỳ vọng vượt quá năng lực, nguồn lực đầu tư thu hẹp và lĩnh vực rơi vào giai đoạn trầm lắng thường gọi là mùa đông AI.
 
-Trong một giai đoạn dài, con đường viết quy tắc bằng tay lên ngôi. Người ta mời chuyên gia kể cách quyết định rồi biến thành quy tắc cho máy. Máy y tế chứa quy tắc chẩn đoán, máy tài chính chứa quy tắc xét duyệt. Cách này thắng ở nơi việc rõ ràng và ít đổi, nhưng thua ở đời sống mở vì đời sống có quá nhiều ngoại lệ và tri thức ngầm khó gọi tên. Người lái xe lâu năm khó kể hết cách xử lý bất ngờ, người đầu bếp giỏi khó viết hết cảm nhận về lửa. Viết tay mãi không xuể nên kỳ vọng sụp xuống, đầu tư rút đi, báo chí bớt quan tâm. Người ta gọi đó là mùa đông AI.
+Hướng học từ dữ liệu (machine learning) thay thế dần vai trò trung tâm khi ba điều kiện đồng thời chín muồi là dữ liệu số quy mô lớn, năng lực tính toán cao và kiến trúc mô hình nhiều lớp (deep learning). Thay vì quy định chi tiết từng luật, con người xác định khung học và chuẩn bị dữ liệu, mô hình tự điều chỉnh qua quá trình tối ưu. Nhờ vậy các bài toán nhiều ngoại lệ như nhận diện trong điều kiện khó hay dịch thuật văn bản dài đạt chất lượng dùng được.
 
-Con đường học từ ví dụ lúc đó vẫn lặng lẽ tiến bộ trong phòng thí nghiệm nhưng thiếu ba điều kiện là dữ liệu lớn, máy đủ khỏe và cách tổ chức mô hình đủ tốt. Khi mạng toàn cầu phổ biến thì dữ liệu bùng nổ, máy nhanh hơn rất nhiều, mô hình nhiều lớp học được sắc nét hơn. Học máy là tên chung cho con đường này, học sâu là nhánh nổi bật với ý tưởng nhiều lớp biểu diễn chồng lên nhau. Lớp đầu nhận nét và màu, lớp giữa nhận bộ phận, lớp sau nhận vật thể và ý nghĩa. Nhờ vậy nhiều việc tưởng chỉ người mới làm được bỗng đạt chất lượng dùng được.
+Khi đạt ngưỡng ứng dụng, AI tạo ra vòng phản hồi tích cực giữa sản phẩm và dữ liệu. Lượng người dùng lớn tạo ra dữ liệu mới liên tục, dữ liệu dồi dào cải thiện chất lượng hệ thống, chất lượng tốt thu hút thêm người dùng. Giai đoạn mô hình nền tảng tiếp tục mở rộng logic này khi một mô hình quy mô lớn được dùng chung cho nhiều nhiệm vụ ngôn ngữ như tóm tắt, dịch thuật và đối thoại. Về bản chất, đây vẫn là suy luận dựa trên phân phối đã học nên hệ thống có thể diễn đạt trôi chảy nhưng sai lệch sự thật một cách tự tin.
 
-Khi chất lượng đủ dùng thì AI đi vào sản phẩm hằng ngày và tạo vòng phản hồi mạnh. Càng nhiều người dùng thì càng nhiều dữ liệu mới, càng nhiều dữ liệu thì hệ càng tốt, hệ càng tốt thì càng nhiều người dùng. Đây là lý do tiến bộ dồn dập trong vài năm gần đây. Gần đây lại có mô hình lớn học từ lượng dữ liệu khổng lồ rồi dùng chung cho nhiều việc chữ như tóm tắt, dịch và trò chuyện. Máy sinh nội dung trôi chảy nhưng về bản chất vẫn là đoán tiếp cái hợp lý nhất từ quy luật đã học, nên vẫn có thể sai một cách tự tin.
+## 3. Tóm lược và chuyển tiếp
 
-## 3. Nhớ gọn và đi tiếp
+Lịch sử AI là quá trình chuyển trục từ viết quy tắc thủ công sang học quy luật từ dữ liệu khi điều kiện dữ liệu và tính toán cho phép. Mỗi giai đoạn trầm lắng đều phản ánh kỳ vọng vượt quá phạm vi thực tế và điều kiện chưa đủ. Vòng phản hồi giữa sản phẩm và dữ liệu giải thích tốc độ tiến bộ khi AI đi vào đời sống. Mô hình quy mô lớn dù cho khả năng sinh ấn tượng vẫn cần được đánh giá trong phạm vi, dữ liệu và giới hạn cụ thể.
 
-Bạn chỉ cần mang theo ba ý. Lịch sử AI là cuộc giằng co giữa viết quy tắc bằng tay và học từ ví dụ, phần thắng hiện tại thuộc về học từ dữ liệu nhờ dữ liệu nhiều và máy khỏe. Mỗi mùa đông đều dạy bài học về kỳ vọng quá sớm và phạm vi quá hẹp. Tiến bộ gần đây đến từ vòng phản hồi giữa sản phẩm và dữ liệu, còn mô hình lớn dù sinh giỏi vẫn là đoán nhận tinh vi cần kiểm chứng.
+Để tự kiểm tra, hãy trình bày trong năm phút sự khác nhau giữa hai hướng tiếp cận và điều kiện giúp hướng học từ dữ liệu vươn lên. Khi tiếp nhận một tin đột phá, hãy đặt ngay ba câu hỏi về dữ liệu huấn luyện, phạm vi áp dụng và bằng chứng đánh giá độc lập.
 
-Tự hỏi hai câu là đủ. Bạn có kể lại được câu chuyện hai con đường trong năm phút không. Khi nghe tin đột phá mới, bạn có hỏi ngay về dữ liệu, phạm vi và giới hạn trước khi tin không.
-
-Bài tiếp theo bàn câu hỏi sâu nhất là máy có hiểu thật không. Ta sẽ nghe câu chuyện căn phòng tiếng Trung và học cách dùng máy đúng cách cho việc quan trọng.
+Bài tiếp theo phân tích câu hỏi cốt lõi là máy có hiểu thực chất hay không, qua đó thiết lập nguyên tắc sử dụng phù hợp cho các nhiệm vụ quan trọng.
 
 <p align="center">
   <a href="../01_toan_canh/README.md">Về bài 01</a> | <a href="../README.md">Về mục lục</a> | <a href="../03_triet_hoc_nhan_thuc/README.md">Sang bài 03</a>
