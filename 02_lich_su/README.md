@@ -25,3 +25,7 @@ Bạn chỉ cần mang theo ba ý. Lịch sử AI là cuộc giằng co giữa v
 Tự hỏi hai câu là đủ. Bạn có kể lại được câu chuyện hai con đường trong năm phút không. Khi nghe tin đột phá mới, bạn có hỏi ngay về dữ liệu, phạm vi và giới hạn trước khi tin không.
 
 Bài tiếp theo bàn câu hỏi sâu nhất là máy có hiểu thật không. Ta sẽ nghe câu chuyện căn phòng tiếng Trung và học cách dùng máy đúng cách cho việc quan trọng.
+
+<p align="center">
+  <a href="../01_toan_canh/README.md">Về bài 01</a> | <a href="../README.md">Về mục lục</a> | <a href="../03_triet_hoc_nhan_thuc/README.md">Sang bài 03</a>
+</p>

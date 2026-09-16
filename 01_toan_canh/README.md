@@ -40,3 +40,7 @@ Bạn chỉ cần mang theo bốn ý. AI là công nghệ giúp máy làm việc
 Tự hỏi hai câu là đủ. Hãy kể lại AI là gì trong một phút mà không chép định nghĩa. Hãy lấy cửa hàng quen của bạn và thử xếp các việc của họ vào sáu nhóm trên.
 
 Bài tiếp theo kể AI từ đâu mà có, từ giấc mơ máy biết nghĩ qua thời viết quy tắc bằng tay đến thời học từ dữ liệu lên ngôi. Có lịch sử trong đầu bạn sẽ bình tĩnh hơn trước mọi tin nóng.
+
+<p align="center">
+  <a href="../README.md">Về mục lục</a> | <a href="../02_lich_su/README.md">Sang bài 02</a>
+</p>

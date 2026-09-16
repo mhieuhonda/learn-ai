@@ -23,3 +23,7 @@ Bạn chỉ cần mang theo ba ý. Hiểu của người gắn với trải nghi
 Tự hỏi hai câu là đủ. Hãy kể lại chuyện căn phòng kín cho người thân trong hai phút. Hãy liệt kê ba việc trong tuần có thể nhờ máy gợi ý và hai việc nhất định do người quyết định.
 
 Chặng tiếp theo nói về dữ liệu ở mức khái niệm, rằng dữ liệu là gì, vì sao dữ liệu quyết định mọi đoán nhận và vì sao dữ liệu lệch dẫn tới kết quả lệch. Toàn bộ vẫn là lý thuyết để hiểu, không cần chạm vào máy.
+
+<p align="center">
+  <a href="../02_lich_su/README.md">Về bài 02</a> | <a href="../README.md">Về mục lục</a>
+</p>

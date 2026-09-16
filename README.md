@@ -111,3 +111,7 @@ Cấu trúc dưới đây là định hướng phát triển, nội dung chi ti�
 Repo được chia sẻ với tinh thần mở cho cộng đồng người Việt yêu tri thức. Khi trích dẫn hoặc sử dụng lại, vui lòng ghi rõ nguồn từ repo này. Mọi góp ý về độ chính xác khái niệm, về cấu trúc, về cách diễn đạt, vui lòng tạo Issue trên trang của repo để cùng hoàn thiện. Repo ưu tiên những góp ý giúp khái niệm đúng hơn, rõ hơn và đầy đủ hơn, thay vì những đề xuất thêm nội dung thực hành vốn nằm ngoài tôn chỉ.
 
 <p align="center">Hãy đọc chậm, hiểu sâu và giữ cho mình một bản đồ tri thức AI thật rõ ràng.</p>
+
+<p align="center">
+  <a href="01_toan_canh/README.md">Bắt đầu bài 01</a> | <a href="02_lich_su/README.md">Sang bài 02</a> | <a href="03_triet_hoc_nhan_thuc/README.md">Sang bài 03</a>
+</p>
